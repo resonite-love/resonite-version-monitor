@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Data files (except versions.json which we want to track)
+data/current_manifests.json
+data/previous_manifests.json
+
+# SteamCMD
+.steam/
+steamcmd/
+
+# OS
+.DS_Store
+Thumbs.db

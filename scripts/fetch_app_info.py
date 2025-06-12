@@ -88,6 +88,7 @@ def main():
     app_info = get_app_info(app_id)
     
     print("Parsing manifests...")
+    print(app_info)
     manifests = parse_manifests(app_info)
     
     # Output as JSON

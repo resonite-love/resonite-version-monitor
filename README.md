@@ -37,21 +37,21 @@ To manually trigger the check:
 {
   "public": [
     {
-      "depotid": "8412389452125882142",
+      "manifestId": "8412389452125882142",
       "timestamp": "2025-01-13T12:00:00Z",
       "gameVersion": null
     }
   ],
   "prerelease": [
     {
-      "depotid": "4281492182895112523",
+      "manifestId": "4281492182895112523",
       "timestamp": "2025-01-13T12:00:00Z",
       "gameVersion": null
     }
   ],
   "release": [
     {
-      "depotid": "8412389452125882142",
+      "manifestId": "8412389452125882142",
       "timestamp": "2025-01-13T12:00:00Z",
       "gameVersion": null
     }

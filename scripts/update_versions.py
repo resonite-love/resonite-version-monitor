@@ -24,7 +24,7 @@ def create_version_entries(manifest_data, timestamp):
     entries = {}
     for branch_name, gid in depot_2519832.items():
         entries[branch_name] = {
-            'depotid': gid,
+            'manifestId': gid,
             'timestamp': timestamp,
             'gameVersion': None
         }
@@ -60,14 +60,14 @@ def update_versions_json(manifest_data):
                 versions_data[branch_name] = []
             
             # Check if this GID already exists for this branch
-            existing_gids = [v.get('depotid') for v in versions_data[branch_name]]
+            existing_gids = [v.get('manifestId') for v in versions_data[branch_name]]
             
-            if new_entry['depotid'] not in existing_gids:
+            if new_entry['manifestId'] not in existing_gids:
                 versions_data[branch_name].append(new_entry)
                 updated = True
-                print(f"Added new entry for {branch_name}: {new_entry['depotid']}")
+                print(f"Added new entry for {branch_name}: {new_entry['manifestId']}")
             else:
-                print(f"GID {new_entry['depotid']} already exists for branch {branch_name}")
+                print(f"GID {new_entry['manifestId']} already exists for branch {branch_name}")
         
         if updated:
             # Save updated versions

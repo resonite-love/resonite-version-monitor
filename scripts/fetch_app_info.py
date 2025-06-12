@@ -49,71 +49,103 @@ def get_app_info(app_id):
     
     return result.stdout
 
+def parse_vdf_section(text, start_pos=0):
+    """Parse a VDF section and return its content as a dictionary."""
+    result = {}
+    i = start_pos
+    
+    while i < len(text):
+        # Skip whitespace
+        while i < len(text) and text[i] in ' \t\n\r':
+            i += 1
+        
+        if i >= len(text):
+            break
+            
+        # Check for closing brace
+        if text[i] == '}':
+            return result, i + 1
+        
+        # Parse key
+        if text[i] == '"':
+            i += 1
+            key_start = i
+            while i < len(text) and text[i] != '"':
+                if text[i] == '\\' and i + 1 < len(text):
+                    i += 2
+                else:
+                    i += 1
+            key = text[key_start:i]
+            i += 1
+            
+            # Skip whitespace between key and value
+            while i < len(text) and text[i] in ' \t\n\r':
+                i += 1
+            
+            # Parse value
+            if i < len(text):
+                if text[i] == '"':
+                    # String value
+                    i += 1
+                    value_start = i
+                    while i < len(text) and text[i] != '"':
+                        if text[i] == '\\' and i + 1 < len(text):
+                            i += 2
+                        else:
+                            i += 1
+                    value = text[value_start:i]
+                    i += 1
+                    result[key] = value
+                elif text[i] == '{':
+                    # Nested section
+                    i += 1
+                    value, new_i = parse_vdf_section(text, i)
+                    i = new_i
+                    result[key] = value
+        else:
+            i += 1
+    
+    return result, i
+
 def parse_manifests(app_info_output):
     """Parse manifest GIDs from app_info_print output (VDF format)."""
     manifests = {}
     
-    # Find the depots section - look for "depots" followed by opening brace
-    depots_start = app_info_output.find('"depots"')
-    if depots_start == -1:
-        return manifests
-    
-    # Find the corresponding closing brace for depots section
-    brace_count = 0
-    i = depots_start
-    depots_end = -1
-    inside_quotes = False
-    
-    while i < len(app_info_output):
-        char = app_info_output[i]
-        
-        # Track if we're inside quotes
-        if char == '"' and (i == 0 or app_info_output[i-1] != '\\'):
-            inside_quotes = not inside_quotes
-        
-        # Only count braces outside of quotes
-        if not inside_quotes:
-            if char == '{':
-                brace_count += 1
-            elif char == '}':
-                brace_count -= 1
-                if brace_count == 0 and i > depots_start:
-                    depots_end = i + 1
-                    break
-        i += 1
-    
-    if depots_end == -1:
-        return manifests
-    
-    depots_content = app_info_output[depots_start:depots_end]
-    
-    # Look for depot entries with numeric IDs
-    depot_pattern = r'"(\d+)"\s*\{([^{}]*(?:\{[^{}]*\}[^{}]*)*)\}'
-    
-    for depot_match in re.finditer(depot_pattern, depots_content):
-        depot_id = depot_match.group(1)
-        depot_content = depot_match.group(2)
-        
-        # Look for manifests section within this depot
-        manifests_match = re.search(r'"manifests"\s*\{([^{}]*(?:\{[^{}]*\}[^{}]*)*)\}', depot_content)
-        if manifests_match:
-            manifests_content = manifests_match.group(1)
+    # Parse the entire VDF structure
+    try:
+        # Skip any leading output before the actual data
+        data_start = app_info_output.find('{')
+        if data_start == -1:
+            print("Could not find start of VDF data")
+            return manifests
             
-            depot_manifests = {}
-            
-            # Parse each branch's manifest
-            branch_pattern = r'"([^"]+)"\s*\{([^{}]*)\}'
-            for branch_match in re.finditer(branch_pattern, manifests_content):
-                branch_name = branch_match.group(1)
-                branch_content = branch_match.group(2)
+        vdf_data, _ = parse_vdf_section(app_info_output, data_start + 1)
+        
+        # Navigate to depots section
+        depots = vdf_data.get('depots', {})
+        
+        # Look for depot entries with manifests
+        for depot_id, depot_data in depots.items():
+            # Skip non-numeric depot IDs (like "branches", "baselanguages")
+            if not depot_id.isdigit():
+                continue
                 
-                # Extract GID
-                gid_match = re.search(r'"gid"\s*"(\d+)"', branch_content)
-                if gid_match:
-                    depot_manifests[branch_name] = gid_match.group(1)
-            
-            if depot_manifests:
-                manifests[depot_id] = depot_manifests
+            if isinstance(depot_data, dict) and 'manifests' in depot_data:
+                depot_manifests = {}
+                manifests_data = depot_data['manifests']
+                
+                if isinstance(manifests_data, dict):
+                    for branch_name, branch_data in manifests_data.items():
+                        if isinstance(branch_data, dict) and 'gid' in branch_data:
+                            depot_manifests[branch_name] = branch_data['gid']
+                
+                if depot_manifests:
+                    manifests[depot_id] = depot_manifests
+    
+    except Exception as e:
+        print(f"Error parsing VDF: {e}")
+        import traceback
+        traceback.print_exc()
     
     return manifests
 
@@ -124,7 +156,6 @@ def main():
     app_info = get_app_info(app_id)
     
     print("Parsing manifests...")
-    print(app_info)
     manifests = parse_manifests(app_info)
     
     # Output as JSON

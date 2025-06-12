@@ -1,0 +1,23 @@
+{
+  "public": [
+    {
+      "manifestId": "8412389452125882142",
+      "timestamp": "2025-06-12T16:11:53.403001Z",
+      "gameVersion": null
+    }
+  ],
+  "prerelease": [
+    {
+      "manifestId": "4281492182895112523",
+      "timestamp": "2025-06-12T16:11:53.403001Z",
+      "gameVersion": null
+    }
+  ],
+  "release": [
+    {
+      "manifestId": "8412389452125882142",
+      "timestamp": "2025-06-12T16:11:53.403001Z",
+      "gameVersion": null
+    }
+  ]
+}

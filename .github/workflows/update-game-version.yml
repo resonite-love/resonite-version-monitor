@@ -1,0 +1,77 @@
+name: Update Game Version
+
+on:
+  workflow_run:
+    workflows: ["Check Resonite Updates"]
+    types:
+      - completed
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to update (public, prerelease, release)'
+        required: false
+        default: 'all'
+
+jobs:
+  update-version:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    permissions: write-all
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        # Get the latest changes
+        fetch-depth: 0
+    
+    - name: Pull latest changes
+      run: git pull origin main
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+    
+    - name: Install DepotDownloader
+      run: |
+        # Download DepotDownloader
+        wget https://github.com/SteamRE/DepotDownloader/releases/latest/download/DepotDownloader-linux-x64.zip
+        unzip DepotDownloader-linux-x64.zip -d DepotDownloader
+        chmod +x DepotDownloader/DepotDownloader
+    
+    - name: Update game versions
+      env:
+        STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+        STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
+      run: |
+        python scripts/update_game_versions.py
+    
+    - name: Check for changes
+      id: check_changes
+      run: |
+        if git diff --quiet; then
+          echo "has_changes=false" >> $GITHUB_OUTPUT
+        else
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+          # Get summary of changes
+          CHANGES=$(git diff --name-only | head -5 | tr '\n' ', ' | sed 's/,$//')
+          echo "changed_files=$CHANGES" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Commit and push changes
+      if: steps.check_changes.outputs.has_changes == 'true'
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        # Add changed files
+        git add data/versions.json
+        
+        # Commit with summary
+        git commit -m "Update game versions" \
+          -m "Updated game versions for: ${{ steps.check_changes.outputs.changed_files }}"
+        
+        # Push changes
+        git push

@@ -15,13 +15,23 @@ This project monitors Resonite (App ID: 2519830) for updates by checking Steam m
 - `scripts/fetch_app_info.py` - Downloads and runs SteamCMD to get app info
 - `scripts/check_for_updates.py` - Compares current vs previous manifests
 - `scripts/update_versions.py` - Updates versions.json with new GIDs
+- `scripts/update_game_versions.py` - Downloads Build.version files and updates gameVersion
 - `data/versions.json` - Historical record of depot 2519832 GID changes
+
+## Workflows
+
+1. **Check Resonite Updates** - Monitors manifest changes and updates versions.json
+2. **Update Game Version** - Downloads Build.version files and updates gameVersion fields
 
 ## Setup
 
 1. Fork/clone this repository
 2. Enable GitHub Actions in your repository
-3. The workflow will run automatically on schedule
+3. Add Steam credentials as GitHub Secrets:
+   - `STEAM_USERNAME`: Your Steam username
+   - `STEAM_PASSWORD`: Your Steam password
+   - These are required for downloading Build.version files
+4. The workflow will run automatically on schedule
 
 ## Manual Run
 

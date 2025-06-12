@@ -80,6 +80,8 @@ def update_versions_with_game_version():
     app_id = 2519830
     depot_id = 2519832
     updated = False
+    failed_count = 0
+    max_failures = 3  # Stop after 3 consecutive failures (likely rate limit)
     
     # Process each branch
     for branch_name in ['public', 'prerelease', 'release']:
@@ -99,13 +101,26 @@ def update_versions_with_game_version():
                     if game_version:
                         entry['gameVersion'] = game_version
                         updated = True
+                        failed_count = 0  # Reset failure counter on success
                         print(f"Updated {branch_name} entry with version: {game_version}")
+                        
+                        # Save progress periodically (every successful update)
+                        save_json(versions_file, versions_data)
                     else:
                         print(f"Failed to get version for {branch_name} manifest: {manifest_id}")
+                        failed_count += 1
+                        
+                        # Check if we hit rate limit
+                        if failed_count >= max_failures:
+                            print(f"\nStopping due to {max_failures} consecutive failures (likely rate limit)")
+                            if updated:
+                                save_json(versions_file, versions_data)
+                                print(f"Saved progress: updated entries before hitting rate limit")
+                            return updated
     
     if updated:
         save_json(versions_file, versions_data)
-        print("\nSuccessfully updated versions.json with game versions")
+        print("\nSuccessfully updated all available versions")
         return True
     else:
         print("\nNo updates needed")

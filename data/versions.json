@@ -1,23 +1,1043 @@
 {
   "public": [
     {
+      "manifestId": "46528300973251031",
+      "timestamp": "2024-10-04T15:32:39Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8252654501983979266",
+      "timestamp": "2024-10-08T22:37:15Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5081960274621398689",
+      "timestamp": "2024-10-23T00:33:58Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "3269907593548201806",
+      "timestamp": "2024-10-29T20:38:50Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "6270485971974165693",
+      "timestamp": "2024-11-12T22:26:40Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8777561274830262077",
+      "timestamp": "2024-11-14T20:00:07Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "2836391326131014463",
+      "timestamp": "2024-11-19T08:05:13Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4591919368891207150",
+      "timestamp": "2024-12-02T20:03:43Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "135499739487298963",
+      "timestamp": "2024-12-09T19:29:05Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "6109509450897693466",
+      "timestamp": "2024-12-10T08:09:10Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "3272575603435964304",
+      "timestamp": "2024-12-16T21:52:52Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "536889705477488053",
+      "timestamp": "2024-12-16T23:16:36Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "447371753641733678",
+      "timestamp": "2024-12-17T09:04:42Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7784620721219697938",
+      "timestamp": "2024-12-18T08:03:35Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7317037505035009887",
+      "timestamp": "2024-12-26T23:09:15Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5467136440859128176",
+      "timestamp": "2025-01-07T23:15:45Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7231309808377354879",
+      "timestamp": "2025-01-09T23:43:30Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "485330054964984642",
+      "timestamp": "2025-01-10T23:11:39Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7311649915017010340",
+      "timestamp": "2025-01-14T00:32:25Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8326587028153178624",
+      "timestamp": "2025-01-25T20:48:37Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4414766211919498514",
+      "timestamp": "2025-01-28T20:26:38Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "6225678409896289783",
+      "timestamp": "2025-01-30T23:33:00Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "926412989150436275",
+      "timestamp": "2025-02-04T22:45:05Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8729567831685354700",
+      "timestamp": "2025-02-05T21:56:57Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "412818807815203824",
+      "timestamp": "2025-02-11T00:22:17Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8683259493033923167",
+      "timestamp": "2025-02-12T21:13:50Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7072755122696490068",
+      "timestamp": "2025-02-13T23:30:45Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7380523498946055757",
+      "timestamp": "2025-02-14T07:04:42Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "2764801017406518174",
+      "timestamp": "2025-02-17T21:47:26Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "6301102380501471896",
+      "timestamp": "2025-02-17T23:39:06Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7142202929531713575",
+      "timestamp": "2025-02-18T00:09:32Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "3286825175622790180",
+      "timestamp": "2025-02-18T23:18:30Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "1640514326572325809",
+      "timestamp": "2025-02-19T00:33:18Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "3096593909572461992",
+      "timestamp": "2025-02-21T00:29:27Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "2589867183535532625",
+      "timestamp": "2025-02-21T01:45:04Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "6859103155009274161",
+      "timestamp": "2025-02-25T22:03:25Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "189529380417922997",
+      "timestamp": "2025-02-26T03:00:05Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7244678051437818916",
+      "timestamp": "2025-03-04T23:48:55Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "829069518740903804",
+      "timestamp": "2025-03-11T22:35:32Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8097899113441105476",
+      "timestamp": "2025-03-17T23:01:40Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "318539667587941268",
+      "timestamp": "2025-03-18T00:30:26Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4671307095594816658",
+      "timestamp": "2025-03-25T22:34:34Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8900056277104228303",
+      "timestamp": "2025-03-27T19:43:01Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5158236652015255050",
+      "timestamp": "2025-03-28T19:37:37Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "1300551774472972495",
+      "timestamp": "2025-04-01T07:28:46Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "349611396004574698",
+      "timestamp": "2025-04-01T08:41:47Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8645234934112025399",
+      "timestamp": "2025-04-03T22:33:07Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4946471762566798007",
+      "timestamp": "2025-04-10T21:52:39Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "9188029936522253920",
+      "timestamp": "2025-05-01T21:32:35Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7519644939576959332",
+      "timestamp": "2025-05-09T00:30:25Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "1439904322770232510",
+      "timestamp": "2025-05-09T19:08:15Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8772094806876476032",
+      "timestamp": "2025-05-13T23:38:58Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7456489022502497505",
+      "timestamp": "2025-05-14T22:38:45Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4843605160801601345",
+      "timestamp": "2025-05-16T00:35:31Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4485813256947097851",
+      "timestamp": "2025-05-16T21:27:03Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4293697008335354679",
+      "timestamp": "2025-05-23T00:03:16Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "374358282819415153",
+      "timestamp": "2025-05-23T00:46:36Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "2496500126663483193",
+      "timestamp": "2025-05-23T18:23:53Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "6378378175103934740",
+      "timestamp": "2025-05-28T21:31:58Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5818570134642961056",
+      "timestamp": "2025-05-30T00:13:59Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4643386648831883116",
+      "timestamp": "2025-05-30T21:27:04Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "448986111114967166",
+      "timestamp": "2025-05-30T22:50:42Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "1324356736896540422",
+      "timestamp": "2025-06-02T16:57:27Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7948424894764595411",
+      "timestamp": "2025-06-03T11:51:11Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7939760756338420742",
+      "timestamp": "2025-06-03T12:14:21Z",
+      "gameVersion": null
+    },
+    {
       "manifestId": "8412389452125882142",
-      "timestamp": "2025-06-12T16:11:53.403001Z",
-      "gameVersion": "2025.6.4.1085"
+      "timestamp": "2025-06-04T18:17:18Z",
+      "gameVersion": null
     }
   ],
   "prerelease": [
     {
+      "manifestId": "3028822006182256883",
+      "timestamp": "2024-10-11T01:00:41Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8474099380526411866",
+      "timestamp": "2024-10-21T21:52:49Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5549291936332297974",
+      "timestamp": "2024-10-22T03:44:08Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4339091563695110536",
+      "timestamp": "2024-10-22T03:52:51Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "848482880684128337",
+      "timestamp": "2024-10-22T04:25:38Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "52336512033074753",
+      "timestamp": "2024-10-22T19:01:22Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7563477085197004663",
+      "timestamp": "2024-11-13T07:43:32Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "3371302329714264951",
+      "timestamp": "2024-11-19T08:37:40Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "472299323508335833",
+      "timestamp": "2024-12-04T19:51:41Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "2382076818505402081",
+      "timestamp": "2024-12-05T09:15:43Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "1704794229673401153",
+      "timestamp": "2024-12-05T20:04:51Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5341928486782498706",
+      "timestamp": "2024-12-10T09:04:11Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7471651835555989009",
+      "timestamp": "2024-12-10T23:56:26Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "1962254964456478237",
+      "timestamp": "2024-12-11T08:49:32Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4188066206498953539",
+      "timestamp": "2024-12-11T23:18:37Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "3525623414850525889",
+      "timestamp": "2024-12-12T09:15:22Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8191166813912607587",
+      "timestamp": "2024-12-12T21:14:11Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "3131132926421788407",
+      "timestamp": "2024-12-13T22:31:56Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5091573150703026874",
+      "timestamp": "2025-01-04T22:57:05Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "133525415927931324",
+      "timestamp": "2025-01-05T22:07:20Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "6107124791474159802",
+      "timestamp": "2025-01-10T03:41:51Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5704106848238749604",
+      "timestamp": "2025-01-16T05:46:37Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "2144288504617765717",
+      "timestamp": "2025-02-07T21:11:53Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "1865903663650940960",
+      "timestamp": "2025-02-10T22:25:22Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8962826505745045848",
+      "timestamp": "2025-02-12T21:35:06Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "148244342832243679",
+      "timestamp": "2025-02-13T23:46:02Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "3030461755301052085",
+      "timestamp": "2025-02-14T07:23:30Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8900092249999466161",
+      "timestamp": "2025-04-07T23:06:55Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "9223027635926498129",
+      "timestamp": "2025-04-08T01:23:15Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4059990648587823161",
+      "timestamp": "2025-04-08T02:06:01Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4346839274144743506",
+      "timestamp": "2025-04-08T21:35:24Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "3027049114743588122",
+      "timestamp": "2025-04-08T23:20:16Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4998492167361708474",
+      "timestamp": "2025-04-08T23:46:14Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8455739234012030760",
+      "timestamp": "2025-04-09T19:12:01Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7540168789204955111",
+      "timestamp": "2025-04-10T00:58:24Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7804017418834779674",
+      "timestamp": "2025-04-10T09:12:02Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "2895486396451909388",
+      "timestamp": "2025-04-10T20:55:07Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5771652629050587960",
+      "timestamp": "2025-04-28T23:35:51Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8176258863373312044",
+      "timestamp": "2025-04-29T02:51:57Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4289748030414837727",
+      "timestamp": "2025-04-29T21:48:20Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7119990186857075952",
+      "timestamp": "2025-04-30T00:14:05Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7385769913194979225",
+      "timestamp": "2025-04-30T03:05:31Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "187337175316911138",
+      "timestamp": "2025-05-01T01:47:13Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "800334666958062736",
+      "timestamp": "2025-05-02T05:31:10Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4144313492880925392",
+      "timestamp": "2025-05-02T17:41:12Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "1202878549145297163",
+      "timestamp": "2025-05-05T23:22:11Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "2676113727167518322",
+      "timestamp": "2025-05-06T04:19:42Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5587019514960949241",
+      "timestamp": "2025-05-06T05:59:47Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7427423357990270495",
+      "timestamp": "2025-05-06T19:41:25Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "2732600837577350034",
+      "timestamp": "2025-05-06T22:33:03Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "1168914493439060083",
+      "timestamp": "2025-05-07T00:48:47Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5984795350239797963",
+      "timestamp": "2025-05-07T03:55:22Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7079431632766979851",
+      "timestamp": "2025-05-08T19:05:20Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5445731077419069907",
+      "timestamp": "2025-05-08T20:00:52Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4866853367605751153",
+      "timestamp": "2025-05-08T21:45:51Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5481455891084506063",
+      "timestamp": "2025-05-08T22:08:56Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8249381990600809586",
+      "timestamp": "2025-05-13T17:33:29Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7593702414193617327",
+      "timestamp": "2025-05-20T00:11:52Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7958359567309327526",
+      "timestamp": "2025-05-20T19:36:15Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4141647269838923698",
+      "timestamp": "2025-05-20T21:54:04Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8217649568332175058",
+      "timestamp": "2025-05-20T22:45:09Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "3329251671985588337",
+      "timestamp": "2025-05-20T22:58:57Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "3523405963727830634",
+      "timestamp": "2025-05-20T23:28:51Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5763076026377832691",
+      "timestamp": "2025-05-21T00:14:16Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "306350934531021390",
+      "timestamp": "2025-05-21T04:29:31Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "6056806225297646751",
+      "timestamp": "2025-05-21T18:22:45Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8192040172027211697",
+      "timestamp": "2025-05-21T19:42:30Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7245794026657946684",
+      "timestamp": "2025-05-21T20:19:40Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "661992956566181804",
+      "timestamp": "2025-05-21T21:15:21Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4913435084070482714",
+      "timestamp": "2025-05-22T18:16:29Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "3079633946942081368",
+      "timestamp": "2025-05-22T18:46:33Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "6062291764856616116",
+      "timestamp": "2025-05-28T00:01:47Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4952836035341678743",
+      "timestamp": "2025-05-28T20:25:26Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7489463287389669183",
+      "timestamp": "2025-05-29T22:03:23Z",
+      "gameVersion": null
+    },
+    {
       "manifestId": "4281492182895112523",
-      "timestamp": "2025-06-12T16:11:53.403001Z",
-      "gameVersion": "2025.5.29.1376"
+      "timestamp": "2025-05-29T23:02:04Z",
+      "gameVersion": null
     }
   ],
   "release": [
     {
+      "manifestId": "46528300973251031",
+      "timestamp": "2024-10-04T15:32:39Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8252654501983979266",
+      "timestamp": "2024-10-08T22:37:15Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5081960274621398689",
+      "timestamp": "2024-10-23T00:33:58Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "3269907593548201806",
+      "timestamp": "2024-10-29T20:38:50Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "6270485971974165693",
+      "timestamp": "2024-11-12T22:26:40Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8777561274830262077",
+      "timestamp": "2024-11-14T20:00:07Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "2836391326131014463",
+      "timestamp": "2024-11-19T08:05:13Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4591919368891207150",
+      "timestamp": "2024-12-02T20:03:43Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "135499739487298963",
+      "timestamp": "2024-12-09T19:29:05Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "6109509450897693466",
+      "timestamp": "2024-12-10T08:09:10Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "3272575603435964304",
+      "timestamp": "2024-12-16T21:52:52Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "536889705477488053",
+      "timestamp": "2024-12-16T23:16:36Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "447371753641733678",
+      "timestamp": "2024-12-17T09:04:42Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7784620721219697938",
+      "timestamp": "2024-12-18T08:03:35Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7317037505035009887",
+      "timestamp": "2024-12-26T23:09:15Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5467136440859128176",
+      "timestamp": "2025-01-07T23:15:45Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7231309808377354879",
+      "timestamp": "2025-01-09T23:43:30Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "485330054964984642",
+      "timestamp": "2025-01-10T23:11:39Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7311649915017010340",
+      "timestamp": "2025-01-14T00:32:25Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8326587028153178624",
+      "timestamp": "2025-01-25T20:48:37Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4414766211919498514",
+      "timestamp": "2025-01-28T20:26:38Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "6225678409896289783",
+      "timestamp": "2025-01-30T23:33:00Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "926412989150436275",
+      "timestamp": "2025-02-04T22:45:05Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8729567831685354700",
+      "timestamp": "2025-02-05T21:56:57Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "412818807815203824",
+      "timestamp": "2025-02-11T00:22:17Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8683259493033923167",
+      "timestamp": "2025-02-12T21:13:50Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7072755122696490068",
+      "timestamp": "2025-02-13T23:30:45Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7380523498946055757",
+      "timestamp": "2025-02-14T07:04:42Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "2764801017406518174",
+      "timestamp": "2025-02-17T21:47:26Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "6301102380501471896",
+      "timestamp": "2025-02-17T23:39:06Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7142202929531713575",
+      "timestamp": "2025-02-18T00:09:32Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "3286825175622790180",
+      "timestamp": "2025-02-18T23:18:30Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "1640514326572325809",
+      "timestamp": "2025-02-19T00:33:18Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "3096593909572461992",
+      "timestamp": "2025-02-21T00:29:27Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "2589867183535532625",
+      "timestamp": "2025-02-21T01:45:04Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "6859103155009274161",
+      "timestamp": "2025-02-25T22:03:25Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "189529380417922997",
+      "timestamp": "2025-02-26T03:00:05Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7244678051437818916",
+      "timestamp": "2025-03-04T23:48:55Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "829069518740903804",
+      "timestamp": "2025-03-11T22:35:32Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8097899113441105476",
+      "timestamp": "2025-03-17T23:01:40Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "318539667587941268",
+      "timestamp": "2025-03-18T00:30:26Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4671307095594816658",
+      "timestamp": "2025-03-25T22:34:34Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8900056277104228303",
+      "timestamp": "2025-03-27T19:43:01Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5158236652015255050",
+      "timestamp": "2025-03-28T19:37:37Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "1300551774472972495",
+      "timestamp": "2025-04-01T07:28:46Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "349611396004574698",
+      "timestamp": "2025-04-01T08:41:47Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8645234934112025399",
+      "timestamp": "2025-04-03T22:33:07Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4946471762566798007",
+      "timestamp": "2025-04-10T21:52:39Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "9188029936522253920",
+      "timestamp": "2025-05-01T21:32:35Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7519644939576959332",
+      "timestamp": "2025-05-09T00:30:25Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "1439904322770232510",
+      "timestamp": "2025-05-09T19:08:15Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "8772094806876476032",
+      "timestamp": "2025-05-13T23:38:58Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7456489022502497505",
+      "timestamp": "2025-05-14T22:38:45Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4843605160801601345",
+      "timestamp": "2025-05-16T00:35:31Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4485813256947097851",
+      "timestamp": "2025-05-16T21:27:03Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4293697008335354679",
+      "timestamp": "2025-05-23T00:03:16Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "374358282819415153",
+      "timestamp": "2025-05-23T00:46:36Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "2496500126663483193",
+      "timestamp": "2025-05-23T18:23:53Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "6378378175103934740",
+      "timestamp": "2025-05-28T21:31:58Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "5818570134642961056",
+      "timestamp": "2025-05-30T00:13:59Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "4643386648831883116",
+      "timestamp": "2025-05-30T21:27:04Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "448986111114967166",
+      "timestamp": "2025-05-30T22:50:42Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "1324356736896540422",
+      "timestamp": "2025-06-02T16:57:27Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7948424894764595411",
+      "timestamp": "2025-06-03T11:51:11Z",
+      "gameVersion": null
+    },
+    {
+      "manifestId": "7939760756338420742",
+      "timestamp": "2025-06-03T12:14:21Z",
+      "gameVersion": null
+    },
+    {
       "manifestId": "8412389452125882142",
-      "timestamp": "2025-06-12T16:11:53.403001Z",
-      "gameVersion": "2025.6.4.1085"
+      "timestamp": "2025-06-04T18:17:18Z",
+      "gameVersion": null
     }
   ]
 }

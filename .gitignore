@@ -8,9 +8,8 @@ env/
 venv/
 ENV/
 
-# Data files (except versions.json which we want to track)
+# Data files (current_manifests.json is temporary, but we track versions.json and previous_manifests.json)
 data/current_manifests.json
-data/previous_manifests.json
 
 # SteamCMD
 .steam/

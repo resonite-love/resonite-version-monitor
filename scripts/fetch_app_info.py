@@ -50,34 +50,70 @@ def get_app_info(app_id):
     return result.stdout
 
 def parse_manifests(app_info_output):
-    """Parse manifest GIDs from app_info_print output."""
+    """Parse manifest GIDs from app_info_print output (VDF format)."""
     manifests = {}
     
-    # Find the depots section
-    depots_match = re.search(r'"depots"\s*{([^{}]*(?:{[^{}]*}[^{}]*)*)}', app_info_output)
-    if not depots_match:
+    # Find the depots section - look for "depots" followed by opening brace
+    depots_start = app_info_output.find('"depots"')
+    if depots_start == -1:
         return manifests
     
-    depots_content = depots_match.group(0)
+    # Find the corresponding closing brace for depots section
+    brace_count = 0
+    i = depots_start
+    depots_end = -1
+    inside_quotes = False
     
-    # Find all depot entries with manifests
-    depot_pattern = r'"(\d+)"\s*{[^}]*"manifests"\s*{([^}]*)}'
+    while i < len(app_info_output):
+        char = app_info_output[i]
+        
+        # Track if we're inside quotes
+        if char == '"' and (i == 0 or app_info_output[i-1] != '\\'):
+            inside_quotes = not inside_quotes
+        
+        # Only count braces outside of quotes
+        if not inside_quotes:
+            if char == '{':
+                brace_count += 1
+            elif char == '}':
+                brace_count -= 1
+                if brace_count == 0 and i > depots_start:
+                    depots_end = i + 1
+                    break
+        i += 1
     
-    for match in re.finditer(depot_pattern, depots_content):
-        depot_id = match.group(1)
-        manifest_content = match.group(2)
+    if depots_end == -1:
+        return manifests
+    
+    depots_content = app_info_output[depots_start:depots_end]
+    
+    # Look for depot entries with numeric IDs
+    depot_pattern = r'"(\d+)"\s*\{([^{}]*(?:\{[^{}]*\}[^{}]*)*)\}'
+    
+    for depot_match in re.finditer(depot_pattern, depots_content):
+        depot_id = depot_match.group(1)
+        depot_content = depot_match.group(2)
         
-        # Extract public manifest GID
-        public_match = re.search(r'"public"\s*"(\d+)"', manifest_content)
-        if public_match:
-            manifests[depot_id] = {
-                'public': public_match.group(1)
-            }
-        
-        # Extract beta manifest GID if present
-        beta_match = re.search(r'"beta"\s*"(\d+)"', manifest_content)
-        if beta_match and depot_id in manifests:
-            manifests[depot_id]['beta'] = beta_match.group(1)
+        # Look for manifests section within this depot
+        manifests_match = re.search(r'"manifests"\s*\{([^{}]*(?:\{[^{}]*\}[^{}]*)*)\}', depot_content)
+        if manifests_match:
+            manifests_content = manifests_match.group(1)
+            
+            depot_manifests = {}
+            
+            # Parse each branch's manifest
+            branch_pattern = r'"([^"]+)"\s*\{([^{}]*)\}'
+            for branch_match in re.finditer(branch_pattern, manifests_content):
+                branch_name = branch_match.group(1)
+                branch_content = branch_match.group(2)
+                
+                # Extract GID
+                gid_match = re.search(r'"gid"\s*"(\d+)"', branch_content)
+                if gid_match:
+                    depot_manifests[branch_name] = gid_match.group(1)
+            
+            if depot_manifests:
+                manifests[depot_id] = depot_manifests
     
     return manifests
 

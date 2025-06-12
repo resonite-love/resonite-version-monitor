@@ -20,18 +20,22 @@ def create_version_entry(manifest_data, timestamp):
         print("Warning: Depot 2519832 not found in manifest data")
         return None
     
-    # Get the public manifest GID for depot 2519832
-    gid = depot_2519832.get('public')
-    
-    if not gid:
-        print("Warning: No public manifest GID found for depot 2519832")
-        return None
-    
-    return {
+    # Extract GIDs for all branches in depot 2519832
+    entry = {
         'timestamp': timestamp,
-        'depot_2519832_gid': gid,
+        'depot_2519832': depot_2519832,  # Store all branches
         'all_depots': manifests  # Store all depot info for reference
     }
+    
+    # Add specific fields for easy access
+    if 'public' in depot_2519832:
+        entry['depot_2519832_public_gid'] = depot_2519832['public']
+    if 'prerelease' in depot_2519832:
+        entry['depot_2519832_prerelease_gid'] = depot_2519832['prerelease']
+    if 'release' in depot_2519832:
+        entry['depot_2519832_release_gid'] = depot_2519832['release']
+    
+    return entry
 
 def update_versions_json(manifest_data):
     """Update versions.json with new manifest data."""
@@ -52,10 +56,24 @@ def update_versions_json(manifest_data):
     new_entry = create_version_entry(manifest_data, timestamp)
     
     if new_entry:
-        # Check if this GID already exists (avoid duplicates)
-        existing_gids = [v.get('depot_2519832_gid') for v in versions_data.get('versions', [])]
+        # Check if any GID has changed (avoid duplicates)
+        should_update = False
         
-        if new_entry['depot_2519832_gid'] not in existing_gids:
+        # Check if we have any existing versions
+        if versions_data.get('versions'):
+            last_entry = versions_data['versions'][-1]
+            
+            # Compare all branches in depot 2519832
+            last_depot = last_entry.get('depot_2519832', {})
+            current_depot = new_entry.get('depot_2519832', {})
+            
+            if last_depot != current_depot:
+                should_update = True
+        else:
+            # No existing versions, always add the first one
+            should_update = True
+        
+        if should_update:
             versions_data['versions'].append(new_entry)
             
             # Keep only last 100 versions
@@ -65,10 +83,10 @@ def update_versions_json(manifest_data):
             with open(versions_file, 'w') as f:
                 json.dump(versions_data, f, indent=2)
             
-            print(f"Updated versions.json with new GID: {new_entry['depot_2519832_gid']}")
+            print(f"Updated versions.json with depot 2519832 changes")
             return True
         else:
-            print(f"GID {new_entry['depot_2519832_gid']} already exists in versions.json")
+            print(f"No changes detected in depot 2519832")
     
     return False
 

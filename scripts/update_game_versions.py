@@ -22,6 +22,11 @@ def download_build_version(app_id, depot_id, manifest_id, branch):
     
     # Create temporary directory for download
     with tempfile.TemporaryDirectory() as temp_dir:
+        # Create filelist file
+        filelist_path = Path(temp_dir) / 'filelist.txt'
+        with open(filelist_path, 'w') as f:
+            f.write('Build.version\n')
+        
         cmd = [
             depot_downloader,
             '-app', str(app_id),
@@ -31,7 +36,7 @@ def download_build_version(app_id, depot_id, manifest_id, branch):
             '-password', os.environ.get('STEAM_PASSWORD', ''),
             '-remember-password',
             '-dir', temp_dir,
-            '-filelist', 'Build.version'
+            '-filelist', str(filelist_path)
         ]
         
         # Add branch if specified

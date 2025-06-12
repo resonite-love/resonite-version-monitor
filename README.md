@@ -35,14 +35,28 @@ To manually trigger the check:
 `versions.json` contains:
 ```json
 {
-  "app_id": 2519830,
-  "tracked_depot": "2519832",
-  "versions": [
+  "public": [
     {
+      "depotid": "8412389452125882142",
       "timestamp": "2025-01-13T12:00:00Z",
-      "depot_2519832_gid": "1234567890123456789",
-      "all_depots": { ... }
+      "gameVersion": null
+    }
+  ],
+  "prerelease": [
+    {
+      "depotid": "4281492182895112523",
+      "timestamp": "2025-01-13T12:00:00Z",
+      "gameVersion": null
+    }
+  ],
+  "release": [
+    {
+      "depotid": "8412389452125882142",
+      "timestamp": "2025-01-13T12:00:00Z",
+      "gameVersion": null
     }
   ]
 }
 ```
+
+Each branch tracks its complete history separately, with new entries added when the depot GID changes.

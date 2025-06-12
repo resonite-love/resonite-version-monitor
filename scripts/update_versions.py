@@ -9,8 +9,8 @@ def load_json(file_path):
     with open(file_path, 'r') as f:
         return json.load(f)
 
-def create_version_entry(manifest_data, timestamp):
-    """Create a version entry from manifest data."""
+def create_version_entries(manifest_data, timestamp):
+    """Create version entries from manifest data."""
     manifests = manifest_data.get('manifests', {})
     
     # Focus on depot 2519832 as requested
@@ -20,22 +20,16 @@ def create_version_entry(manifest_data, timestamp):
         print("Warning: Depot 2519832 not found in manifest data")
         return None
     
-    # Extract GIDs for all branches in depot 2519832
-    entry = {
-        'timestamp': timestamp,
-        'depot_2519832': depot_2519832,  # Store all branches
-        'all_depots': manifests  # Store all depot info for reference
-    }
+    # Create entries for each branch
+    entries = {}
+    for branch_name, gid in depot_2519832.items():
+        entries[branch_name] = {
+            'depotid': gid,
+            'timestamp': timestamp,
+            'gameVersion': None
+        }
     
-    # Add specific fields for easy access
-    if 'public' in depot_2519832:
-        entry['depot_2519832_public_gid'] = depot_2519832['public']
-    if 'prerelease' in depot_2519832:
-        entry['depot_2519832_prerelease_gid'] = depot_2519832['prerelease']
-    if 'release' in depot_2519832:
-        entry['depot_2519832_release_gid'] = depot_2519832['release']
-    
-    return entry
+    return entries
 
 def update_versions_json(manifest_data):
     """Update versions.json with new manifest data."""
@@ -45,48 +39,45 @@ def update_versions_json(manifest_data):
     if versions_file.exists():
         versions_data = load_json(versions_file)
     else:
+        # Initialize with empty arrays for each branch
         versions_data = {
-            'app_id': 2519830,
-            'tracked_depot': '2519832',
-            'versions': []
+            'public': [],
+            'prerelease': [],
+            'release': []
         }
     
-    # Create new version entry
+    # Create new version entries
     timestamp = datetime.utcnow().isoformat() + 'Z'
-    new_entry = create_version_entry(manifest_data, timestamp)
+    new_entries = create_version_entries(manifest_data, timestamp)
     
-    if new_entry:
-        # Check if any GID has changed (avoid duplicates)
-        should_update = False
+    if new_entries:
+        updated = False
         
-        # Check if we have any existing versions
-        if versions_data.get('versions'):
-            last_entry = versions_data['versions'][-1]
+        # Process each branch
+        for branch_name, new_entry in new_entries.items():
+            # Initialize branch if it doesn't exist
+            if branch_name not in versions_data:
+                versions_data[branch_name] = []
             
-            # Compare all branches in depot 2519832
-            last_depot = last_entry.get('depot_2519832', {})
-            current_depot = new_entry.get('depot_2519832', {})
+            # Check if this GID already exists for this branch
+            existing_gids = [v.get('depotid') for v in versions_data[branch_name]]
             
-            if last_depot != current_depot:
-                should_update = True
-        else:
-            # No existing versions, always add the first one
-            should_update = True
+            if new_entry['depotid'] not in existing_gids:
+                versions_data[branch_name].append(new_entry)
+                updated = True
+                print(f"Added new entry for {branch_name}: {new_entry['depotid']}")
+            else:
+                print(f"GID {new_entry['depotid']} already exists for branch {branch_name}")
         
-        if should_update:
-            versions_data['versions'].append(new_entry)
-            
-            # Keep only last 100 versions
-            versions_data['versions'] = versions_data['versions'][-100:]
-            
+        if updated:
             # Save updated versions
             with open(versions_file, 'w') as f:
                 json.dump(versions_data, f, indent=2)
             
-            print(f"Updated versions.json with depot 2519832 changes")
+            print("Updated versions.json")
             return True
         else:
-            print(f"No changes detected in depot 2519832")
+            print("No new changes to record")
     
     return False
 

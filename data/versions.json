@@ -1,0 +1,23 @@
+{
+  "public": [
+    {
+      "depotid": "8412389452125882142",
+      "timestamp": "2025-06-12T16:07:18.284325Z",
+      "gameVersion": null
+    }
+  ],
+  "prerelease": [
+    {
+      "depotid": "4281492182895112523",
+      "timestamp": "2025-06-12T16:07:18.284325Z",
+      "gameVersion": null
+    }
+  ],
+  "release": [
+    {
+      "depotid": "8412389452125882142",
+      "timestamp": "2025-06-12T16:07:18.284325Z",
+      "gameVersion": null
+    }
+  ]
+}

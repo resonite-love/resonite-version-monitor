@@ -26,6 +26,9 @@ jobs:
         # Install required packages for SteamCMD
         sudo apt-get update
         sudo apt-get install -y lib32gcc-s1 lib32stdc++6 wget
+        # Install Python dependencies
+        python -m pip install --upgrade pip
+        pip install requests
     
     - name: Fetch current app info
       env:
@@ -45,6 +48,10 @@ jobs:
       run: |
         python scripts/update_versions.py
     
+    - name: Update Steam news
+      run: |
+        python scripts/fetch_steam_news.py || echo "Steam news update failed, continuing..."
+    
     - name: Commit and push changes
       if: steps.check_changes.outputs.has_changes == 'true'
       run: |
@@ -52,7 +59,7 @@ jobs:
         git config --local user.name "github-actions[bot]"
         
         # Add changed files
-        git add data/versions.json data/previous_manifests.json
+        git add data/versions.json data/previous_manifests.json data/steam_news.json
         
         # Commit with change summary
         git commit -m "Update versions.json: ${{ steps.check_changes.outputs.change_summary }}" \

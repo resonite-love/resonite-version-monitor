@@ -33,13 +33,25 @@ def get_app_info(app_id):
     """Fetch app info from Steam using SteamCMD."""
     steamcmd = setup_steamcmd()
     
+    # Check for Steam credentials and beta key
+    steam_username = os.environ.get('STEAM_USERNAME', '')
+    steam_password = os.environ.get('STEAM_PASSWORD', '')
+    steam_beta_key = os.environ.get('STEAM_BETA_KEY', '')
+    
+    # Build login command
+    if steam_username and steam_password:
+        login_cmd = ['+login', steam_username, steam_password]
+    else:
+        login_cmd = ['+login', 'anonymous']
+    
+    # Build beta command if beta key is provided
+    beta_cmds = []
+    if steam_beta_key:
+        # Set beta for Resonite app ID
+        beta_cmds = ['+app_license_request', str(app_id), '+app_update', str(app_id), '-beta', 'headless', '-betapassword', steam_beta_key]
+    
     # Run SteamCMD with app_info_print command
-    cmd = [
-        steamcmd,
-        '+login', 'anonymous',
-        '+app_info_print', str(app_id),
-        '+quit'
-    ]
+    cmd = [steamcmd] + login_cmd + beta_cmds + ['+app_info_print', str(app_id), '+quit']
     
     result = subprocess.run(cmd, capture_output=True, text=True)
     

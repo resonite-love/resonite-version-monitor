@@ -43,7 +43,8 @@ def update_versions_json(manifest_data):
         versions_data = {
             'public': [],
             'prerelease': [],
-            'release': []
+            'release': [],
+            'headless': []
         }
     
     # Create new version entries

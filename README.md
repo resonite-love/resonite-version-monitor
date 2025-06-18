@@ -30,7 +30,8 @@ This project monitors Resonite (App ID: 2519830) for updates by checking Steam m
 3. Add Steam credentials as GitHub Secrets:
    - `STEAM_USERNAME`: Your Steam username
    - `STEAM_PASSWORD`: Your Steam password
-   - These are required for downloading Build.version files
+   - `STEAM_BETA_KEY`: Beta key for accessing headless branch
+   - These are required for downloading Build.version files and accessing beta branches
 4. The workflow will run automatically on schedule
 
 ## Manual Run
@@ -62,6 +63,13 @@ To manually trigger the check:
   "release": [
     {
       "manifestId": "8412389452125882142",
+      "timestamp": "2025-01-13T12:00:00Z",
+      "gameVersion": null
+    }
+  ],
+  "headless": [
+    {
+      "manifestId": "1234567890123456789",
       "timestamp": "2025-01-13T12:00:00Z",
       "gameVersion": null
     }

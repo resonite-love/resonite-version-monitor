@@ -28,6 +28,10 @@ jobs:
         sudo apt-get install -y lib32gcc-s1 lib32stdc++6 wget
     
     - name: Fetch current app info
+      env:
+        STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
+        STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
+        STEAM_BETA_KEY: ${{ secrets.STEAM_BETA_KEY }}
       run: |
         python scripts/fetch_app_info.py
     

@@ -42,6 +42,12 @@ def download_build_version(app_id, depot_id, manifest_id, branch):
         # Add branch if specified
         if branch and branch != 'public':
             cmd.extend(['-beta', branch])
+            
+            # Add beta password for headless branch
+            if branch == 'headless':
+                beta_key = os.environ.get('STEAM_BETA_KEY', '')
+                if beta_key:
+                    cmd.extend(['-betapassword', beta_key])
         
         print(f"Downloading Build.version for {branch} (manifest: {manifest_id})...")
         
@@ -84,7 +90,7 @@ def update_versions_with_game_version():
     max_failures = 3  # Stop after 3 consecutive failures (likely rate limit)
     
     # Process each branch
-    for branch_name in ['public', 'prerelease', 'release']:
+    for branch_name in ['public', 'prerelease', 'release', 'headless']:
         if branch_name not in versions_data:
             continue
         

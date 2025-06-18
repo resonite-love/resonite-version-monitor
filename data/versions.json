@@ -1049,5 +1049,12 @@
       "timestamp": "2025-06-17T14:41:55.739681Z",
       "gameVersion": "2025.6.17.855"
     }
+  ],
+  "headless": [
+    {
+      "manifestId": "6036263128058459735",
+      "timestamp": "2025-06-18T07:00:39.385990Z",
+      "gameVersion": null
+    }
   ]
 }

@@ -29,7 +29,6 @@ jobs:
     - name: Fetch Steam news
       id: fetch_news
       run: |
-        cd version-monitor
         if python scripts/fetch_steam_news.py; then
           echo "has_changes=true" >> $GITHUB_OUTPUT
           echo "News updated successfully"

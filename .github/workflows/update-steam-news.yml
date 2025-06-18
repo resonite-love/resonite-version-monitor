@@ -44,7 +44,7 @@ jobs:
         git config --local user.name "github-actions[bot]"
         
         # Add changed files
-        git add version-monitor/data/steam_news.json
+        git add data/steam_news.json
         
         # Get current timestamp
         TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")

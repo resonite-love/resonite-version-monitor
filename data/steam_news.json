@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 101,
+  "count": 102,
   "newsitems": [
+    {
+      "gid": "1808601382442014",
+      "title": "2025.8.21.667 - Fixed gradual FPS degradation in some sessions",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1808601382442014",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "You get one bugfix today before I go to sleep! This fixes the gradual performance degradation as you're in a session! More soon!\n\nAlso I forgot to mention in previous release notes - the video players audio desyncing has been fixed by the splittening too! I had to rework the audio handling with video players for the IPC and managed to fix the issue in the process! So that issue is gone too!\n\nAnd it's compatible with previous! \n\nNow I go sleep!\n\n[h2]Locale:[/h2]\n- Merged French locale fix from @baplar\n- Merged Chinese locale update from modimobeikete\n- Merged Russian locale update from @antonalekseevich, @mrsetto \n- Merged Japanese locale update from @ginjake\n\n[h2]Tweaks:[/h2]\n- Added additional debug diagnostics\n-- The time it takes for the main process to receive frame start from renderer from when it starts waiting on one is now shown\n-- The debug also show the size of the IPC message to start a frame\n\n[h2]Fixes:[/h2]\n- Fixed FPS slowly degrading over time in some sessions (reported by @epiceaston197, @sylvathemoth, @dustysprinkles, @zenuru, ikubaysan, issue #5292)\n-- This happened due to video clock error messages not being cleared as long as they were being generated and accumulating\n-- In rarer cases this could've been happening with OnChanges ReflectionProbes\n\n- Fixed video players slowly losing desync over time (reported by @flamesoulis, @pyroboy, @liny_fox, issue #1415)\n-- Technically this was fixed by the previous (big splittening update) due to reworking video players, but I forgot to include it, so I'm including it in this one\n-- 🥓 :(",
+      "feedlabel": "Community Announcements",
+      "date": 1755775540,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2025-08-21T11:25:40Z"
+    },
     {
       "gid": "1808601382424077",
       "title": "2025.8.20.1298 - The Big Performance Update (aka The Splittening)",
@@ -1417,5 +1431,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2025-08-21T11:30:08.274297Z"
+  "last_updated": "2025-08-21T12:57:17.664030Z"
 }

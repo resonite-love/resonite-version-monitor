@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 102,
+  "count": 103,
   "newsitems": [
+    {
+      "gid": "1808601382612978",
+      "title": "2025.8.26.946 - Stability fixes, Simplex procedural cubemap, Linux bugfixes",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1808601382612978",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "I've got another update for you! This has a number of stability fixes, fixes audio device listing on Linux and more! My brain still isn't fully braining, so I mostly tried to focus on fixing crashes.\n\nI ended up adding one thing from my \"happy list\" - Simplex procedural cubemap texture! You can make animated skyboxes and stuff with it, it's quite cool and seamless!\n\nAlso I discovered an oopsie - I never implemented material & material property block deallocation, so they just kept accumulating on the renderer. That's fixed now and they should be getting cleaned up!\n\nMore soon, but I might be slow as my brain recovers.\n\nAlso thanks to @gawdl3y for pushing the button to let this build out! I've got a new phone this weekend and Steam locked me out for 72 hours again >///>\n\n[h2]New Features:[/h2]\n- Added SimplexCubemap procedural texture (requested by me @frooxius, issue #5412)\n-- This is analog of the 2D and 3D variants\n-- It samples either 3D or 4D Simplex noise with the normalized direction at the point of the cubemap scaled by custom scale (radius) and optional W offset (for the 4D version)\n-- It has similar options to the other variants - lerping between colors\n- Added DebugDirectionCubemap procedural cubemap\n-- This is analogue of the ProceduralUV texture - the direction at each point of the cubemap is encoded into color\n-- This is mostly for diagnostic purposes\n\n[h2]Optimizations:[/h2]\n- Cleanup Renderite related code, moving unnecessary pieces out of it and removing any assets/libraries that are no longer needed\n- Implement material & material property block unloading on the renderer side\n-- This fixes material & material property block instances gradually accumulating on the renderer over time, increasing memory usage (I forgot to implement the unload mechanism for these during all the splittening stuff and found out when reworking some of the unload mechanisms to fix other issues ;_; )\n\n[h2]Tweaks:[/h2]\n- Group main process & renderer to the same WASAPI audio session (based on report by @marsmaantje, @elektrospy, issue #5278)\n-- This makes the audio slider in Windows pick up name and icon from the renderer process\n-- Unfortunately currently this doesn't help OBS / Discord capture the application audio\n- Remove mesh debugging logging on GridMesh\n- Update default yt-dlp to 20250.08.22\n- Added additional diagnostics for syncing issues (reported by @decoybird, @mint_shock, Dankman, @oxysynth, Mrdabup, @stiefeljackal, @slashsabercat, @paragonorang, @.snooper, issue #5346)\n-- Note: The sync issues don't actually affect any important assets, just optional variants - if you keep restarting, it'll eventually go through - but please share logs when it errors out again so I can fully fix it!\n\n[h2]Locale:[/h2]\n- Merged Chinese (Taiwan) locale update by @meowwei\n- Merged French locale update by @baplar \n- Merged Chinese (Simplified, Mainland China) locale update by modimobeikete\n- Merged Korean locale update by @mirpasec \n- Merged German locale update by @cameron5 and @muppeq\n- Merged English locale tweak by @muppeq and @cameron5 \n\n[h2]Fixes:[/h2]\n- SDL3 is now built against the Steam Sniper Runtime which should fix launching Resonite on certain Linux distributions (reported by @im_a_princess, @mushroom8071, @whippersnatchpumpkinpatch, issue #5335, implemented by @j4.lc)\n- Fixed world crash when processing network changes from another user, which cause renderable to be incremented on a parent that's also been removed in the same update (discovered by myself (@frooxius))\n- Fixed audio streaming panel being blank when utilizing the SDL3 audio backend. (reported by @spexcat, @vrbat, dragos240, issue #5311, fixed by @bluecyro)\n-- This majorly affects Linux users, but should also fix the streaming panel for Windows users who were also using the SDL3 audio backend\n- Fixed crashing when VertexColorInterpolationSpace is set to unsupported values on materials (based on report by @ultrawidegamer, @cloud_jumper, issue #5408)\n-- Any unsupported color profile will fallback to Linear\n- Reworked part of renderable asset deallocation mechanism to delay deallocating native resources a few frames after freeing Unity side ones\n-- This should potentially help a number renderer crashes\n-- E.g. this could fix reloading all textures in a heavy world causing a crash (reported by @modernballoonie, @knah, MHowser, issue #5057\n-- This could help with frequent crashes on some machines (reported by @jackthefoxotter, mayedlootah, issue #5415)\n-- Possibly could also help with other crashes (reported by @dustysprinkles, Zahashi, @baplar, issue #5316)\n",
+      "feedlabel": "Community Announcements",
+      "date": 1756224758,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2025-08-26T16:12:38Z"
+    },
     {
       "gid": "1808601382442014",
       "title": "2025.8.21.667 - Fixed gradual FPS degradation in some sessions",
@@ -1431,5 +1445,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2025-08-26T16:32:19.490633Z"
+  "last_updated": "2025-08-26T18:38:34.241758Z"
 }

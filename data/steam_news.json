@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 103,
+  "count": 104,
   "newsitems": [
+    {
+      "gid": "1808601382615871",
+      "title": "2025.8.26.1096 - Fixed random renderer crashes in some situations",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1808601382615871",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Quick hotfix for a crashing issue in the latest build - sorry for the inconvenience!\n\nCompatible with previous, but update recommended so you don't crash!\n\n[h2]Fixes:[/h2]\n- Fixed random crashes when material property blocks that were never initialized are freed (reported by Nocypher, @jackthefoxotter, @theminxii, issue #5440)\n",
+      "feedlabel": "Community Announcements",
+      "date": 1756232617,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2025-08-26T18:23:37Z"
+    },
     {
       "gid": "1808601382612978",
       "title": "2025.8.26.946 - Stability fixes, Simplex procedural cubemap, Linux bugfixes",
@@ -1445,5 +1459,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2025-08-26T18:38:34.241758Z"
+  "last_updated": "2025-08-26T18:59:47.802326Z"
 }

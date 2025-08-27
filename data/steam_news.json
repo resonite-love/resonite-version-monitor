@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 104,
+  "count": 105,
   "newsitems": [
+    {
+      "gid": "1809235871557912",
+      "title": "2025.8.27.954 - Native Project Babble face tracker support, fixed sync errors",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1809235871557912",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Another day of my brain not braining. I've started a few splittening related things and got kinda brainfoggy on each.\n\nSo I picked up a smaller, but fun task that I didn't get to due to all the splittening stuff - official Project Babble face tracker support! Big thanks to @dfgHiatus for sending me a unit too! You can find more about it here: https://babble.diy/\n\nAlso this fixes the syncing errors that have been happening! I wanted to get that one out of the way and the diagnostics in previous build helped narrow this down!\n\n[h2]New Features:[/h2]\n- Added native Project Babble face tracker support (requested by @JackTheFoxOtter, issue #3456)\n-- This initial implementation and few mouth shapes aren't mapped yet - it will be tuned and expanded in subsequent builds. Please provide feedback if you can if you have one!\n-- If the Babble_App is detected already running, the driver is initialized automatically and should work out of the box\n-- You can force Babble driver initialization by launching with -ForceBabble command-line argument\n-- If you're using different OSC port, you can configure it in Settings -> Devices - Project Babble\n-- Huge thanks to @dfgHiatus for providing a unit for implementation & testing!\n\n[h2]Locale:[/h2]\n- Merged Korean locale update by @mirpasec\n\n[h2]Fixes:[/h2]\n- Fixed crashes when setting procedural cubemaps to formats not supported by the renderer (based on report by @luxkitty, issue #5457)\n- Fixed exceptions when syncing records due to path differences for cached variants (based on report by @decoybird, @mint_shock, Dankman, @oxysynth, Mrdabup, @stiefeljackal, @slashsabercat, @paragonorang, @.snooper, @electronus, issue #5346)\n",
+      "feedlabel": "Community Announcements",
+      "date": 1756310804,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2025-08-27T16:06:44Z"
+    },
     {
       "gid": "1808601382615871",
       "title": "2025.8.26.1096 - Fixed random renderer crashes in some situations",
@@ -1459,5 +1473,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2025-08-27T15:59:34.317229Z"
+  "last_updated": "2025-08-27T16:35:48.277485Z"
 }

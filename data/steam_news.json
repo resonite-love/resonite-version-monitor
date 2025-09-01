@@ -1,7 +1,35 @@
 {
   "appid": 2519830,
-  "count": 106,
+  "count": 108,
   "newsitems": [
+    {
+      "gid": "1809235871725555",
+      "title": "2025.9.1.1178 - Fixed corrupted rendering in VR",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1809235871725555",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "I accidentally opened and built with wrong sub-version of Unity, causing rendering issues in VR - sorry!\n\nCompatible with previous!\n\n[h2]Fixes:[/h2]\n- Fixed VR rendering being corrupted due to wrong Unity version",
+      "feedlabel": "Community Announcements",
+      "date": 1756756174,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2025-09-01T19:49:34Z"
+    },
+    {
+      "gid": "1809235871725099",
+      "title": "2025.9.1.1152 - Bugfixes for renderer decoupling",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1809235871725099",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Got a few bugfixes for the decoupling mechanism to improve its reliability and stability!\n\nCompatible with previous, though update recommended for better experience!\n\n[h2]Locale:[/h2]\n- Merged German locale update by @muppeq\n\n[h2]Fixes:[/h2]\n- Fixed Unity Native video players jittering when the renderer is decoupled (reported by @epiceaston197, issue #5494)\n- Fixed crash when setting decoupling activation framerate to 0 (reported by @cubee_cb, @gyztormizirath, @epiceaston197, issue #5492)\n- Improved renderer coupling re-activation mechanism to be more reliable\n-- This fixes the decoupling remaining active for extended periods of time due to jitter in the rendering process itself causing the re-activation timings to be off\n",
+      "feedlabel": "Community Announcements",
+      "date": 1756754492,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2025-09-01T19:21:32Z"
+    },
     {
       "gid": "1809235871715705",
       "title": "2025.9.1.748 - Renderer decoupling on hitches, many improvements and fixes",
@@ -1487,5 +1515,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2025-09-01T19:27:38.735821Z"
+  "last_updated": "2025-09-01T19:54:38.871177Z"
 }

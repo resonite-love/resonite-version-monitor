@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 108,
+  "count": 109,
   "newsitems": [
+    {
+      "gid": "1809235871740481",
+      "title": "2025.9.2.430 - Right-align active checkboxes, fix keys getting stuck",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1809235871740481",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Okay, this is probably the last build this week before I leave for EF (because I'm leaving in 3 hours for my flight x3), fixing up some issues!\n\nThe slot active checkboxes got moved to the right by @Gawdl3y to address the feedback and provide a good compromise until inspector rework.\n\nThe keys getting stuck is also fixed! Turns out Unity auto-updated the input package to a new version and I didn't notice and the new version has a bug.\n\nCompatible with previous!\n\n[h2]Locale:[/h2]\n- Merged German locale update by @muppeq \n- Merged Korean locale update by @mirpasec \n- Merged Chinese (Mainland) locale update by modimobeikete\n\n[h2]Tweaks:[/h2]\n- Changed the slot active checkboxes in the inspector hierarchy to be right-aligned (requested by @anquietas_sys, @GyztorMizirath, @hafaeith, @jamieboi1989, @GlitchFlux, @reddneko, @im_a_princess, @marsmaantje, @dustysprinkles, implemented by @Gawdl3y, issue #5495)\n-- This helps avoid accidental presses when intending to click the hierarchy expand/collapse toggle buttons\n\n[h2]Fixes:[/h2]\n- Fixed input system getting stuck when window is unfocused (@joliair, @badhaloninja issue #5504 and @pyroboy, @raxoron, @rynfluff, @officialxau, @twinkieship, @foxbox., @989onan, @sylvathemoth issue #5503)\n-- This happened due to Unity auto-updating its input package to a newer version with a bug\n-- This had nothing to do with the decoupling mechanism itself\n",
+      "feedlabel": "Community Announcements",
+      "date": 1756797699,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2025-09-02T07:21:39Z"
+    },
     {
       "gid": "1809235871725555",
       "title": "2025.9.1.1178 - Fixed corrupted rendering in VR",
@@ -1515,5 +1529,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2025-09-01T19:54:38.871177Z"
+  "last_updated": "2025-09-02T07:29:16.340291Z"
 }

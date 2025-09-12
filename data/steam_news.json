@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 109,
+  "count": 110,
   "newsitems": [
+    {
+      "gid": "1810503566459568",
+      "title": "2025.9.12.1173 - Headless contact request commands, security fix, more",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1810503566459568",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "I've got an update for you! I wasn't originally planning on pushing a build today since it's Friday, but there's a few important changes for upcoming events and security fix, as well as few improvements from other team members that got merged in!\n\nCompatible with previous! Will have more next week!\n\n[h2]New Features:[/h2]\n- Added sendFriendRequest and removeFriend commands to the Headless Server Software (requested by @amasteramaster, issue #4762, implemented by @j4.lc)\n-- This allows you to manage the headless contacts list without having to log into the client\n\n[h2]Security:[/h2]\n- Saving worlds or changing their public status will now not auto-process any linked worlds unless the record link specifically indicates that the world needs to be linked (requested by @JackTheFoxOtter, issue #5577)\n-- To mark a world as linked, add ?linked=true at the end of its resrec:/// URL\n-- This prevents worlds accidentally being marked as public due to references to them saved in other worlds and being saved to another account when saving the root world (e.g. through world orbs or screenshots, reported by @.missmolly, @daveheiser, @GearBell, @reddneko, @Baplar, @JackTheFoxOtter, @Nytra, @kulza, @knackrack, davidheiserca, issue #5573\n-- IMPORTANT: This is BREAKING change due to security considerations, where most worlds shouldn't be processed as linked to avoid leaking them. However if you were relying on this behavior with a world structure where you embed worlds into another and need them to be saved together, you will need to update the URL's to indicate explicit linking\n-- Note: This doesn't affect saving worlds stored locally to cloud - if you have references to local worlds in a root local world that you then save to the cloud, those embedded local worlds will also be recursively saved to the cloud - this is because cloud cannot reference worlds stored on local machine\n\n[h2]Tweaks:[/h2]\n- Added events.resonite.com and discord.com to the default trusted hosts (implemented by @Gawdl3y)\n-- events.resonite.com is used for the official community events facet\n-- discord.com is in addition to the already-existing discordapp.net since the API is typically used at discord.com now\n- Updated the included yt-dlp vinaries to nightly 2025.09.11.232836 (implemented by @Gawdl3y)\n\n[h2]Locale:[/h2]\n- Merged English locale fix by @muppeq \n- Merged German locale update by @muppeq \n- Merged French locale update by @baplar \n- Merged Russian locale update by AntonBoch1244 and @shizzo1d \n- Merged Esperanto locale update by @sejden \n- Merged Swedish locale update by @fuzzybipolarbear and @dwaggiemorph \n- Merged Korean locale update by @mirpasec \n- Merged Chinese (Taiwan) locale update by @meowwei \n\n[h2]Fixes:[/h2]\n- Typed Dynamic Impulse trigger commands on the Headless Server Software now correctly display the count number of impulses triggered (reported by @reddneko, issue #4717, fixed by @j4.lc)\n- Fixed a bug where when a groups name was changed the old name would still be displayed in some areas (reported by @jackthefoxotter, @dantetucker, issue #4885, fixed by @dantetucker)\n",
+      "feedlabel": "Community Announcements",
+      "date": 1757706051,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2025-09-12T19:40:51Z"
+    },
     {
       "gid": "1809235871740481",
       "title": "2025.9.2.430 - Right-align active checkboxes, fix keys getting stuck",
@@ -1529,5 +1543,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2025-09-05T08:15:31.453749Z"
+  "last_updated": "2025-09-12T19:46:21.476186Z"
 }

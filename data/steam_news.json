@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 110,
+  "count": 111,
   "newsitems": [
+    {
+      "gid": "1811138915565918",
+      "title": "2025.9.23.1237 - OpenLipSync integration, splittening cleanup & improvements",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1811138915565918",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone! Sorry for the lack of updates lately. I've been very brain-foggy, so progress has been slow, but I've got a good number of goodies for you today!\n\nFirst, we now have native OpenLipSync library integration for viseme analysis! This library has been created by our own community member @kyuubiyoru and is a great alternative to the proprietary OVRLipSync. If you're on Windows, you can choose either to run analysis and on Linux it'll automatically use this one, fixing the issue where viseme analysis doesn't work for Linux users! Check the repo as well if you'd like to contribute - we'll update this library as it improves!\n\n[previewyoutube=oSVugEX_4ng;full][/previewyoutube]\n\nMost of other stuff is general splittening cleanup. For our business usecases, there's a mechanism where the taskbar icon (and splash screen) can now be updated dynamically for whitelabeled universe - but there's some small treats for you too - it'll show your profile picture as overlay when you're logged in and the record syncing is now shown on taskbar too!\n\nOne of the big(ish) sources of renderer crashing is also fixed now and yt-dlp should now properly auto-update as well!\n\n[h2]New Features:[/h2]\n- Natively integrate OpenLipSync library as alternative analyzer for VisemeAnalyzer (based on issue @kyuubiyoru, @grayboltwolf, @reddneko, DarkRTA, @baplar, Naia-love, Orion, @toasteruwu, @stellanora, library by @kyuubiyoru, integrated by @frooxius, NuGet CI/CD implemented by @j4.lc)\n-- Huge thanks to @kyuubiyoru for making this library!\n-- If you'd like to check it out or contribute, check this repo: https://github.com/KyuubiYoru/OpenLipSync\n-- VisemeAnalyzer now has \"PreferredAnalyzer\" field that allows selecting active analyzer\n-- When OVRLipSync is not available (e.g. Linux) the system automatically falls back to OpenLipSync - this fixes visemes not working for Linux users\n\n- Added mechanisms to override renderer icon & splash screen over IPC mechanism to allow for custom branding for private universes and business use-cases\n- Record syncing progress now shows up on the taskbar icon in Windows\n-- This is a small addition possible thanks to the update above!\n- Resonite will now show an overlay icon on the taskbar with the profile picture of the currently logged in user\n-- This will be later expanded to show things like unread messages\n\n- Added ComparisonMode to ReplaceSubstring & Replace FirstSubstring nodes (based on feedback by @jackthefoxotter, issue #4901)\n\n[h2]Optimizations:[/h2]\n- Switched half datatype implementation to native .NET datatype from an explicit implementation (issue #5180 by @yoshiyoshiyoshiyoshiyoshyoshyosh)\n-- This has better performance and more stable conversions between half <--> float\n-- Added missing methods to encode the datatype in the data model, preventing exceptions when saving elements with this type\n\n[h2]Locale:[/h2]\n- Merged German locale update by @muppeq\n- Merged Korean locale update by @mirpasec \n- Merged Polish locale update by @foxobread \n\n[h2]Fixes:[/h2]\n- Fixed renderer crash due to off-by-one error when updating materials and the number of elements exactly aligns with the end of current update buffer (based on report by @thejebforge, @dustysprinkles, @celeste_heartsong, @laizze, @uruloke, @coggy9, @salira_daxius, issue #5482)\n- Fixed TubeSpiralMesh not being correctly adapted for legacy content (reported by @stellanora, @rucio, issue #5466)\n-- TubeSpiralMesh now has \"RadiusIndependentStepScaling\" property - when turned on, the number of steps is computed as if the spiral had unit radius, rather than scaled by the actual radius (this is also used to preserve the legacy behavior)\n- Fixed yt-dlp update not working correctly (based on reports by @epiceaston197 , @draconas_rayne, @_deltawolf, @troyborg, @krzeszny, @reddneko, @grand__, @foolishsnowmew, @luxkitty, SlyTheFloof, @karasutengu, @stellanora, @foxbox., issue #2518)\n-- The update is also only attempted once per session\n- Fixed desktop mirror freezing when the renderer gets decoupled (reported by @reddneko, issue #5560)",
+      "feedlabel": "Community Announcements",
+      "date": 1758660630,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2025-09-23T20:50:30Z"
+    },
     {
       "gid": "1810503566459568",
       "title": "2025.9.12.1173 - Headless contact request commands, security fix, more",
@@ -1543,5 +1557,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2025-09-12T19:46:21.476186Z"
+  "last_updated": "2025-09-23T20:56:15.434633Z"
 }

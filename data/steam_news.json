@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 112,
+  "count": 113,
   "newsitems": [
+    {
+      "gid": "1816849002006160",
+      "title": "2025.11.19.6 - Hotfix for crash for RenderTransformOverride",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1816849002006160",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "A quick hotfix for a crash and the ButtonEquipFavoriteAvatar!\n\nCompatible with previous build, but update strongly recommended (you might keep crashing otherwise).\n\n.NET 10 version coming soon to prerelease!\n\n[h2]Fixes:[/h2]\n- Fixed ButtonEquipFavoriteAvatar only being attachable in userspace (reported by @_deltawolf, issue #5866)\n-- Note: The button will still only work in Userspace for security reasons\n- Fixed RenderTransformOverride set to override on REdnerToTextureAsset causing crashes (reported by @nidgithm, @dustysprinkles, issue #5871, possibly also fixes report by @bluecyro, issue #5870)",
+      "feedlabel": "Community Announcements",
+      "date": 1763511482,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2025-11-19T00:18:02Z"
+    },
     {
       "gid": "1816307528974712",
       "title": "2025.11.18.1216 - Quality of life improvements, security fix and more",
@@ -1571,5 +1585,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2025-11-18T22:22:09.131877Z"
+  "last_updated": "2025-11-19T02:08:10.288489Z"
 }

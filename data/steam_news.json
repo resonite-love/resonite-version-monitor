@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 113,
+  "count": 114,
   "newsitems": [
+    {
+      "gid": "1816849002015442",
+      "title": "2025.11.21.1164 - Fixed session thumbnails & yt-dlp on Linux",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1816849002015442",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone! \n\nI got a small patch today, fixing up a few issues that popped up so they're in place before the Block Party.\n\nNone of the new features are merged in this so the build is compatible with previous! Update at your leisure.\n\n .NET 10 version coming soon on prerelease channel!\n\n[h2]Fixes:[/h2]\n- Fixed session thumbnails failing to upload due to using stale or nonexistent thumbnail IDs in their URL generation (reported by @karasutengu, fixed by @Gawdl3y, issue #5874)\n- Replaced the yt-dlp (zipimport) Linux binary with yt-dlp_linux (standalone PyInstaller bundle) (fixed by @j4.lc, issue #5867)\n-- This should restore YouTube (and other services) video playback on Linux\n-- yt-dlp no longer supports Python 3.9, requiring a minimum of 3.10. Steam Runtime still only provides 3.9.\n-- The standalone yt-dlp_linux binary previously caused issues for some users during prerelease testing of The Splittening, but appears to be fine now in our testing. Please let us know if you run into any problems!\n-- Both the Linux and Windows version of yt-dlp are now on the latest nightly release (note that they also auto-update each time you start Resonite)\n- Prevented DynamicReferenceVariables from returning stale references to deleted world elements (reported by @ardescar, @nytra, @ohzee, @foohy, @mpmxyz, @rustybot, @shdw_x, issues #156, #1347, #1436, #1975, #4159, fixed by @gawdl3y)\n-- This resolves numerous world crashes related to various ProtoFlux nodes operating on a stale reference obtained from a DynamicReferenceVariable\n",
+      "feedlabel": "Community Announcements",
+      "date": 1763753956,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2025-11-21T19:39:16Z"
+    },
     {
       "gid": "1816849002006160",
       "title": "2025.11.19.6 - Hotfix for crash for RenderTransformOverride",
@@ -1585,5 +1599,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2025-11-21T19:45:26.176465Z"
+  "last_updated": "2025-11-21T19:58:06.408742Z"
 }

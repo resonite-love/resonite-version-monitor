@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 114,
+  "count": 115,
   "newsitems": [
+    {
+      "gid": "1816849002021863",
+      "title": "2025.11.24.1340 - Upgrade to .NET 10 - free performance boost!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1816849002021863",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nThe upgrade to .NET 10 is here! Thanks to the splittening earlier this year, it's now very quick and easy to update to latest version of the .NET runtime and receive all the benefits that come with it.\n\nNotably, .NET 10 has a number of performance improvements over .NET 9. While they are not as drastic as The Splittening itself, it's essentially a free extra performance boost (and we'll get one every year!).\n\nBig thanks for these people for their reports during the .NET 10 testing! @shadowpanther, mxjessie, @troyborg, @krzeszny, @shininghero, @jackthefoxotter, OrionMoonclaw, @jvyden4, @raidriar796, @.fulgens\n\nThere's a few bugfixes too. I originally wanted to include some more goodies in this build, but they need more time to cook, so they'll be later this week.\n\n[h2]Optimizations:[/h2]\n- Upgraded Resonite to .NET 10 (issue #5847)\n-- This should provide additional performance improvements thanks to performance improvements in the framework (see https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-10 )\n-- Framework-related libraries (like System.Text.Json) were upgraded to 10.0.0 versions as well from 9.x.x\n-- The performance boost will vary depending on your machine & scenario in-game. We've seen anything from minimal improvements to up to 40 % boosts in certain cases (e.g. with ProtoFlux benchmark)\n-- Particle simulation smoothness seems to be improved heavily (likely thanks to heavy improvements in thread scheduling)\n-- .NET 10 runtime will be installed automatically on first launch (both on Windows & Linux) for the graphical client\n\n[h2]Fixes:[/h2]\n- Fixed handling of incoming OAuth Application Client Ids to enable them to be fetched from the database correctly\n-- Found while diagnosing OAuth issues from @_deltawolf and @aritosuits\n- The OpenWorld and FocusWorld nodes now detect invalid URIs more reliably, preventing undismissable world loading indicators and outputting their failure impulse in more cases (reported by @probableprime, issue #3181, fixed by @probableprime)\n- Fixed various input drivers (Vive Pro Eye, Leap Motion, bHaptics, GoogleTech, Babble...) initializing on the headless (reported by @stiefeljackal, issue #5374)",
+      "feedlabel": "Community Announcements",
+      "date": 1764023490,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2025-11-24T22:31:30Z"
+    },
     {
       "gid": "1816849002015442",
       "title": "2025.11.21.1164 - Fixed session thumbnails & yt-dlp on Linux",
@@ -1599,5 +1613,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2025-11-24T22:28:10.129101Z"
+  "last_updated": "2025-11-24T22:46:21.191221Z"
 }

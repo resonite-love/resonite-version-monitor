@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 115,
+  "count": 116,
   "newsitems": [
+    {
+      "gid": "1818752592125254",
+      "title": "2025.12.11.1385 - Headless ARM support, constrained delaunay triangulation",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1818752592125254",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "[p]Hello everyone!\n\nSorry for the lack of builds, I've been travelling and busy at con, but there's some cool things from other team members! \n\nWe now have official support for Linux ARM headless thanks to @j4.lc and bunch of community contributors! If you got Raspberry Pi or the Oracle Cloud Plan or other machine, you should be able to run the headless on it out of the box.\n\nThis is initial support, so there might be still some issues - please report them on GitHub if you run into them!\n\nThis work is also important for a potential native support on the Steam Frame! But we'll see how that one goes (Valve devkit please? :3)\n\nOne of my \"fun\" issues also made it in - we now have proper triangulation algorithm in the codebase! It's exposed through a new procedural mesh and a new type of brush, so have fun with it! It requires a bit of care though to generate valid results - no intersections!\n\n[h2]New Features:[/h2]\n- Added support for the ARM CPU architecture on the Headless Server software (@j4.lc, gameboycjp and OrionMoonclaw, issue #2555, implemented by @j4.lc)\n-- If you have an old Raspberry Pi computer on a shelf, time to de-dust it and host a Resonite headless session on it!\n-- This also helps if you are on the free Oracle Cloud plan\n-- Special thanks to Orion, GameboyCJP, Cyro and all the others that chipped in the Headless on ARM thread on Discord and that ran the headless on this platform unofficially\n-- Special shoutouts to the Weird Phone Headless for proving ARM is a more than viable architecture for headlesses\n\n- Linux clipboard is now fully-featured (implemented by @BlueCyro)\n-- Copying/Pasting images, files and text should now be possible\n-- Images copied out of Resonite now support transparency on Linux\n-- The implementation is now using this library <https://github.com/Yellow-Dog-Man/resonite-clipboard-cs>\n-- Thanks to @grand__, @lexibigcheese and @baplar for making this possible\n\n- Added support for Constrained Delaunay Triangulation into FrooxEngine (a fun project by @frooxius, issue #1523)\n-- This algorithm can take a loop of vertices (even concave one) and fill it with triangles\n-- This is important building block for more complex mesh features - procedural meshes, mesh tools and so on\n-- The algorithm also supports holes\n-- Note that for the algorithm to work correctly, the vertex loops must NOT be self-intersecting\n\n-  Added ConstrainedDelaunayMesh procedural mesh\n-- This is similar to Triangle procedural mesh, but you can define arbitrary number of vertices to form a loop to be triangulated\n-- You can also add arbitrary number of vertex loops specifying holes\n-- Note that the loops must not be intersecting - you'll likely get invalid triangulation results if they are\n-- The triangulation works in 2D - you can either specify the plane manually with plane position & normal or let the procedural mesh estimate it\n\n- Added MeshPlaneBrushTool\n-- This is a new brush that lets you draw concave 2D(ish) shapes represented by the ConstrainedDelaunayMesh\n-- The first stroke draw the main shape\n-- Subsequent strokes will draw holes in this shape until the stroke group is finished\n-- You can undo/redo adding individual holes\n-- Note: for this to work well, the loops must not be intersecting\n\n- Added \"End Stroke Group\" context menu option for brushes\n-- This will immediately finish the current stroke group\n\n[h2]Locale:[/h2]\n- Merged Chinese locale update by modimobeikete\n\n[h2]Fixes:[/h2]\n- Fixed spelling of Gaussian Splats in several places (reported by mxjessie, issue #5816, fixed by @j4.lc)\n- Upgraded Mono.Cecil library which fixes plugins not loading in certain cases (Reported by @colin.cat, issue #5656, fixed by @j4.lc)\n-- Thanks a lot to @colin.cat for the patch for Mono.Cecil: <https://github.com/Yellow-Dog-Man/cecil/commit/5c7ef35a04d077cd400efa5d292faf93c7e5fd95>\n[/p]",
+      "feedlabel": "Community Announcements",
+      "date": 1765496554,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2025-12-11T23:42:34Z"
+    },
     {
       "gid": "1816849002021863",
       "title": "2025.11.24.1340 - Upgrade to .NET 10 - free performance boost!",
@@ -1613,5 +1627,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2025-12-11T23:40:41.114045Z"
+  "last_updated": "2025-12-12T01:25:24.059661Z"
 }

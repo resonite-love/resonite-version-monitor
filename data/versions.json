@@ -424,6 +424,11 @@
       "manifestId": "8001708420637883467",
       "timestamp": "2025-12-12T01:25:23.440932Z",
       "gameVersion": "2025.12.11.1435"
+    },
+    {
+      "manifestId": "1856020983720200585",
+      "timestamp": "2025-12-17T01:19:20.662671Z",
+      "gameVersion": null
     }
   ],
   "prerelease": [

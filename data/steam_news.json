@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 116,
+  "count": 117,
   "newsitems": [
+    {
+      "gid": "1819386365085313",
+      "title": "2025.12.16.1424 - Raw dT node, fixes for ARM headless & precise bounds",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1819386365085313",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Here's a bunch of fixes for the ARM and precise bounds calculations. Also new Raw dT node! \n\n[h2]New Features:[/h2]\n- Added Raw dT and Raw 1/dT ProtoFlux nodes that expose raw delta time (based on report by @.fulgens, issue #5998)\n-- This is delta time without any clamping or filtering\n-- In case of hitches, this will output potentially very large values that can destabilize some simulations - use with caution!\n\n[h2]Tweaks:[/h2]\n- Disabled sources of bounds are now excluded from calculating precise bounds (based on report by @yoshiyoshiyoshiyoshiyoshyoshyosh, issue #5995)\n\n[h2]Locale:[/h2]\n- Merged Korean locale update by @mirpasec \n- Merged Chinese locale update by modimobeikete\n- Merged German locale update by @muppeq\n\n[h2]Fixes:[/h2]\n- Fixed SRAnipal or HP Omnicept getting initialized when running through SteamLink\n- Patch various ARM64 libraries to avoid loading error (reported by hantabaru1014, issue #5971, fixed by @j4.lc)\n-- Move the ARM64 Brotli native library to the correct folder, which patches the not found error\n-- Build Assimp on ARM64 against lower requirements target to avoid missing libraries when used on older machines\n-- This also fixes freetype not loading on systems not shipping it (reported by Orion Moonclaw, issue #5982)\n- Disable AVX512 on Linux for compressonator to avoid common crash (reported by @kyuvulpes, mxjessie, issue #5970 and @reddneko, @hayden_fluff, @bredo, issue #5972)\n- Fixed PointOnUVSphere being calculated incorrectly (reported by @yoshiyoshiyoshiyoshiyoshyoshyosh, brecert, issue #5991)\n- Fixed precise bounds being calculated incorrectly in various cases for primitive colliders (based on report by @yoshiyoshiyoshiyoshiyoshyoshyosh, issue #5994)\n- Re-build FreeImage without neon for ARM devices to prevent a crash (reported by Kulza in #5996)\n",
+      "feedlabel": "Community Announcements",
+      "date": 1765929365,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2025-12-16T23:56:05Z"
+    },
     {
       "gid": "1818752592125254",
       "title": "2025.12.11.1385 - Headless ARM support, constrained delaunay triangulation",
@@ -1627,5 +1641,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2025-12-16T23:53:31.077904Z"
+  "last_updated": "2025-12-17T01:19:21.158951Z"
 }

@@ -429,6 +429,11 @@
       "manifestId": "1856020983720200585",
       "timestamp": "2025-12-17T01:19:20.662671Z",
       "gameVersion": "2025.12.16.1424"
+    },
+    {
+      "manifestId": "7879254601058097051",
+      "timestamp": "2025-12-29T22:02:11.977338Z",
+      "gameVersion": null
     }
   ],
   "prerelease": [
@@ -1598,6 +1603,11 @@
       "manifestId": "1856020983720200585",
       "timestamp": "2025-12-16T23:53:30.744975Z",
       "gameVersion": "2025.12.16.1424"
+    },
+    {
+      "manifestId": "7879254601058097051",
+      "timestamp": "2025-12-29T22:02:11.977338Z",
+      "gameVersion": null
     }
   ],
   "headless": [
@@ -1705,6 +1715,11 @@
       "manifestId": "889480472189649856",
       "timestamp": "2025-12-16T23:53:30.744975Z",
       "gameVersion": "2025.12.16.1424"
+    },
+    {
+      "manifestId": "8570184853553237139",
+      "timestamp": "2025-12-29T22:02:11.977338Z",
+      "gameVersion": null
     }
   ],
   "pre-splittening": [

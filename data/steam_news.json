@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 117,
+  "count": 118,
   "newsitems": [
+    {
+      "gid": "1819386365113441",
+      "title": "2025.12.29.1301 - Particle subemitters, Minecraft importer upgrade, goodies!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1819386365113441",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone! I hope you had happy Christmas! We've been taking it easy at the team, so things have been quiet, but we saved up some fun Christmas presents for you to play with! :Delaunay\n\nThere's a bunch of goodies for PhotonDust! It supports subemitters now! As well as number of other new modules and improvements to existing ones.\n\nThe Minecraft world importer has been upgraded too! It should now import new Minecraft maps properly, though some blocks will still probably be mis-classified.\n\nThere will be more \"normal\" stuff soon, but hopefully you'll have fun with these in the meanwhile!\n\n[h2]New Features:[/h2]\n- Added support for particle subemitters (requested by @thebasementnerd issue #2295, picked by @frooxius as creative day issue) allowing particles to emit other particles\n-- Particles can be emitted at birth (ParticleBirthSubEmitter), over their lifetime (ParticleLifetimeSubEmitter) and death (ParticleDeathSubEmitter)\n-- Particles can also be emitted on collision on the PositionSimulatorModule (with velocity being pre/post collision or derived from the collision normal)\n-- SubEmission can inherit orientation, scale, color, direction and lifetime - note that inherited values will be then multiplied by the target particle system initializers\n-- You can feed subemission back into the particle system itself - note that in some cases this can quickly exhaust the capacity of the particle system - particles will not be emitted beyond the particle system's Max Particles limit\n-- Subemissions can be chained too - any target particle system can have its own subemissions (or even loop back)\n\n- Added \"Uniform Distribution\" to Mesh emitters (requested by @banane9, issue #2347)\n-- Enabling this while emitting from faces ensures that bigger triangles get proportionatelly more particles than smaller ones, ensuring uniform distribution of particles across the mesh surface\n-- Note: When used with SkinnedMeshEmitter, only the rest pose is taken into account, not the deformed triangle positions\n-- Note: It's not recommended to use this with frequently changing procedural meshes, as this will have a significant performance impact of recomputing the acceleration structure on every mesh update\n- Added Color List Initializer for PhotonDust (requested by @reddneko, issue #4697)\n-- This lets you define a list of colors that particles will be randomly assigned to\n-- Each color entry can have assigned weight so some colors can appear more often than others\n- Added SizeOverLifetimeTexture module for PhotonDust (requested by @zozokasu, issue #4068)\n-- This uses a texture to vary the particle size over its lifetime\n-- The texture RGB channels are mapped to XYZ scale (use grayscale for uniform)\n-- Texture is sampled along the X coordinate over the lifetime\n- Added \"MinimumVelocity\" and \"VelocityTransitionRange\" to OrientByVelocity (requested by @art0007i, issue #3611)\n-- The module will not update the particle orientation if its velocity is below this value\n-- The VelocityTransitionRange allows you to have the module interpolate the orientation velocity as the particle speeds up, rather than instantly snapping to new orientation once it crosses the threshold\n\n- Upgraded Minecraft importer to support new Minecraft versions & fixed a number of issues\n-- Note that there's a number of blocks that will not be classified properly still - you can report them if you find them!\n\n[h2]Optimizations:[/h2]\n- Pipelined Minecraft importer to start importing chunks as soon as they are exported, instead of waiting for Mineways to export all the chunks\n-- This should significantly decrease the time it takes to import big Minecraft worlds\n\n[h2]Locale:[/h2]\n- Merged English locale fix by @_deltawolf \n- Merged English locale tweaks by @stiefeljackal \n- Merged Chinese (Taiwan) locale update by @meowwei \n- Merged German locale update by @muppeq \n- Merged Chinese locale update by modimobeikete\n- Merged Korean locale update by @mirpasec \n\n[h2]Fixes:[/h2]\n- Fixed stack overflow for particular inputs to Delaunay Triangulation resulting in a crash (reported by @dustysprinkles, issue #5955)\n- Fix asset import sometimes failing due to file being temporarily in use\n",
+      "feedlabel": "Community Announcements",
+      "date": 1767045694,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2025-12-29T22:01:34Z"
+    },
     {
       "gid": "1819386365085313",
       "title": "2025.12.16.1424 - Raw dT node, fixes for ARM headless & precise bounds",
@@ -1641,5 +1655,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2025-12-17T07:32:56.056968Z"
+  "last_updated": "2025-12-29T22:02:12.265961Z"
 }

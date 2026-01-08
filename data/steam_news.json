@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 118,
+  "count": 119,
   "newsitems": [
+    {
+      "gid": "1821288646577782",
+      "title": "2026.1.8.6 - Introducing ResoniteLink - open protocol for working with datamodel",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821288646577782",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hey everyone!\n\nI got another fun holiday treat for you! We're introducing ResoniteLink! A simple WebSocket JSON protocol for working with the data model from external apps, scripts and tools!\n\nThis is an open project whose goal is to significantly increase Resonite's interoperability. It's a building block for building stuff like Unity SDK (and other game engines), integrations with various software or just playing around with Resonite from external scripts and tools. \n\nThere's lots of possibilities, I recommend checking out the repository linked below to learn more.\n\nThis is also currently in beta, so breaking changes can occur and some things are still missing, but coming soon! Give it a try and let us know what you think (and show off what you build with it)!\n\n[previewyoutube=PpET4kpVuAI;full][/previewyoutube]\n\n[h2]New Features:[/h2]\n- Implemented ResoniteLink - a new protocol for working with the data model from external tools, scripts and apps\n-- This allows you to read & write data model in worlds that you host over simple JSON WebSocket protocol\n-- Client library & reference C# implementation & sample REPL client is available under MIT license here: https://github.com/Yellow-Dog-Man/ResoniteLink\n-- Note that the protocol & library is currently in beta! We're looking for feedback on it and are open to breaking changes until the label is removed.\n-- The library & protocol is also work in progress and will also be expanded with additional commands soon and support for more of the data model (see the README in the repository above)\n-- This is going to be a building block for an official Unity SDK as well as any community tools and integrations (issue #6)\n-- To access a world with ResoniteLink, it needs to be enabled first. Only host can do this. There are multiple ways to do so:\n--- In graphical client, go to Sessions and click \"Enable ResoniteLink\"\n--- In headless config, you can add `enableResoniteLink` and optionally `forceResoniteLinkPort` config options\n--- In a running headless you can also use the `enableResoniteLink <port>` command (use 0 for random port)\n-- Certain objects are excluded from ResoniteLink - e.g. hierarchies under SimpleAvatarProtection that you don't own. Intentionally bypassing these protections with mods is not allowed under our policy: https://resonite.com/policies/ModAndPlugin.html\n-- Shoutout to @j4.lc for setting up NuGet CI/CD and @earthmark for first community contribution!\n\n[h2]Locale:[/h2]\n- Merged Japanese locale update by @.aesc and @markn2000\n- Merged German locale update by @muppeq and @cameron5\n- Merged Chinese locale update by modimobeikete\n\n[h2]Fixes:[/h2]\n- Patch issue when auto-spawning items via the headless configuration file (reported by sctanf, issue #1107, fixed by @j4.lc)\n",
+      "feedlabel": "Community Announcements",
+      "date": 1767832287,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-01-08T00:31:27Z"
+    },
     {
       "gid": "1819386365113441",
       "title": "2025.12.29.1301 - Particle subemitters, Minecraft importer upgrade, goodies!",
@@ -1655,5 +1669,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2025-12-29T22:02:12.265961Z"
+  "last_updated": "2026-01-08T01:41:45.087246Z"
 }

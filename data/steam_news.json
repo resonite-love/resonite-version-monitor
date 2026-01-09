@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 119,
+  "count": 120,
   "newsitems": [
+    {
+      "gid": "1821288646581833",
+      "title": "2026.1.9.1218 - ResoniteLink improvements (Uri, importing textures, permissions)",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821288646581833",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone! This build was meant to go out yesterday, but it got a bit delayed.\n\nHere's some more progress on ResoniteLink! Uri & empty fields (like node outputs) are now supported!\n\nYou can now also import textures through ResoniteLink! Both from a file and by sending the raw texture data. More asset types coming soon!\n\nThe permission system was also improved - by default ResoniteLink requires Builder level permissions to enable. You can also configure this for your worlds and optionally allow read-only access (or write-only, but that usually doesn't make too much sense) for any roles.\n\nAlso shoutout to @zozokasu, @bredo and @earthmark for their contributions to ResoniteLink library! If you'd like to contribute too, check out the repo here: https://github.com/Yellow-Dog-Man/ResoniteLink\n\n[h2]New Features:[/h2]\n- Added support for importing 2D textures through ResoniteLink\n-- This can be done either through a file or by sending the raw texture data\n\n- Added support for Uri datatype to ResoniteLink (based on report by @orange3134, issue #6107)\n- Added support for empty members to ResoniteLink (based on report by @orange3134, issue #6108)\n-- These are any elements that don't contain data model data, but still need to be referenced by other data model elements (e.g. node outputs)\n\n[h2]Tweaks:[/h2]\n- ResoniteLink will now accept out of order $type property (based on feedback by @earthmark)\n\n[h2]Security:[/h2]\n- Added ResoniteLinkPermissions to control ResoniteLink permissions in the world (based on report by @zenuru, security ticket #521033)\n-- You can control read/write access with ResoniteLink through this for your worlds\n-- Existing worlds are auto-upgraded to only allow ResoniteLink if the host is Builder/Admin. If host is restricted to lower permissions, ResoniteLink is not allowed to be enabled\n-- Note: If the world has modified the permission Roles, the auto-upgrade might not work and will require manually settting up those permissions\n-- Also a reminder that using mods to circument session moderation is not allowed: <https://resonite.com/policies/ModAndPlugin.html>\n\n[h2]Locale:[/h2]\n- Merged Chinese locale update by modimobeikete\n- Merged Korean locale update by @mirpasec \n- Merged French locale update by @baplar",
+      "feedlabel": "Community Announcements",
+      "date": 1767991026,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-01-09T20:37:06Z"
+    },
     {
       "gid": "1821288646577782",
       "title": "2026.1.8.6 - Introducing ResoniteLink - open protocol for working with datamodel",
@@ -1669,5 +1683,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-01-09T20:35:43.544302Z"
+  "last_updated": "2026-01-09T22:35:10.882533Z"
 }

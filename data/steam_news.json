@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 120,
+  "count": 121,
   "newsitems": [
+    {
+      "gid": "1821922921814932",
+      "title": "2026.1.16.273 - Meshes & Audio support for Resonite Link, MMC26 sponsor badge",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1821922921814932",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI'm getting back into swing of things after travels. Here's a whole bunch of updates to ResoniteLink! You can now import meshes & audio clips through it! It supports more data model elements too and there's other improvements and bugfixes. Shoutout to @cyrillus_ for their first ResoniteLink contribution!\n\nAlso there's now an MMC26 sponsor badge! \n\nThe build is compatible with previous, so you don't need to update, but you won't see the new badges until the host updates! ;3\n\n[h2]New Features:[/h2]\n- Added MMC26 sponsor badge (requested by @medravr)\n-- Badges have already been assigned - the host needs to update for this to take effect!\n\n- Added support for importing Mesh asset data through ResoniteLink\n-- This can be done through a full JSON definition of the geometry data - this is easier to work with, but less efficient\n-- It can also be done through raw data message - this is harder to work with, but a lot more efficient\n-- Both methods will result in same mesh asset, they're provided for convenience. You may choose to implement only one of them if you want\n- Added support for importing Audio Clip asset data through ResoniteLink\n-- This can be done by importing a file on local file system - it MUST be supported by Resonite for this to work correctly\n-- Alternatively this can be done through raw data message and providing the raw audio samples\n- Added support for DateTime & TimeSpan datatypes for ResoniteLink (based on report by @hemisputnik, @baplar, issue #6125)\n- Added support for nullable enum fields (reported by xhayper, @jackthefoxotter, ResoniteLink issue #18)\n- Added session data to ResoniteLink\n-- This includes Resonite version, ResoniteLink version that Resonite uses and unique ID\n-- Each distinct WebSocket connection for given Resonite world gets a unique ID - this can be used to ensure that ID's between different ResoniteLink sessions don't collide (based on request by @jackthefoxotter, ResoniteLink issue #39)\n-- The ID's are NOT unique between different worlds or when the world itself is restarted\n\n[h2]Tweaks:[/h2]\n- Empty string ID's in ResoniteLink are now considered null (requested by @earthmark, ResoniteLink issue #49)\n\n[h2]Locale:[/h2]\n- Merged Japanese locale update by @markn2000 \n- Merged Korean & Chinese locale update by @meowwei \n- Merged Chinese (Traditional, Taiwan) locale update by @meowwei\n- Merged Russian locale update by @antonalekseevich \n\n[h2]Fixes:[/h2]\n- ResoniteLink now returns fully assembly qualified types to be consistent with the types it expects (reported by @xekridragon, ResoniteLink issue #31)\n- Fixed wrong response types on ResoniteLink for error states for various add/update/remove messages (reported by @jackthefoxotter, ResoniteLink issue #28)\n- Update ONNX runtime used by OpenLipSync to 1.23.2 from 1.22.1\n-- This might fix some random hard crashes that have been occurring",
+      "feedlabel": "Community Announcements",
+      "date": 1768541156,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-01-16T05:25:56Z"
+    },
     {
       "gid": "1821288646581833",
       "title": "2026.1.9.1218 - ResoniteLink improvements (Uri, importing textures, permissions)",
@@ -1683,5 +1697,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-01-09T22:35:10.882533Z"
+  "last_updated": "2026-01-16T05:39:04.530735Z"
 }

@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 121,
+  "count": 122,
   "newsitems": [
+    {
+      "gid": "1823191198600808",
+      "title": "2026.1.28.1247 - Numerous bugfixes & potential optimization for hybrid cores",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1823191198600808",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone! \n\nSorry for few builds lately, I've been dealing with some administrative stuff and meetings, so I didn't have as much time for coding and I mostly spend it hacking away at some SteamLink things, that will come soon.\n\nHere's a bunch of bugfixes and improvements in the meanwhile.\n\n[h2]New Features:[/h2]\n- Added Rotation, UVScale & UVOffset properties to GridMesh\n\n[h2]Optimizations:[/h2]\n- Change process priority class from AboveNormal to High to potentially improve performance on systems with hybrid core architecture (based on report by @ultrawidegamer, issue #6176)\n\n[h2]Tweaks:[/h2]\n- Update default font chains to fix a number of characters not rendering (reported by @kebbbbb, Mhowser, issue #4183)\n- Changed quad to grid mesh in GridSpace\n-- This should help prevent the ground shaking at certain angles with AMD GPU's (reported by @.fulgens, @satellaview.dev, @reddneko, @krzeszny, @shininghero, @_deltawolf, @zyro1331, @karasutengu, @point7755, issue #3829)\n- Switch libVLC resampler to speex for better quality\n-- This should significantly improve audio quality for multimedia files that are not 48 kHz (reported by @enverex, @epiceaston197, @foolishsnowmew, @sctanf, @rabbuttz, @zyro1331, @hayden_fluff, issue #282)\n- Update number of NuGet packages to latest versions\n\n[h2]Fixes:[/h2]\n- Fixed models flipping & turning inside-out when imported with blendshape tangents (reported by @spexcat, @karasutengu, @art0007i, issue #2388, fixed by @BlueCyro)\n- Fixed crash when particle system tries to rebuild renderers, but the renderer has been destroyed (based on report by @reddneko, issue #3863 and @aegis_wolf, @yoshiyoshiyoshiyoshiyoshyoshyosh, @ryuvi, @charizmare, @eldritchkaiju, Zaphiel, @modernballoonie, issue #4541)\n- Fixed session dialog not using localized strings for ResoniteLink (reported by @baplar, issue #6105)\n- Fixed deadlock when connection closes due to timeout, resulting Resonite in locking up (reported by @_deltawolf, @aritosuits, @zyro1331, @stiefeljackal, Ghost, @dustysprinkles, @jackthefoxotter, @reddneko, mxjessie, AwesomeTornado, @jvyden4, @krzeszny, @ohzee @bredo, issue #2681)\n-- This also fixes LNL threads deadlocking and not getting cleaned up\n- Fix AccountDump tool failing to retrieve data due to security changes on the cloud API (reported by @zyro1331, mxjessie, issue #6158)\n",
+      "feedlabel": "Community Announcements",
+      "date": 1769635227,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-01-28T21:20:27Z"
+    },
     {
       "gid": "1821922921814932",
       "title": "2026.1.16.273 - Meshes & Audio support for Resonite Link, MMC26 sponsor badge",
@@ -1697,5 +1711,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-01-28T07:59:08.049374Z"
+  "last_updated": "2026-01-28T21:41:58.008294Z"
 }

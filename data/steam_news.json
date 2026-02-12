@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 123,
+  "count": 124,
   "newsitems": [
+    {
+      "gid": "1824459501605723",
+      "title": "2026.2.12.359 - Glue tool is less evil now and won't explode people anymore",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1824459501605723",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "It's not every day I have to exorcise a tool, but here we are! No more eldritch abominations when baking meshes! I hope you saved as many exploded meshes as you could!\n\nCompatible with previous build.\n\n[h2]Fixes:[/h2]\n- Glue/Bake tool has been exorcised to be less evil and stop exploding people (reported by SaraLouisa, issue #6255)\n-- This was due to invalid offset to vertex data source buffer when baking transformations",
+      "feedlabel": "Community Announcements",
+      "date": 1770879662,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-02-12T07:01:02Z"
+    },
     {
       "gid": "1824459501604969",
       "title": "2026.2.11.1336 - ResoniteLink reflection & improvements, texture (un)packing...",
@@ -1725,5 +1739,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-02-11T22:57:50.308882Z"
+  "last_updated": "2026-02-12T07:16:09.041063Z"
 }

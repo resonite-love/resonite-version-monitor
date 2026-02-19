@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 124,
+  "count": 125,
   "newsitems": [
+    {
+      "gid": "1825093633184562",
+      "title": "2026.2.19.620 - ResoniteLInk updates, audio system crash guard, sharper VR image",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1825093633184562",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone! \n\nI got a new build for you! There's a bunch of ResoniteLink updates and fixes, as well as other fixes and quality of life improvements. We're avoiding some more potentially disruptive things during the MMC.\n\nThe audio system now has better fault handling to avoid errors in codecs and other problems from bringing down the entire audio system - instead it will only kill that particular audio output. If this happens, please do report them still with logs, so we can see if we can fix the breakage, but overall this should be a good QoL improvement.\n\nWe've also made a fix to the post processing filters based on community feedback & research - this should make image in VR sharper than it was before!\n\nThe cloud has also been getting important updates from both @probableprime and @gawdl3y, improving its security and modernizing it, with more to come soonish!\n\nResoniteLink has been updated to 0.8.3 from 0.7.0! Check the repo for full list of changes: https://github.com/Yellow-Dog-Man/ResoniteLink/releases\n\n[h2]New Features:[/h2]\n- Added Cubemap import support to ResoniteLink\n-- There's multiple possible methods to bring cubemaps in, either through image files or by specifying raw data (this supports providing mipmaps as well)\n-- Check the ResoniteLink repo for the models\n\n- Added BoundingBox primitive support to ResoniteLink\n\n[h2]Security:[/h2]\n- Migrated Cloud Secrets to Azure Key Vault, improving Secret Security, Automation and Management (implemented by @probableprime)\n-- This will make some specific Patreon issues faster to resolve\n-- This was done as part of commercial business work\n- Removed \n\n[h2]Tweaks:[/h2]\n- Removed dark background from the Desktop tab\n-- This makes lower opacity levels work better, as you can actually see through the desktop tab!\n\n[h2]Removals:[/h2]\n- Removed reserved account handling code (implemented by @gawdl3y)\n\n[h2]Locale:[/h2]\n- Merged Chinese locale update by @modimobeikete \n- Merged English locale tweaks by @alizardguy \n- Merged Korean locale update by @mirpasec \n- Merged German locale update by @muppeq \n\n[h2]Fixes:[/h2]\n- Fixed deleted asset recovery failing when some deleted records are links to other records (based on internal report by @dantetucker)\n\n- Fixed references failing to assign properly in ResoniteLink when earlier messages contain references to objects added in a later part of the message\n-- Note: For references to new objects to be assigned properly, those must be added through a data model operation batch. This will not work across multiple independent messages.\n- Fixed submitting mesh data through ResoniteLink as raw failing triangle count validation (reported by @nytra, issue #6271)\n- Fixed list updates through ResoniteLink adding new elements instead of updating in-place when the provided list doesn't specify ID's\n\n- Fixed pooled ProtoFlux contexsts not cleaning abort execution flag, resulting in incorrectly aborted contexts (reported by @mpmxyz, @jackthefoxotter, @colin.cat, issue #6241)\n- Supress aborting of ProtoFlux contexts during world save/load operations (based on report by @mpmxyz, @jackthefoxotter, @colin.cat, issue #6241)\n\n- Added fault isolation when rendering audio outputs, to prevent exceptions and errors in reading particular audio source from taking the whole audio system down (based on reports by @rucio, issue #5275, @krzeszny, issue #5427 and others)\n-- The particular audio output will be supressed and won't play anymore locally for the user in case of such exception\n-- Please make a report when this happens! If the cause of the exception is preventable, we can fix it so it doesn't happen again\n- Added additional diagnostics for audio reading errors\n\n- Fixed PostProcessing filters causing subtle blurring in VR, making the VR image sharper (reported by @cloud_jumper, @toasteruwu, @kaestralblades, @.fulgens, @jvyden4, issue #6273)\n",
+      "feedlabel": "Community Announcements",
+      "date": 1771497728,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-02-19T10:42:08Z"
+    },
     {
       "gid": "1824459501605723",
       "title": "2026.2.12.359 - Glue tool is less evil now and won't explode people anymore",
@@ -1739,5 +1753,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-02-16T22:44:35.044865Z"
+  "last_updated": "2026-02-19T11:04:05.843853Z"
 }

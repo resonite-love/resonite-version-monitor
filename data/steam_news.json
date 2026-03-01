@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 125,
+  "count": 126,
   "newsitems": [
+    {
+      "gid": "1825727806715874",
+      "title": "2026.3.1.792 - MMC26 category, fix crashes, ResoniteLink updates",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1825727806715874",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone and congrats on finishing MMC26! :3\n\nWith the submissions over, we've got a special build for you! We've specifically delayed this an hour after the deadline in coordination with @medravr to avoid disruptions in the last days of MMC, but it has some important fixes for the MMC world hops!\n\nIt contains important fix for crashes with worlds from @probableprime, which should make world hopping easier.\n\nThe world browser category was also updated to MMC26 so it's easier to find all the submissions.\n\nThere are some other bugfixes and additions for ResoniteLink as well that were done in the meanwhile. ResoniteLink has been updated to 0.9.3 from 0.8.3! Thanks for @nytra and @flying_stitchman making their first contributions!\n\nCompatible with previous build, but update recommended to avoid crashes!\n\nAnyway, congrats everyone on finishing (or not) your MMC26 entries! We can't wait to see all the cool stuff you have made!\n\n[h2]New features:[/h2]\n- Added a new distributed locking mechanism to the cloud with abstractions to simplify the locking of arbitrary resources on the backend (implemented by @Gawdl3y)\n- Refactored some existing locks to make use of the new abstractions\n- Other refactors & features will rely on this in the near future\n- Added backend functionality for basic \"news posts\", which we will introduce an official facet for in the near future (implemented by @Gawdl3y)\n- Added support for reading/writing SyncPlayback to Resonite link\n\n[h2]Tweaks:[/h2]\n- Updated MMC category in the world browser to MMC26\n- Removed extra new line at the end of SkyFrost request timeout messages (implemented by @probableprime)\n\n[h2]Fixes:[/h2]\n- Fixed RemoveSlot ResoniteLink messages erroring within a message batch, if a child of parent Slot is destroyed after the parent slot has been destroyed\n-- In other words, as long as all the slots exist at the time of the message being received, it will not error, regardless of order\n-- If the slots are already gone at the time of receiving the message, it will still error\n- Fixed bone bindings being processed incorrectly for meshes improted through ResoniteLink from raw data\n- Fixed renderer crash when LightType on a Light is set to invalid value\n\n- Fixed crash that occured when closing sessions joined using Steam Sockets (reported by @nexulan, @eldritchkaiju, @medravr, @arandommeatball, @rueshejn, issue #6216 and others, fixed by @propperpea)\n",
+      "feedlabel": "Community Announcements",
+      "date": 1772395391,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-03-01T20:03:11Z"
+    },
     {
       "gid": "1825093633184562",
       "title": "2026.2.19.620 - ResoniteLInk updates, audio system crash guard, sharper VR image",
@@ -1753,5 +1767,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-02-22T05:40:27.360289Z"
+  "last_updated": "2026-03-01T20:35:49.648618Z"
 }

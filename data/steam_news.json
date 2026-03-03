@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 126,
+  "count": 127,
   "newsitems": [
+    {
+      "gid": "1825727806721460",
+      "title": "2026.3.3.1232 - ResoniteLink dictionary support, Babbalonia Eye Tracking, fixes",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1825727806721460",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nHere's another build with a bunch of improvements and fixes! Going to be trying to release these more frequently now that everyone is not working on their MMC stuff anymore.\n\nCompatible with previous!\n\n[h2]New Features:[/h2]\n- Added support for data model dictionaries to ResoniteLink\n\n- Added support for eye tracking with Babbalonia (requested by @tahvostudio, Naia-love, Lewisvz, @jasonmo, @kyuvulpes, issue #5533)\n-- Please let me know if this works well for you! I've only tested this roughly with ReVision and Vive Pro Eye, which technically worked, but had issues and I'm not sure if that's HW/calibration or something else\n\n- You can now disable HTTP Proxies for Resonite by setting the SKYFROST_NO_PROXY environment variable (implemented by @probableprime)\n-- This is a development workflow improvement for @probableprime \n-- See: https://wiki.resonite.com/Environment_Variables for additional information\n\n[h2]Tweaks:[/h2]\n- Auto initialize Project Babble driver when Baballonia is running or installed in default location\n- Supress SRAnipal driver when ReVision is detected to be running\n- This is open source tool to get Vive Pro Eye tracking camera feeds and can be used to replace SRAnipal when paired with Babble: <https://github.com/Blue-Doggo/ReVision>\n- Flush logs when shutdown is initiated\n-- This should prevent some cases where part is missing due to shutdown getting stuck\n\n[h2]Optimizations:[/h2]\n- Switched many entities' GUIDs from v4 to v7 (implemented by @Gawdl3y)\n-- This should speed up many database lookups and writes as time goes on\n\n[h2]Locale:[/h2]\n- Merged German locale update by @muppeq \n- Merged Chinese locale update by @modimobeikete \n\n[h2]Fixes:[/h2]\n- Ensure that a Session Orb's session URLs are kept up to date from the Session (reported by @probableprime, issue #6310, fixed by @probableprime)\n-- This fixes session orbs only having one session url when opened which could have been an incompatible protocol with your setup. E.g. Only Steam shown, Steam disabled.\n- Fixed avatar creation breaking when only BipedRig is present, but IK or Rig components are missing\n- Fixed screenshot file names saved to local system using UTC time instead of local time zone (reported by @kokoa, issue #264)\n",
+      "feedlabel": "Community Announcements",
+      "date": 1772570554,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-03-03T20:42:34Z"
+    },
     {
       "gid": "1825727806715874",
       "title": "2026.3.1.792 - MMC26 category, fix crashes, ResoniteLink updates",
@@ -1767,5 +1781,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-03-03T07:30:19.350417Z"
+  "last_updated": "2026-03-03T20:47:13.928027Z"
 }

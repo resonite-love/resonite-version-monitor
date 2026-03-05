@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 127,
+  "count": 128,
   "newsitems": [
+    {
+      "gid": "1826362059921658",
+      "title": "2026.3.5.946 - ResoniteLink sync methods, bugfixes",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826362059921658",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nGot another build pushing out some of the bugfixes and additions!\n\nResoniteLink now supports calling sync methods! The ResoniteLink library has been updated to 0.11.0, see details here: <https://github.com/Yellow-Dog-Man/ResoniteLink/releases>\n\nCompatible with previous!\n\n[h2]New Features:[/h2]\n- Added support for sync methods to ResoniteLink\n-- Any methods exposed to data model can be called as long as their argument and return types are supported by ResoniteLink\n-- Both sync & async methods are supported\n-- You need write permissions to call any sync methods, since they can (and often do) modify the data model\n\n[h2]Locale:[/h2]\n- Merged Chinese locale update by @modimobeikete \n- Merged Korean locale update by @mirpasec \n- Merged German locale update by @muppeq\n\n[h2]Fixes:[/h2]\n- Fixed logic precedence bug in Headless when using loginRequired (reported by @sun_serega, issue #6320, fixed by @probableprime)\n- Fixed OpenWorld PF node not working with lnl, lnl-nat, res-steam and tcp Urls (reported by @enverex and @nepushiro, issue #3181, fixed by @probableprime)\n- Fixed eye data from Babbalonia being updated incorrectly\n",
+      "feedlabel": "Community Announcements",
+      "date": 1772726324,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-03-05T15:58:44Z"
+    },
     {
       "gid": "1825727806721460",
       "title": "2026.3.3.1232 - ResoniteLink dictionary support, Babbalonia Eye Tracking, fixes",
@@ -1781,5 +1795,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-03-03T20:58:02.223673Z"
+  "last_updated": "2026-03-05T16:05:48.161135Z"
 }

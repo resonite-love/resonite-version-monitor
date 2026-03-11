@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 128,
+  "count": 129,
   "newsitems": [
+    {
+      "gid": "1826992588591231",
+      "title": "2026.3.11.1400 - Introducing Resonite SDK (beta) for Unity Editor",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1826992588591231",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI got a super exciting update for you - the Resonite SDK for Unity Editor is now out in beta! :D You can start playing with it! It offers an alternative way to build content for Resonite and makes it very easy to bring existing content you have in Unity too.\n\nExpect some jank still, as it's in beta state. If you're wanting hassle free experience, you might give it a bit more time to stabilize, but otherwise have fun converting content and messing with it!\n\nIt's also fully open source and has modular extensible conversion system. Community issues, PR's and forks are now welcome!\n\n[previewyoutube=lRGDnu9OeSs;full][/previewyoutube]\n\nAlso the build is compatible with previous, so no need to update if you're not going to be messing with it.\n\nResoniteLink has been updated to 0.13.1\n\n[h2]New Features:[/h2]\n- Introducing Resonite SDK beta for Unity Editor (requested by many people for a long while, issue #6, implemented by @frooxius, GitHub workflows setup by @j4.lc )\n-- Currently in Beta - expect some jank and incorrect conversions - please report issues on the UnitySDK repo\n-- If you're wanting a hassle free experience - please give it a bit more time to stabilize!\n-- Allows converting content from Unity Editor to Resonite - both worlds & avatars are supported\n-- Supports real-time mode with Unity Editor changes being live translated to Resonite\n-- It's open source (MIT license) and has modular extensible system - community PR's, improvements and forks are welcome!\n-- Instructions & latest download here: https://github.com/Yellow-Dog-Man/Resonite.UnitySDK\n-- More improvements to come, this is initial release to get it into your hands early!\n\n- Added session discovery support to ResoniteLink\n-- This allows automatically finding any ResoniteLink sessions on the local network, erasing the need to manually input a port number\n- Added support for reading/writing spherical harmonics values with ResoniteLink\n\n- Refactored AvatarCreator to use a static method for the actual creation & exposed this method to the data model\n-- This allows avatar creation being invoked from ProtoFlux, ResoniteLink and the Unity SDK\n-- IMPORTANT: Please note that we do plan to eventually overhaul AvatarCreator completely, which will provide more flexible methods for the setup\n\n[h2]Tweaks:[/h2]\n- Made \"Blank\" world preset even more blank\n-- This makes it a suitable starting point for converting worlds with the Unity SDK\n\n[h2]Fixes:[/h2]\n- Fixed sync methods with no return value erroring when invoked through ResoniteLink\n",
+      "feedlabel": "Community Announcements",
+      "date": 1773271971,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-03-11T23:32:51Z"
+    },
     {
       "gid": "1826362059921658",
       "title": "2026.3.5.946 - ResoniteLink sync methods, bugfixes",
@@ -1795,5 +1809,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-03-11T23:27:49.166889Z"
+  "last_updated": "2026-03-11T23:53:54.521006Z"
 }

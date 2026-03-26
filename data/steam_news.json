@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 130,
+  "count": 131,
   "newsitems": [
+    {
+      "gid": "1827626365769172",
+      "title": "2026.3.25.1356 - User Registration refactor, bugfixes, Unity SDK updates",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1827626365769172",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI've got another build for you! This has mostly some small bugfixes it the client itself, but also matching big refactor of user registration process in the cloud by @Gawdl3y!\n\nHe has reworked how the cloud handles registration to make it significantly more robust, preventing cases of users who would end up with incomplete accounts when registering, requiring a support ticket to handle this. This has been in works for a while and should avoid common onboarding issue that a chunk of new users hit.\n\nCompatible with current. However registering user accounts might not work with older builds.\n\n[h2]Fixes:[/h2]\n- Heavily refactored the user registration process in the cloud, improving it to be more robust, scalable, and consistent across methods of registration (implemented by @Gawdl3y)\n-- This should resolve cases where users were registered but stuck in an invalid state, such as with missing storage, missing credentials, etc. (reported by @dantetucker issue #4189)\n-- This also fixes verification emails not being sent upon registration through the account website (reported by @dantetucker, issue #4497)\n\n- Fixed right eye close parameter using the value from left eye with Babble driver (reported by @kyuvulpes, @noblefurlyfe, issue #5533)\n- Fixed typo in injected legay toolshelf offset (reported by @bredo, @zyro1331, issue #6371)\n-- Note this only affects newly converted avatars, old ones will be unaffected\n- Fixed legacy toolshelf positioning being slightly off (reported by HNOTails, @badhaloninja, issue #6372)\n-- Note: If you re-saved your avatar after upgrade, you'll need to fix it manually, as the new positioning is now baked in\n\n[h2][Resonite Unity SDK] v0.0.7[/h2]\nHey @Updates!\n\nHow about MORE Unity SDK updates? :3\n\nWell... it's actually just one thing that is dependent on the new Resonite build to work right! I just didn't want it to sit unreleased for a while.\n\nGet it here:\nhttps://github.com/Yellow-Dog-Man/Resonite.UnitySDK/releases\n\n[h3]New Features:[/h3]\n- Added tooltip anchors & visuals to BipedAvatarDescriptor by @frooxius in #74\n-- This fixes tooltip, shelf and grabber anchors not being setup properly (reported by @seventhvoids and @holadivinus in #68",
+      "feedlabel": "Community Announcements",
+      "date": 1774478863,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-03-25T22:47:43Z"
+    },
     {
       "gid": "1827626365764657",
       "title": "2026.3.23.1426 - 2FA changes, cloud, Unity SDK updates, open source shaders",
@@ -1823,5 +1837,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-03-25T22:57:07.855792Z"
+  "last_updated": "2026-03-26T03:24:54.432630Z"
 }

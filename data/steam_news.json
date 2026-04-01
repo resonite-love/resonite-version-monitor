@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 131,
+  "count": 132,
   "newsitems": [
+    {
+      "gid": "1828894815553856",
+      "title": "2026.4.1.11 - Vibe Coding for ProtoFlux, LLM, NFT's and Limited use Consumables!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1828894815553856",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nWith almost every update, we work on things that people want and asked for on our GitHub. But nobody ever thinks about features that nobody wants or has asked for!\n\nHowever today is a very special day, because we've decided to finally give all of those a go. This build of Resonite finally brings some of the biggest features that nobody wanted!\n- Vibe Coding Mode for ProtoFlux\n- LLM for the Resonite Bot that will reply to your questions\n- NFT's - mint yours today!\n- Consumables - with limited number of uses!\n\nWe can't wait to see what you think of those brand new features and how they will transform your day today. Let us know what you think! Share your videos and reactions!\n\nP.S.: The Mystery Settings from last year have mysteriously come back. It's a mysterious mystery why this has happened. You definitely should not go to Settings -> Misc to solve this mystery.\n\nP.P.S.: I'd also like to inform you that I'm contently eating black currant ice cream as I release this build.\n\n[h2]New Features:[/h2]\n- Added Vibe Coding Mode to ProtoFlux tool\n-- You can enable it from the context menu on any ProtoFlux tool (even custom ones!)\n-- Good vibes can let you achieve more in less time!\n-- Creating nodes and connecting them will feel like ✨magic✨ - the tool will be bursting with sparks of creativity!\n\n- Added LLM (little language model) to Resonite bot to answer any questions\n-- Just send a message command `/ask <question>?` and you'll get a reply\n-- You can ask anything!\n-- The model uses a custom Zero-training-data technology (ZTD), which removes 100 % bias from its responses\n\n- Added NFT's - Non-Fungible Tints\n-- Join the \"Mint the Tint\" - you can now own colors on Resonite!\n-- Just send `/mintColor #RRGGBB` to the Resonite bot to claim a color!\n-- You can use `/myColors` to see all the colors you have minted\n-- We offer the whole 8-bit per channel RGB three-dimensional color space, which is way better than land, because land is just 2D\n-- Market cap is 16.7 million colors! Get them while they last! We're not getting more cones in our eyes anytime soon.\n-- Once successfully minted, that color is yours (on Resonite) forever™!\n-- It's first come first serve! Only one user can own each unique color!\n-- There's no utility! You just own the color. Just on Resonite. Everyone can still freely use the color, but you know it's yours! It's in the database!\n-- You can show the colors you have to anyone who can read JSON! Just go to `https://api.resonite.com/users/<YOUR_USER_ID>/mintedcolors`\n-- The system also tracks everyone who wanted your color! See how popular your colors are at the link above!\n-- Stripe/Patreon supporters get more colors to mint! For each $100 of lifetime support you get extra color. WOW! You can truly become a color whale swimming in the ocean of paint if you really want to!\n-- What's next? Volumetric visualization of claimed colors? HDR color space? Extending to 4D with ALPHA?! Who knows!\n-- There was absolutely no insider color trading with team members getting their colors first. Nu uh. I don't know what you're talking about. How are you even talking to me? These are release notes in the commit messages! AAA!\n\n- Added Consumables\n-- They have limited number of consumption stages before they're depleted\n-- Each stage can give unique amount of time to consume\n-- Consumable can be permanently destroyed after it's consumed\n-- Added ProtoFlux nodes to listen to events and activate extra affects and behaviors when consuming\n-- It provides a number of helpful info for each consumption  stage for visuals, effects and other behaviors\n-- It uses simple heuristics for consumption  entry point. This will be improved in the future and made customizable\n-- You can find them under Transform/Interaction",
+      "feedlabel": "Community Announcements",
+      "date": 1775028306,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-04-01T07:25:06Z"
+    },
     {
       "gid": "1827626365769172",
       "title": "2026.3.25.1356 - User Registration refactor, bugfixes, Unity SDK updates",
@@ -1837,5 +1851,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-03-30T13:12:38.124733Z"
+  "last_updated": "2026-04-01T07:51:49.257794Z"
 }

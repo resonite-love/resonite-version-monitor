@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 132,
+  "count": 133,
   "newsitems": [
+    {
+      "gid": "1828894815568376",
+      "title": "2026.4.7.1266 - New release CI/CD workflow, Promo codes, SkinnedMeshPositioner",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1828894815568376",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI've got relatively small build for you today with a few additions. What's really exciting about this build is how it was published! \n\nThanks to @j4.lc's work, this build has been compiled & published fully from a cloud CI/CD pipeline, instead of me doing this manually! This simplifies a lot of the steps I normally have to take and reduces mistakes (e.g. wrong files being included).\n\nSince this is first production push of this type (we've done a bunch of prerelease pushes before this), there might be some initial issues still, so bear with us if anything explodes, it should be fixed up soon!\n\nThe other additions in this build is introduction of Promo codes! When new users register with this code, they'll get extra account perks for a limited time, which should help entice new users to register! We'll start using those very soon for our marketing campaigns, which will also help us track their effectivness and see where people are coming from.\n\n[h2]New Features:[/h2]\n- Added SkinnedMeshPositioner component, which allows positioning transform to exactly match a point on a triangle affected by bone transforms and blendshapes (creative day issue #6397 by @Frooxius)\n-- When you want object to stay fixed to part of skinned mesh affected by multiple bones & blendshapes, this provides an easy way to do this\n-- Easiest way to compute the parameters is by using the \"Compute Parameters\" in the inspector. This will find the closest point on a triangle for the Slot's current position\n\n- Added support for Promo Codes during registration (requested internally by the marketing team)\n-- This allows us to create promotional codes for our own purposes and for influencers\n-- Promotional codes have perks associated with them - e.g. they can give $1 tier for 3 months for free when user registers with this perks\n-- This will help us track effectiveness of various marketing endeavors and help entice new users to register from those campaigns\n\n- Implemented CI/CD workflow to build FrooxEngine & Headless & publish to Steam (implemented by @j4.lc)\n-- This build has been built & uploaded through this pipeline, rather than locally\n-- This should help reduce number of errors and mistakes with compiling & publishing builds manually\n-- It's an important step towards Molecule!\n\n[h2]Locale:[/h2]\n- Merged French locale update by @baplar \n- Merged Chinese locale update by @modimobeikete \n- Merged German locale update by @muppeq \n- Merged Korean locale update by @mirpasec \n- Merged Chinese (Taiwan) locale update by @meowwei \n- Merged Japanese locale update by blhsrwznrghfzpr\n- Merged Dutch locale update by @xeravax",
+      "feedlabel": "Community Announcements",
+      "date": 1775596816,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-04-07T21:20:16Z"
+    },
     {
       "gid": "1828894815553856",
       "title": "2026.4.1.11 - Vibe Coding for ProtoFlux, LLM, NFT's and Limited use Consumables!",
@@ -1851,5 +1865,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-04-03T03:24:09.984377Z"
+  "last_updated": "2026-04-07T21:29:11.102661Z"
 }

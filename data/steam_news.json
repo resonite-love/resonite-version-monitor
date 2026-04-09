@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 133,
+  "count": 134,
   "newsitems": [
+    {
+      "gid": "1829528821308375",
+      "title": "2026.4.9.1303 - Potential crash fix, OSC, yt-dlp, SkinnedMeshPostioner fixes",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821308375",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "I've got another build for you! This is pretty much various bugfixes & maintenance update.\n\nThis build *might* actually fix the crash when switching controllers/handtracking with Quest (huge thanks to @eldritchkaiju for helping narrow down potential cause) - please give it a test and let us know if the issue still occurs!\n\nIf you're using OSC listener, you no longer need to ensure that there's only one active component for given port - it now uses a shared listener in the background, so you can have as many as you want without having them interfere with each other!\n\nThe new SkinnedMeshRenderer also got a bunch of bugfixes. Some of them might change the behavior a bit due to being calculated incorrectly for some cases before - you'll need to re-adjust those.\n\nAlso yt-dlp got some improvements from @gawdl3y and @baplar too!\n\n[h2]Tweaks:[/h2]\n- Added web_safari client option to yt-dlp by default (contributed by @baplar)\n-- This should improve YouTube video quality for YouTube Premium users when using cookies\n-- PR: <https://github.com/Yellow-Dog-Man/NYouTubeDL/pull/4>\n- Updated a number dependencies to latest versions (mostly official .NET libraries like System.Text.Json and others)\n\n[h2]Fixes:[/h2]\n- Fixed yt-dlp not being able to find JavaScript runtime (@nytra, @troyborg, @dantetucker, dragos240 in issue #6263, fixed by @gawdl3y)\n- Reworked OSC Receiver to use a global per-port handler shared across all the worlds\n-- This fixes OSC Receiver not listening when there's multiple active instances - either in the same world or in different worlds (reported by @epiceaston197, @shadowpanther, @ultrawidegamer, @emergencytemporalshift, @flamesoulis, issue #1885 and @modernballoonie, issue #1910)\n- Fixed SkinnedMeshPositioner breaking on meshes without tangents or normals (reported by @modernballoonie, @dustysprinkles, issue #6410)\n-- It will use a fallback method to compute coordinate space if those are missing\n-- It's strongly recommended to have those calculated on the mesh itself though, as fallbacks will be less robust\n- Fixed transform of SkinnedMeshRenderer incorrectly affecting positioning of SkinnedMeshPositioner (reported by @modernballoonie, mxjessie, issue #6411)\n-- Existing instances will be auto-upgraded to compensate, but might cause differences in positioning/scale\n- Fixed inaccurancies in SkinnedMeshPositioner due to reversed order of operations between blendshapes & bones\n-- Note this can cause positioning to change for existing instances. You'll need to re-adjust those manually\n\n- Potentially fixed crash when swapping controllers to hand tracking (reported by @zyro1331, @modernballoonie, @ohzee, @flamesoulis, @cleafspear, @merith, @eldritchkaiju, @kodufan, Mrdabup, @karasutengu, @stellanora, @mint_shock, issue #3066)\n-- Huge thanks to @eldritchkaiju for narrowing down the potential cause\n-- Please give this a test! I'm not sure if this actually fixes the issue or not for sure\n",
+      "feedlabel": "Community Announcements",
+      "date": 1775771623,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-04-09T21:53:43Z"
+    },
     {
       "gid": "1828894815568376",
       "title": "2026.4.7.1266 - New release CI/CD workflow, Promo codes, SkinnedMeshPositioner",
@@ -1865,5 +1879,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-04-08T09:06:56.655183Z"
+  "last_updated": "2026-04-09T22:11:27.001285Z"
 }

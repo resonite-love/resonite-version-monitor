@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 134,
+  "count": 135,
   "newsitems": [
+    {
+      "gid": "1829528821318820",
+      "title": "2026.4.14.1205 - Private UI laser priority, QoL additions & bugfixes, security",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1829528821318820",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone! I got a bunch of QoL goodies for you in this build!\n\nThere's small new features, settings and a bunch of bugfixes!\n\nNotably the controller/hand swap with Quest *might* actually be fixed in this one - please give it a test. We are having to work around SteamVR/Unity memory corruption bug unfortunately, making this a much harder/uncertain fix. Big thanks to @eldritchkaiju for helping narrow down the cause.\n\nAlso another thanks to @nytra for a suggestion for a bugfix for low framerate when VR headset goes to sleep when switched to Desktop mode.\n\nThere's also new setting to always prioritize private UI for laser interactions, which should help improve accessibility!\n\n[h2]New Features:[/h2]\n- Added RandomValueInitializer components which will initialize a field to a random value between Min/Max on Duplicate/Load (requested by @jackthefoxotter, issue #6262, creative day issue)\n-- This makes setting up items that need some parameters randomized on each instance easier\n\n- Added \"Always Use Flat Normal\" to SkinnedMeshPositioner (requested by @bluecyro, @modernballoonie, issue #6442)\n-- This will use a flat normal computed from the triangle itself, instead of the interpolated normals from the vertices \n\n- Added a setting to adjust the animation speed of switching dash screens/tabs (implemented by @Gawdl3y)\n-- Both this and the dash open/close speed setting can now be set to 0 to make the transitions instant\n\n- Added \"Prioritize Private UI\" setting which will make lasers always ignore in-world objects when pointed at private UI (like dash, facet anchors, keyboard...) (based on request by @keeze988, issue #6424)\n-- Setting can be found under User Interface -> Laser Settings\n-- Note: You can also place component UserspaceLaserPriority (under Interaction) on select UI's to selectively force only those UI's to always have priority in userspace\n\n[h2]Security:[/h2]\n- Fixed PhotoMetadata methods to save/export screenshots being callable when exposed with mods (security ticket #308337)\n\n[h2]Tweaks:[/h2]\n- Added wiki.resonite.com to default trusted domains (requested by @qualium, issue #6438)\n\n[h2]Fixes:[/h2]\n- Fixed issues in reporting failed registration status to users when their registration attempt fails for a few specific reasons (fixed by @Gawdl3y)\n\n- Second attempt to potentially fix crash when swapping controllers to hand tracking (reported by @zyro1331, @modernballoonie, @ohzee, @flamesoulis, @cleafspear, @merith, @eldritchkaiju, @kodufan, Mrdabup, @karasutengu, @stellanora, @mint_shock, issue #3066)\n-- Huge thanks to @eldritchkaiju for narrowing down the potential cause\n-- Please give this a test! I'm not sure if this actually fixes the issue or not for sure\n\n- Fixed headset going to standby causing low FPS when switched to desktop mode (reported by @shadowpanther, @nytra, @spexcat, @karasutengu, @flamesoulis, issue #2151)\n-- Big thanks to @nytra for pointing out a fix!\n- Merged upstream fix for encoding audio as Ogg Vorbis cutting small part of the audio data at he beginning (reported by @point7755, issue #6093)\n-- This was fixed upstream in the library by SteveLillis\n-- From my testing, the issue seems like it might still be there however, we'll need to retest this\n\n- Fixed avatars created through ResoniteLink (e.g. with Unity SDK) not having visemes/face-tracking setup in some cases (reported by @loictomatot, @baplar, Unity SDK issue #85)",
+      "feedlabel": "Community Announcements",
+      "date": 1776197782,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-04-14T20:16:22Z"
+    },
     {
       "gid": "1829528821308375",
       "title": "2026.4.9.1303 - Potential crash fix, OSC, yt-dlp, SkinnedMeshPostioner fixes",
@@ -1879,5 +1893,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-04-12T03:43:12.134842Z"
+  "last_updated": "2026-04-14T21:05:24.937342Z"
 }

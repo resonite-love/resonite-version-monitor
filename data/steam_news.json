@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 135,
+  "count": 136,
   "newsitems": [
+    {
+      "gid": "1830163047258686",
+      "title": "2026.4.16.1327 - Our current Unity renderer is now open source (more coming!)",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830163047258686",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI got a small build for you, but with a very important change: We just open sourced the Unity part of our renderer!\n\nWe want to help the custom renderer efforts, help with new official renderer, allow forks and also community contributions. It's available here (give the README a read please, it has more info): It's available here:\nhttps://github.com/Yellow-Dog-Man/Renderite.Unity.Renderer\n\nSpeaking of contributions, we actually got first community contribution to the renderer by @reddneko!\n\nThere's a few related changes. We removed CTAA since there was overwhelming support to remove it and AmplifyOcclusion filter got updated to the latest open source version.\n\nCompatible with previous too!\n\n[h2]Tweaks:[/h2]\n- Updated AmplifyOcclusion filter to latest version (2.1.0)\n-- This version is free and open source, which will make it simpler for us to open source the renderer\n\n[h2]Removals:[/h2]\n- Removed CTAA antialiasing method (issue #6448)\n\n[h2]Locale:[/h2]\n- Merged French locale update by @baplar \n- Merged English locale fix by @muppeq \n- Merged German locale update by @muppeq \n- Merged Korean locale update by @mirpasec\n- Merged Spanish locale update by @rad.4ngel\n- Merged Brazilian Portuguese locale update by HeduardoBits\n- Merged English locale tweaks by @stiefeljackal \n\n[h2]Fixes:[/h2]\n- Do not try to initialize TAA in VR due to issues\n- Patched the CI/CD build pipeline to output exes that were missing from previous builds (reported by Bredo, issue #6409)\n- Fixed ThumbResetTouch not working for Touch Controllers with Steam VR (reported by @antrobot, @namminamm, @amplified3d, @shadowpanther, @waya, @merith, @reddneko, jeana, m1nt_, @karasutengu, issue #449, fix contributed by @reddneko)",
+      "feedlabel": "Community Announcements",
+      "date": 1776378024,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-04-16T22:20:24Z"
+    },
     {
       "gid": "1829528821318820",
       "title": "2026.4.14.1205 - Private UI laser priority, QoL additions & bugfixes, security",
@@ -1893,5 +1907,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-04-14T21:36:48.639755Z"
+  "last_updated": "2026-04-16T22:59:46.540478Z"
 }

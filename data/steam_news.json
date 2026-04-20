@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 136,
+  "count": 137,
   "newsitems": [
+    {
+      "gid": "1830163047267225",
+      "title": "2026.4.20.1290 - Startup/shutdown, OSC, OAuth fixes & addtitions",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830163047267225",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI've got a new build for you with a bunch of fixes and improvements! \n\nWe've got more Renderer contributions, one fixing a bug with AO! You can see all the changes here: https://github.com/Yellow-Dog-Man/Renderite.Unity.Renderer/releases/tag/1.0.1\n\nThere are some fixes and extra diagnostics for startup and shutdown issues.\n\nOAuth and OSC has also gotten more love from @probableprime!\n\nThis build was also made with the fixed CI/CD pipeline by @j4.lc (which also got some security improvements).\n\nAlso the build is compatible with current!\n\n[h2]New Features:[/h2]\n- Added failsafe shutdown routine, that will kill the process if it doesn't shut down cleanly in time\n-- This prevents the Renderite.Host.exe process from lingering in some cases\n\n- Added an Apps Page to the Account Website showing Apps that have access to your account and allowing you to revoke their access (implemented by @probableprime)\n- Enabled OAuth Refresh Tokens to allow Apps the option to \"Remember Me\" (requested by @probableprime and the entire Wiki community, issue #6210, implemented by @probableprime)\n\n- Added `Renderite.Host.Boot.log` log file, which logs the startup process of Renderite.Host\n-- This is simplified logging system that will run before the actual logging is initialized\n-- This should help issue #6467 by @karasutengu, @siffus, @sadstarfish and olejka\n\n[h2]Tweaks:[/h2]\n- Added extra diagnostics to bootstrapper for Resonite to help with issue #6467 by @karasutengu, @siffus, @sadstarfish and olejka\n\n[h2]Security:[/h2]\n- Improved security of build pipelines for Resonite to prevent supply chain attacks (implemented by @j4.lc)\n- Sanitized OAuth User Profile response to match API responses from the rest of our API (implemented by @probableprime)\n\n[h2]Locale:[/h2]\n- Merged Chinese (Taiwan) locale update by @meowwei \n- Merged British English locale update by @bredo \n- Merged Chinese locale update by @modimobeikete \n- Merged Brazilian Portugese locale update by HeduardoBits\n- Merged Esperanto locale update by @rad4ngel_ \n- Merged German locale update by @muppeq \n\n[h2]Fixes:[/h2]\n- Fixed an exception when shutting down audio devices on shutdown preventing the process from shutting down fully\n- Fixed OSC_Field failing to send correct values (reported by @jackthefoxotter, issue #2553, fixed by @probableprime)\n\n- Fixed Ambient Occlusion causing geometry to go black at small scales or when the camera is too close (reported by @lierofox, @xceezyx, @joliair, issue #6462 and @epiceaston197, issue #6469)\n-- Fix contributed by @zyro1331 at: https://github.com/Yellow-Dog-Man/Renderite.Unity.Renderer/pull/12\n",
+      "feedlabel": "Community Announcements",
+      "date": 1776721856,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-04-20T21:50:56Z"
+    },
     {
       "gid": "1830163047258686",
       "title": "2026.4.16.1327 - Our current Unity renderer is now open source (more coming!)",
@@ -1907,5 +1921,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-04-16T23:04:30.259671Z"
+  "last_updated": "2026-04-20T22:27:13.042500Z"
 }

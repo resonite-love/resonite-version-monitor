@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 137,
+  "count": 138,
   "newsitems": [
+    {
+      "gid": "1830797770229450",
+      "title": "2026.4.21.1411 - Compatibility determination fix, startup fix, NASA badge",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830797770229450",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI got a small build for you, but two important fixes (that took a good chunk of time figuring out).\n\nThere was issue with the compatibility determination system, where builds would not be compatible depending on whether they were built on Windows or Linux. This caused issues with the CI/CD pipeline, requiring manual pushes from me, but this should resolve that last issue!\n\nSome users have also been experiencing issues launching Resonite. This has potential fixes for that as well.\n\nDue to changes in the compatibility system, this build is not compatible with previous (which is a bit ironic x3 ) - the fix essentially fixes this going forward, at the cost of this one break.\n\n[h2]New Features:[/h2]\n- Added NASA Space Challenge and LBE Competition badges from events ran by Weaverse (implemented by @probableprime)\n\n[h2]Fixes:[/h2]\n- Added timeout to HardwareInfo initialization & updated the library to latest version\n-- This might help fix Resonite failing to launch on some machines (issue #6467 by @karasutengu, @siffus, @sadstarfish and olejka)\n\n- Fixed Resonite builds not being compatible depending whether they were built on Windows or Linux (based on report by @bredo and Orion, issue #6480)\n",
+      "feedlabel": "Community Announcements",
+      "date": 1776814728,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-04-21T23:38:48Z"
+    },
     {
       "gid": "1830163047267225",
       "title": "2026.4.20.1290 - Startup/shutdown, OSC, OAuth fixes & addtitions",
@@ -1921,5 +1935,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-04-20T22:27:13.042500Z"
+  "last_updated": "2026-04-22T00:05:41.519828Z"
 }

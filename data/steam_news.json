@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 139,
+  "count": 140,
   "newsitems": [
+    {
+      "gid": "1830797770234331",
+      "title": "2026.4.23.1269 - Metaverse Maker Competition 2026 badges!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830797770234331",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "It's time to rejoice, MMC26 badges are here! :D\n\nThey also have been all assigned! (except for a few who provided their Resonite username wrong)\n\nBuild compatible with current, but the badges won't show up unless the host is on the new build.\n\n[img]{STEAM_CLAN_IMAGE}/44646621/ff928706daf979bd0f55fcc0732ed42f977372c7.png[/img] [img]{STEAM_CLAN_IMAGE}/44646621/c73bf14a7038d2e920458ebca8d679eb511eb9c5.png[/img] [img]{STEAM_CLAN_IMAGE}/44646621/b18420cb1ff5b3be506d9044a85ce559cdac7f8d.png[/img] [img]{STEAM_CLAN_IMAGE}/44646621/4b0ee902aa5550250e381853e9de13cc817cbd88.png[/img] [img]{STEAM_CLAN_IMAGE}/44646621/433be3b6d61aeece86def969fd108b2061440e9b.png[/img] [img]{STEAM_CLAN_IMAGE}/44646621/759b548e073153a8ad68acc222a2ae58ca58f0fd.png[/img] [img]{STEAM_CLAN_IMAGE}/44646621/9b4bd70311e5b2864fb6011cc1c4c80012a37907.png[/img] [img]{STEAM_CLAN_IMAGE}/44646621/6b02f7449ffa65be49163abfea1173f5390c3721.png[/img] [img]{STEAM_CLAN_IMAGE}/44646621/bb02531389b2fe6baca768502c892f2618a4b656.png[/img] [img]{STEAM_CLAN_IMAGE}/44646621/b12b8148f80fb9dd63c7567e9b67d5c6b67fc78d.png[/img] [img]{STEAM_CLAN_IMAGE}/44646621/ae8cb396c05ff0cb92cd1a6f4f2fdd53d4e61464.png[/img]\n\n[h2]New Features:[/h2]\n- Added MMC26 badges (badges created by @medravr)\n\n[h2]Fixes:[/h2]\n- Patch CI/CD pipeline so utilities such as AppProtocolHandler are built to an EXE file (reported in #6493 by Marshall-vak, fixed by @j4.lc )",
+      "feedlabel": "Community Announcements",
+      "date": 1776979887,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-04-23T21:31:27Z"
+    },
     {
       "gid": "1830797770231954",
       "title": "2026.4.23.62 - Fixed Resonite not starting on some Windows machines",
@@ -1949,5 +1963,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-04-23T22:02:09.305060Z"
+  "last_updated": "2026-04-23T23:03:25.125135Z"
 }

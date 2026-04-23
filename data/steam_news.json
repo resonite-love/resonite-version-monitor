@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 138,
+  "count": 139,
   "newsitems": [
+    {
+      "gid": "1830797770231954",
+      "title": "2026.4.23.62 - Fixed Resonite not starting on some Windows machines",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1830797770231954",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nAnother small patch today, but important one. I spent a good chunk figuring out why some people are not able to launch Resonite and it should be actually fixed now! Thank you everyone for providing logs.\n\nAlso as bonus, a whole bunch of our dependencies are updated to latest version - I spent a good chunk of time dealing with some dependency hell to see if any of it helps too.\n\nThe build is compatible with previous, no need to update if you're not affected by this issue.\n\n[b]NOTE:[/b] This mostly fixes issues launching on Windows. If you're on Linux, make sure you're not using Proton 11 Experimental - use Proton 10 or lower.\n\n[h2]Tweaks:[/h2]\n- Update .NET libraries to latest versions\n\n[h2]Fixes:[/h2]\n- Fixed Resonite failing to start on certain machines (reported by @karasutengu, @siffus, @sadstarfish, olejka, @rinuzuerebus and others, issue #6467)\n- Fixed Resonite lingering indefinitely when an unhandled error occurs during the startup process",
+      "feedlabel": "Community Announcements",
+      "date": 1776906910,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-04-23T01:15:10Z"
+    },
     {
       "gid": "1830797770229450",
       "title": "2026.4.21.1411 - Compatibility determination fix, startup fix, NASA badge",
@@ -1935,5 +1949,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-04-23T01:13:01.584517Z"
+  "last_updated": "2026-04-23T03:43:50.340201Z"
 }

@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 140,
+  "count": 141,
   "newsitems": [
+    {
+      "gid": "1831432155566503",
+      "title": "2026.4.29.1384 - bHaptics, HP Omnicept fixes, other minor bugfixes",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1831432155566503",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "A small maintenance build today! I've been now working more on the IK, but the work is still early to have anything functional. \n\nMy brain has been a bit fried today to focus, so went out to fix a few more long-standing issues, mostly focusing on HW support.\n\nThis build also merges in some community fixes to our libraries, like Interproces and some minor renderer fixes!\n\nCompatible with current. If you're not affected by any of these problems, no rush to update.\n\n[h2]Tweaks:[/h2]\n- Improved precision of delta time calculation\n-- This uses higher precision timer now, which can help increase overall smoothness of updates\n\n[h2]Fixes:[/h2]\n- Fixed possible exception when shutting down Resonite due to double disposal in interprocess library (fixed by @baplar) \n- Fixed Resonite Window icon not updating correctly on some Linux distributions (reported by jvyden, issue #5670, fix contributed by jvyden)\n- Fixed HP Reverb G2 Omnicept Eye Tracking not working correctly (reported by @derpicidal and @project_floof, issue #4446)\n- Fixed bHaptics integration not working (@navy3001, @rueshejn, @akiram_, nalathethird, @dteyn, @renarikun and OrionMoonclaw, issue #5385)\n",
+      "feedlabel": "Community Announcements",
+      "date": 1777504976,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-04-29T23:22:56Z"
+    },
     {
       "gid": "1830797770234331",
       "title": "2026.4.23.1269 - Metaverse Maker Competition 2026 badges!",
@@ -1963,5 +1977,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-04-28T04:02:58.900802Z"
+  "last_updated": "2026-04-30T00:12:18.814415Z"
 }

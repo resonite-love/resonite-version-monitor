@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 141,
+  "count": 142,
   "newsitems": [
+    {
+      "gid": "1832065502822520",
+      "title": "2026.5.11.1342 - Bugfixes, easy renderer swapping",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1832065502822520",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI've got a small maintenance build for you with a few bugfixes that have accumulated over past week or so!\n\nThere's also new command-line arguments that make it easy to switch which renderer Resonite uses (without having to replace the files) and making it attach to Unity Editor with Renderite (which is now open source in case you missed it!)\n\n[h2]New Features:[/h2]\n- Added WorldFocused and WorldUnfocused nodes, these nodes output when a user focuses or unfocuses a world (requested by @ryuvi, issue #6527, implemented by @probableprime)\n\n- Added launch arguments for picking which renderer should Resonite use\n-- `-Renderer <path to executable>` will make Resonite use alternate renderer at this path, instead of the default one\n-- `-AttachRenderer` will attach to existing instance of a running renderer (mainly Renderite in Unity Editor) (requested by @scrongbongle, issue #6513) - this is intended for debugging & profiling purposes\n\n[h2]Locale:[/h2]\n- Merged Dutch locale update by @xeravax\n- Merged Polish locale update by @xeravax\n- Merged Spanish locale update by @rad4ngel_\n- Merged Esperanto locale update by @_deltawolf\n\n[h2]Fixes:[/h2]\n- Only install .NET 10 runtime on Windows\n-- This might work around steamcmd segfault issue when updating Resonite (reported by AntonBoch1244, issue #5462)\n- Fixed a rare issue causing some user registrations to get stuck due to their distributed lock keys being generated with illegal characters (fixed by @Gawdl3y)\n- Fix Multi-Tools causing world crashes when they are scaled to 0 (reported by @khawn, @domino___, issue #98, fixed by @probableprime)\n-- reported by Khawn & Domino in GH98.\n- Fixed brush tools not working with Tool events (reported by @yoshi1123_, issue #723, fixed by @probableprime)\n",
+      "feedlabel": "Community Announcements",
+      "date": 1778539000,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-05-11T22:36:40Z"
+    },
     {
       "gid": "1831432155566503",
       "title": "2026.4.29.1384 - bHaptics, HP Omnicept fixes, other minor bugfixes",
@@ -1977,5 +1991,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-05-11T22:45:02.030929Z"
+  "last_updated": "2026-05-11T23:09:15.234422Z"
 }

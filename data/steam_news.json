@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 142,
+  "count": 143,
   "newsitems": [
+    {
+      "gid": "1832700592801997",
+      "title": "2026.5.19.1285 - Brush fixes, local debug visuals, spatial variable fix and more",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1832700592801997",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nGot a small maintenance build for you! Fixing up a number of small issues that got tackled while big things are being worked on!\n\nGot more community contributions for the Renderer too! @art0007i made their first contribution! :D\n\n[h2]New Features:[/h2]\n- Brush tools color can now be edited when they are not equipped (based on report by @lecloutpanda, @nepushiro, @art0007i, issue #6094, implemeneted by @probableprime)\n- Added internal support for rendering debug visuals only locally\n-- All Debug visual ProtoFlux nodes now have \"Local\" field which allows you to use this local rendering\n-- This is useful for when testing new features without causing disruption in the world with those visuals\n\n[h2]Tweaks:[/h2]\n- Tweaked language of landing page of account website (internally requested by @bobthegood and @nexulan, implemented by @probableprime)\n- BlitToDisplay now supports transparency (reported by @art0007i, issue #680, fixed by @art0007i)\n\n[h2]Fixes:[/h2]\n- Fixed sampling spatial variable with highest priority returning spatial variable with lowest priority/blend-weight, instead of highest (reported by @colin.cat, @mpmxyz, issue #6219)\n-- This affects following components/nodes: ReferenceSpatialVariableDriver, TypeSpatialVariableDriver, ValueSpatialVariableDriver<T>, SampleObjectSpatialVariable<T> and SampleValueSpatialVariable<T>\n- Fixed Essential Tools brushes from not being able to have their color set to black (reported by @sveken, issue #1165, fixed by @probableprime)\n- Fixed arguments passed to Renderer including errorneous extra data (reported by @seercat, issue #6580)",
+      "feedlabel": "Community Announcements",
+      "date": 1779226758,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-05-19T21:39:18Z"
+    },
     {
       "gid": "1832065502822520",
       "title": "2026.5.11.1342 - Bugfixes, easy renderer swapping",
@@ -1991,5 +2005,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-05-17T21:37:23.794809Z"
+  "last_updated": "2026-05-19T21:42:38.393827Z"
 }

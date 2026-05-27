@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 143,
+  "count": 144,
   "newsitems": [
+    {
+      "gid": "1833968530886573",
+      "title": "2026.5.27.1300 - StrikePose IK chain, optimized background worker, auto-rigging",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530886573",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI've got an exciting update for you! The first piece of the new in-house IK system - StrikePose, is in! It's not full body IK yet, but you can now play with the unconstrainted FABRIK chain solver and use it for your creations!\n\nThis is a general purpose IK algorithm, that will serve as a building block for the IK, but is also usable on its own for your own systems. It's stable enough for everyone to start playing with it (but breaking changes can still occur!) and give some feedback / bug reports - my goal is to make sure it's polished before moving on to the next phases, like constraints and full body IK!\n\nThere's also related tools to this - new Rig Tool and support for auto-rigging static meshes! Hope you have fun with those :)\n\nWe've also thrown away more of old code from Unity-Mono era and switched to the .NET TPL library for background task processing! That's all the asset loading, texture decoding/encoding, mesh generation/processing and so on. This helps remove some tech debt and make Resonite more responsive - the TPL uses fancier thread pool, so it will scale up and down with load, mitigating cases where long running background tasks degrade other things.\n\n[h2]New Features:[/h2]\n- Added FABRIK_Chain component (under Transform/Inverse Kinematics) (this is first part of new in-house IK system, issue #612)\n-- This allows setting up and simulating arbitrary IK chains\n-- This uses StrikePose under the hood for IK solving\n-- Any bone can have an effector assigned\n-- It also propagates bone rotations/twists from the effectors through the chain\n-- If the chain is invalid (e.g. parents aren't setup properly, there's a loop of bones, no root bones etc.) the IK will not solve and be reset to default pose\n-- Constraints and other options aren't supported yet - but will be coming soon(ish)!\n-- While I tried to ensure this is stable enough, the component is marked as work in progress and breaking changes might still happen! There's a notice on the component, we'll remove it once we're comfortable with its stability\n-- This is **NOT** for full body IK yet! This component exposes a building block that will be used for it, but will not handle humanoid rigs well\n\n- Added RigTool that allows working with rigs & creating new blank rigs\n-- Currently you can create new rigs and add bones to existing rigs\n-- You can select existing rig by grabbing a reference to it from inspector and pressing secondary\n-- You can easily setup any rig with generic FABRIK solver\n-- You can add effectors to rigs setup with FABRIK solver\n-- The functionality will expand in the future\n\n- Added support for auto-rigging meshes to convert them to a skinned mesh by providing a rig\n-- Bone weights are automatically calculated based on proximity to each bone\n-- This can be done either from the RigTool with selected rig or by calling AutoRig function on MeshRenderer and providing it with a Rig to use to compute the vertex weights\n\n- Added RigBoneMesh\n-- Procedural mesh that generates a typical rig bone visual used in 3D software\n-- Does not include the bone sphere at the base\n\n[h2]Optimizations:[/h2]\n- Switch background processing from custom thread system to Task Parallel Library\n-- This will use the .NET / C# thread pool system, which should better handle varying workloads\n-- This should help improve responsiveness when background processing is under load by dynamically scaling number of threads (e.g. UI should freeze less often during heavy processing tasks) (reported by @krzeszny, mxjessie, @the.phil. and @blllrpy, issue #6028, @reddneko, issue #4529, @rueshejn and @aegis_wolf, issue #2464 and others)\n-- The original system was designed to run well within Unity's Mono, but since we're running on .NET 10 now this is no longer necessary and we can use .NET mechanisms which are heavily optimized\n-- Note: The debug dialog will no longer display information about currently processed tasks due to using 3rd party system where this information is not readily available\n\n[h2]Locale:[/h2]\n- Merged missing English locale strings from @mvak and 3x1t-5tyl3\n- Merged English locale tweak by @cameron5 \n- Merged Chinese locale update by @modimobeikete \n\n[h2]Fixes:[/h2]\n- Fixed saved brushes being set to white when spawned (reported internally by @frooxius, fixed by @probableprime)",
+      "feedlabel": "Community Announcements",
+      "date": 1779918759,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-05-27T21:52:39Z"
+    },
     {
       "gid": "1832700592801997",
       "title": "2026.5.19.1285 - Brush fixes, local debug visuals, spatial variable fix and more",
@@ -2005,5 +2019,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-05-25T00:18:44.615389Z"
+  "last_updated": "2026-05-27T22:05:42.526241Z"
 }

@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 144,
+  "count": 145,
   "newsitems": [
+    {
+      "gid": "1833968530889497",
+      "title": "2026.5.28.1269 - Rig Tool & IK fixes & improvements, cloud analytics",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530889497",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hey everyone!\n\nGot a smaller update for you, fixing up and improving a bunch of things around the new Rig tool and the IK chain!\n\n@probableprime has also done a lot of work making a new analytics system on our cloud infrastructure, which will help us better understand how people use Resonite and give us data that will help us grow the community better.\n\n[h2]New Features:[/h2]\n- Added \"Open Inspector\" to rig tool, which will open inspector for the currently selected rig\n- Added \"Deselect Rig\" option to RigTool\n-- This will deselect the currently selected rig\n\n- Added Pseudo-Anonymized business intelligence/analysis events to our cloud services (based on internal requests and @imerin., issue #2099, implemented by @probableprime)\n-- This lets us better understand how to make Resonite better for you.\n\n[h2]Tweaks:[/h2]\n- Cleanup selected rig visual when RigTool is destroyed (based on report by @rueshejn, @aegis_wolf, issue #6624)\n- Effectors creatd with the RigTool are now added under the Rig hierarchy and named after the bone\n\n[h2]Locale:[/h2]\n- Merged Japanese locale update by @.aesc \n- Merged Chinese locale update by @modimobeikete \n- Merged Korean locale update by @mirpasec \n- Merged German locale update by @muppeq \n\n[h2]Fixes:[/h2]\n- Fixed AutoRig method on MeshRenderer not being the right type, causing exceptions (reported by @unskilledwolf, issue #6630)\n- Fixed list item labels for lists of sync objects not being reference grabbable (based on report by @lecloutpanda, issue #6629)\n-- This makes it possible to drag & drop references to those items (e.g. for assigning FABRIK chain parent bones)",
+      "feedlabel": "Community Announcements",
+      "date": 1780003317,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-05-28T21:21:57Z"
+    },
     {
       "gid": "1833968530886573",
       "title": "2026.5.27.1300 - StrikePose IK chain, optimized background worker, auto-rigging",
@@ -2019,5 +2033,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-05-27T22:23:49.675776Z"
+  "last_updated": "2026-05-28T22:03:14.134388Z"
 }

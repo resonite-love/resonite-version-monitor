@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 145,
+  "count": 146,
   "newsitems": [
+    {
+      "gid": "1833968530898859",
+      "title": "2026.6.1.1293 - Rainbow logo, Pronouns, Pride Flags, Wiki links & Rig tool fixes",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530898859",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone and happy pride month!\n\nWe've got a bunch of related updates for you to get us started with this month!\n\nFirst or all, as is the tradition for each company each year... we changed our logo to have rainbows! It's totally different now! :3\n\nResonite now also lets you set your pronouns! We don't have nice UI for editing profile just yet though, so you have to do it through the bot, but the changes will show on default nameplates and are accessible through the CloudUserInfo component as well.\n\nIn other news, we merged in a whole new set of pride flags in our repo from our community, which are now assignable. Full list below! The graphics are also fully CC0 in case you'd like to contribute or use them in your own projects: <https://github.com/Yellow-Dog-Man/PrideFlags>\n\nYou can also automatically integrate pride month events to your own content thanks to a new node that indicates if PrideMonth is active or not.\n\nIn non-pride news (though we are still proud of those), Components & ProtoFlux now link directly to Wiki pages thanks to @Gawdl3y! This should make accessing documentation much easier from within the game.\n\nThe Rig Tool has also received a few improvements, notably ability to easily delete selected bones.\n\n[h2]New Features:[/h2]\n- Changed the default logo to a new rainbow logo for the Pride Month! (graphics made by @ryuvi)\n-- It's full of colors now!\n-- It's only for a month, so enjoy while it lasts!\n\n- Added pronouns (requested by @www.sizemo.re, Pinkyyyy, AmriaLeiah, TheFurfOfJuly, @nytra, @zyzylian, @zilepo, @rockstarraccoon, issue #213)\n-- When set, will display below the username on default name plates\n-- Currently they need to be set via Resonite bot command using `/setPronouns <pronouns>` until we have better profile management UI\n-- You can clear them by sending the same command with no argument\n-- They're also exposed on CloudUserInfo component\n-- They need to follow \"<nominative> / <objective>\" formatting unless set to \"any\", but otherwise can be anything (max 16 characters length, only letters or apostrophe)\n-- They will be reformatted for consistency\n-- If you feel the validation rules need to be changed, make an issue with some examples please! \n\n- New Pride Flags!\n-- `Disability`, `Altersex`, `RelationshipAnarchy` by brecert\n-- `Femboy` and `Tomboy` by @charizmare \n-- `Sapphic` by Naia-love\n-- `Abrosexual` by @epiceaston197\n-- `Demiboy` and `Demigirl` by @purpzie \n-- `BearBrotherhood` by @zenuru\n\n- Added IsAprilFools & IsPrideMonth nodes (under Time/Events)\n-- You can use these to programmatically trigger effects and changes for these events!\n\n- Added a button to component headers in inspectors to open the wiki page for that component (requested by @zangooseoo and @JewelTK, issue #2882, implemented by @Gawdl3y)\n- Added a context menu button to the ProtoFlux tool to open the wiki page for the node currently being pointed at or the currently selected node (implemented by @Gawdl3y)\n\n- Added \"Destroy Bone\" to RigTool \n-- This will destroy currently selected bone\n-- Children bones and slots are preserved and will be remapped to the current bone's parent bone\n-- Active FABIK IK chain will also be updated\n\n[h2]Tweaks:[/h2]\n- Automatically pick up existing FABRIK_Chain instance when selecting a rig with the rig tool\n\n[h2]Locale:[/h2]\n- Merged Chinese (Traditional, Taiwan) update by @meowwei \n- Merged Chinese (Simplified, Mainland China) by @modimobeikete\n- Merged German locale update by @muppeq \n- Merged Spanish locale update by rad4angel\n- Merged Japanese locale update by @.aesc",
+      "feedlabel": "Community Announcements",
+      "date": 1780350577,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-06-01T21:49:37Z"
+    },
     {
       "gid": "1833968530889497",
       "title": "2026.5.28.1269 - Rig Tool & IK fixes & improvements, cloud analytics",
@@ -2033,5 +2047,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-06-01T22:24:29.969997Z"
+  "last_updated": "2026-06-01T23:43:33.671159Z"
 }

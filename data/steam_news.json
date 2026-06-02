@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 146,
+  "count": 147,
   "newsitems": [
+    {
+      "gid": "1833968530899410",
+      "title": "2026.6.2.275 - More bugfixes for Wiki links",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1833968530899410",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Got another patch from @Gawdl3y!\n\nCompatible with current, but update recommended if you're running into those issues!\n\n[h2]Locale:[/h2]\n- Merged Spanish locale update by rad4ngel\n- Merged Korean locale update by @mirpasec\n\n[h2]Tweaks:[/h2]\n- Replaced hard-coded type checks for the wiki button logic with a reusable attribute to specify a wiki page prefix on types (implemented by @Gawdl3y)\n-- This fixes user inspectors not building their component UI (reported by @ukilop, @moonbase__, issue #6657)\n\n[h1]Fixes:[/h1]\n- Fixed nested classes of generic components causing an exception when building the wiki button for the component (reported by @ukilop, @moonbase__, issue #6657, fixed by @Gawdl3y)",
+      "feedlabel": "Community Announcements",
+      "date": 1780375789,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-06-02T04:49:49Z"
+    },
     {
       "gid": "1833968530898859",
       "title": "2026.6.1.1293 - Rainbow logo, Pronouns, Pride Flags, Wiki links & Rig tool fixes",
@@ -2047,5 +2061,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-06-02T02:45:12.591279Z"
+  "last_updated": "2026-06-02T04:58:08.284974Z"
 }

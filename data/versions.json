@@ -1963,6 +1963,11 @@
       "manifestId": "6351946200875915050",
       "timestamp": "2026-06-02T07:13:07.853565Z",
       "gameVersion": "2026.6.2.275"
+    },
+    {
+      "manifestId": "4719533905948558571",
+      "timestamp": "2026-06-04T21:05:19.806170Z",
+      "gameVersion": null
     }
   ],
   "headless": [

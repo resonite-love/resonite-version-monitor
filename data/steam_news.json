@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 147,
+  "count": 148,
   "newsitems": [
+    {
+      "gid": "1834602721188769",
+      "title": "2026.6.4.1252 - Pronouns improvements, sharper FXAA, metrics fixes",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1834602721188769",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Got another update for you! This is mostly some small improvements, as most time I'm spending now is on StrikePose.\n\nWe've improved the pronouns based on feedback! It's now a lot more free-form and the size/positioning has been adjusted too! You still can't stick crazy RTF tags in there, but it should cover a lot more now!\n\nThe handling has been expanded too with AvatarNameTagAssigner, so you can setup custom nameplates and separate the username from pronouns too, rather than have it merged in. This should add more flexibility for styling.\n\nFXAA anti-aliasing has also gotten improvement to produce much sharper image thanks to @scrongbongle!\n\nThe cloud metrics have also got a lot of fixes and improvements from @probableprime!\n\n[h2]New Features:[/h2]\n- Added PronounsTargets & UsernameTargets to AvatarNameTagAssigner\n-- This allows setting up custom nameplates without the pronouns merged into the username and use custom formatting that fits the nametag style\n-- UsernameTargets assigns only the username itself\n-- PronounsTargets assigns only the pronouns\n-- LabelTargets assigns both merged together (if present)\n-- Merged formatting has been adjusted to add extra spacing and increase size slightly (based on feedback by @epiceaston197, @shaundreclin, issue #6660, @hayden_fluff, issue #6648)\n\n[h2]Tweaks:[/h2]\n- Loosen up rules for validating pronouns to be more freeform (based on feedback by @amplified3d, @copygirl, @reddneko, @karasutengu, issue #6676 and @kaestralblades, @reviver.noon, @loictomatot, @draconas_rayne, issue #6647)\n-- Capitalization is kept as inputted\n-- You can mix any number of slashes\n-- Following symbols are supported for formatting: ' , - _ /\n-- Length limit now includes formatting (since you can use arbitrary amounts), but limit has been increased to 24 from 16\n-- Bread 🫓\n\n- Improved quality of FXAA anti-aliasing to produce sharper image (especially with text) (contributed by @scrongbongle, Renderer PR #34)\n\n- Removed duplicate copies of native compressonator libraries in Resonite install (implemented by @probableprime, part of ongoing work on #5201)\n- Improved cloud metrics (reported by @probableprime and fixed by @probableprime  ...primeception)\n\n[h2]Locale:[/h2]\n- Merged Chinese (Traditional, Taiwan) update by @meowwei \n- Merged Chinese (Simplified, Mainland China) by @modimobeikete\n- Merged German locale update by @muppeq \n- Merged French locale update by @baplar \n- Merged Japanese locale update by @.aesc",
+      "feedlabel": "Community Announcements",
+      "date": 1780607233,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-06-04T21:07:13Z"
+    },
     {
       "gid": "1833968530899410",
       "title": "2026.6.2.275 - More bugfixes for Wiki links",
@@ -2061,5 +2075,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-06-04T21:05:20.292873Z"
+  "last_updated": "2026-06-04T22:44:03.844197Z"
 }

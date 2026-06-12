@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 148,
+  "count": 149,
   "newsitems": [
+    {
+      "gid": "1835236783562821",
+      "title": "2026.6.12.557 - Bone weight visual, SMAA in VR, and more fixes & tweaks",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835236783562821",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI got another QoL build for you! The main bulk of work I spend on is still on the IK, but there's a bunch of improvements and additions from me, the team and the community!\n\nSMAA anti-aliasing should now work in VR thanks to @scrongbongle! If you have avoided using it before, might be worth another try! There's also small optimization for the renderer thanks to @gyztormizirath, which might boost the performance a bit in VR.\n\nYou can also visualize bone weights right in game thanks to a new procedural mesh! And there's new cool interpolation modes for Sliders & Joints, as well as unclamped Slerp thanks to @ryuvi! The cloud metrics has gotten some more improvements from @probableprime \n\n[img]{STEAM_CLAN_IMAGE}/44646621/1b5125dbff1a9d58ab4d3065f25498e45bbf6e81.png[/img]\n\n[img]{STEAM_CLAN_IMAGE}/44646621/37ecd3352acfc23f98252f0a5f1952a90aab2008.png[/img]\n\nAnd a bunch more!\n\n[h2]New Features:[/h2]\n- AssetMetadata now captures renderer name\n-- This is particularly useful for in-game photos, especially when taken with alternatvie renderers\n\n- Added SnapInterpolationCurve enum to Sliders and Joints. (requested by @ryuvi, @baxterottoman, issue #5087, implemented by @ryuvi)\n-- This enum allows you to adjust how the slider or joint tweens to a snapped position when SnapOnRelease is enabled\n-- The default value for the enum is Sine to preserve previous behavior\n- Added SlerpUnclamped ProtoFlux nodes (for floatQ & doubleQ) (implemented by @ryuvi)\n-- These nodes can be found in Math/Interpolation.\n-- Similar to LerpUnclamped, these nodes allow for interpolation values outside of the 0 to 1 range, which will extrapolate the interpolation\n\n- SMAA antialiasing now works in VR and has been update to use higher quality (contributed by @scrongbongle, PR #37 and #36)\n-- Post Processing stack has also been updated to latest compatible version\n\n- Added BoneWeightDiagnosticMesh which will generate a variant of input mesh with vertex colors visualizing the weights of give bone (based on request by @_.____.__.____._. , issue #6700)\n-- You'll need to use material that can visualize vertex colors to view the debug information\n\n[h2]Optimizations:[/h2]\n- Overlay camera is now disabled while in VR to potentially improve performance (contributed by @gyztormizirath, PR #11)\n\n[h2]Tweaks:[/h2]\n- Updated .NET libraries to latest\n\n[h2]Fixes:[/h2]\n- Fixed setting pronouns breaking for users whose profile was never initialized (based on report by Ilovetoocode, issue #6683)\n- Fix vertex color profile breaknig when processing or baking meshes \n- Fixed Swap R <----> G not swapping colors properly (reported by @raidriar796, @ohzee, @yoshiyoshiyoshiyoshiyoshyoshyosh, @catboy.slim, issue #5790)\n- Fixed ValueGraphRecorder having an artifact due to off by one error (reported by @zyro1331, issue #5812, @jackthefoxotter, issue #1961)\n- Fixed maximum number of users being 256 instead of 255 due to last ID being reserved for local data model (reported by @art0007i, issue #5637)\n- Fixed meshes with bones & blendshapes that are repeatedly copied not clearing data properly\n- Fixed procedural skinned meshes not updating properly\n- When Touch controller skeleton data is not available, the tracking will fallback to bound hand (contributed by @frick_no96, PR #32)\n- Fixed Drag & Drop not working on Linux in some cases (reported by @art0007i, issue #6711, fix contributed by @art0007i, PR #38)\n\n",
+      "feedlabel": "Community Announcements",
+      "date": 1781256775,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-06-12T09:32:55Z"
+    },
     {
       "gid": "1834602721188769",
       "title": "2026.6.4.1252 - Pronouns improvements, sharper FXAA, metrics fixes",
@@ -2075,5 +2089,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-06-04T22:44:03.844197Z"
+  "last_updated": "2026-06-12T10:38:28.620445Z"
 }

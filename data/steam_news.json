@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 149,
+  "count": 150,
   "newsitems": [
+    {
+      "gid": "1835871199303784",
+      "title": "2026.6.18.616 - Various bugfixes, better deltaTime calculation for input",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835871199303784",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nGot a small maintenance build for you with a bunch of bugfixes!\n\nCompatible with current!\n\n[h2]Tweaks:[/h2]\n- Switched to more accurate method for computing delta time for the input system and other core engine operations\n\n[h2]Locale:[/h2]\n- Merged English locale improvements by @noblefurlyfe\n\n[h2]Fixes:[/h2]\n- Patch the `sendFriendRequest` command on the Headless Server Software to avoid needing to already be friends with the target user (reported by DrSciCortex in #5683, fixed by @j4.lc)\n- Fixed API issues causing 500 errors with some cloud variable definitions (fixed by @probableprime)\n-- Discovered with cool new metrics stuff ProbablePrime has been working on.\n- Fixed some PromoCode metrics having mixed case outputs leading to duplicate entries (found & fixed internally by @probableprime)\n- Fixed regression in viewport setting being broken on cameras (reported by @code807, issue #6722, fix contributed by @scrongbongle in Renderer PR #41)\n- Fixed FOV in PhotoMetadata being incorrect in some cases (reported by @jackthefoxotter, issue #6728)\n- Fixed coordinates of photo capture metadata taken with InteractiveCamera being incorrect (reported by @unskilledwolf, @blueberrywolfi, issue #6103)",
+      "feedlabel": "Community Announcements",
+      "date": 1781779812,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-06-18T10:50:12Z"
+    },
     {
       "gid": "1835236783562821",
       "title": "2026.6.12.557 - Bone weight visual, SMAA in VR, and more fixes & tweaks",
@@ -2089,5 +2103,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-06-14T23:55:33.394414Z"
+  "last_updated": "2026-06-18T11:18:39.142902Z"
 }

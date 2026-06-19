@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 150,
+  "count": 151,
   "newsitems": [
+    {
+      "gid": "1835871199307282",
+      "title": "2026.6.19.835 - Fixed inverted multi-touch input",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1835871199307282",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nJust a small patch, fixing issues with multi-touch support.\n\nCompatible with current!\n\n**Fixes:**\n- Fixed multi-touch Y coordinate being inverted (reported by @sv40. jvyden, issue #5238)",
+      "feedlabel": "Community Announcements",
+      "date": 1781878437,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-06-19T14:13:57Z"
+    },
     {
       "gid": "1835871199303784",
       "title": "2026.6.18.616 - Various bugfixes, better deltaTime calculation for input",
@@ -2103,5 +2117,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-06-19T13:49:00.825625Z"
+  "last_updated": "2026-06-19T15:38:12.886305Z"
 }

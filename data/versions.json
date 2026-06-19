@@ -613,7 +613,7 @@
     {
       "manifestId": "178997024087795853",
       "timestamp": "2026-06-19T16:26:43.292303Z",
-      "gameVersion": null
+      "gameVersion": "2026.6.19.835"
     }
   ],
   "prerelease": [
@@ -2007,7 +2007,7 @@
     {
       "manifestId": "178997024087795853",
       "timestamp": "2026-06-19T16:26:43.292303Z",
-      "gameVersion": null
+      "gameVersion": "2026.6.19.835"
     }
   ],
   "headless": [
@@ -2299,7 +2299,7 @@
     {
       "manifestId": "1331172719122935094",
       "timestamp": "2026-06-19T16:26:43.292303Z",
-      "gameVersion": null
+      "gameVersion": "2026.6.19.835"
     }
   ],
   "pre-splittening": [

@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 151,
+  "count": 152,
   "newsitems": [
+    {
+      "gid": "1836506165546121",
+      "title": "2026.6.24.835 - Slot inspector drops, bugfixes",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165546121",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nA small build with a bunch of cool goodies for you! ProbablePrime's inspector slot drops are now in, making it easy to copy any of the slot's properties!\n\nThere's also a bunch of smaller bugfixes and some internal changes in preparation for some future updates.\n\n**IMPORTANT:** This build has breaking changes to the IPC model for the Renderer. You will need to match those if you use a custom renderer (or a fork). See here for more details: <https://github.com/Yellow-Dog-Man/Renderite.Unity.Renderer/pull/43>\n\n[h2]New Features:[/h2]\n- When you drop a slot reference on a field, it will now offer to copy compatible Slot details such as the slots name or position depending on the data type of the field (requested by @krzeszny, @3xxsy, issue #6739, implemented by @probableprime)\n- Exposed SetupFromChildren & SetupFromRigChildren methods on DynamicBoneChain to be callable from ProtoFlux (requested by @jackthefoxotter, issue #6718)\n\n[h2]Tweaks:[/h2]\n- Added business metrics to Patreon updates (implemented by @probableprime)\n\n- Desktop texture is no longer flipped upside down\n-- If you made facets that use desktop texture, you might need to update them to flip the texture back upright\n-- If this causes significant issues, we can add upgrade mechanism in the upcoming builds, but the fix should only affect private userspace elements and not any long term content\n\n- Removed logging information for ProtoFlux rebuilds to reduce log clutter\n- Updated a number of libraries & packages to latest versions\n\n[h2]Fixes:[/h2]\n- Screen Space Reflections in VR are now supressed when SMAA is enabled (fix contributed by @scrongbongle, renderer PR #40)\n-- These two post processing settings unfortunately do not currently work together, causing double vision\n-- FXAA & SSR should work together in VR if you want to use both options\n- Fix password reset page erroring out in account.resonite.com (reported by @dantetucker, issue #6759, fixed by @probableprime)\n-- Password reset is still not supported on account.resonite.com please use Resonite itself to reset passwords\n- MeshEmitter now respects Point filtering on the source texture (based on report by @code807, @luxkitty, issue #6755)\n- Fixed SetNormalDelta assigning the delta to position, instead of normals (reported by @mpmxyz, issue #6751)\n- Fixed appending meshes (e.g. when baking) throwing exception when using geometry mask (reported by @mpmxyz, issue #6752)\n",
+      "feedlabel": "Community Announcements",
+      "date": 1782310334,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-06-24T14:12:14Z"
+    },
     {
       "gid": "1835871199307282",
       "title": "2026.6.19.835 - Fixed inverted multi-touch input",
@@ -2117,5 +2131,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-06-19T16:26:44.777646Z"
+  "last_updated": "2026-06-24T16:23:23.319346Z"
 }

@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 152,
+  "count": 153,
   "newsitems": [
+    {
+      "gid": "1836506165578128",
+      "title": "2026.7.7.829 - Elements.Quantity, cloud fixes, no more gay",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1836506165578128",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI got a maintenance build for you with a bunch of things, as well as turning off the gay since pride month is over! Since I was busy at con last week, you got a whole extra week of rainbow, wow! Now back to normal! :3\n\nIn more serious news, the Elements.Quantity with a ton of community contributions has made it in! There's a few other small additions too.\n\nThe cloud got a lot of bugfixes and improvements by @probableprime as well, so hopefully that should help with some of the reliability issues!\n\n**IMPORTANT:** This build has breaking changes to the IPC model for the Renderer. You will need to match those if you use a custom renderer (or a fork). See here for more details: https://github.com/Yellow-Dog-Man/Renderite.Unity.Renderer/releases/tag/1.0.12\n\n[h2]New Features:[/h2]\n- Added a flow to delete your account to account.resonite.com (issue #6769, requested internally via our contact form, implemented by @probableprime)\n\n- Updated Elements.Quantity to 0.3.0 (integration handled by @probableprime)\n-- Full changelog available on releases page: https://github.com/Yellow-Dog-Man/Elements.Quantity/releases\n-- Contributions from: @stiefeljackal, @reddneko, @zyzylian, @probableprime, @xlinka, @art0007i \n-- Fixes issues: #3430, #768, #4654, #5508, #4315\n\n- Added DopplerLevel to RandomAudioClipPlayer (requested by @one_and_online, issue #6801)\n\n- Added \"Always Hide Gizmos\" setting for Photo Capture Settings\n-- Similarly to \"Always Hide Nameplates\" this will filter out any gizmos from captured photos, regardless whether they're visible\n-- This is useful to capture clean photos\n\n- Added IME composition/preedit data to the keyboard state (contributed by @esnya in #47)\n-- This is currently an internal change and not utilized in the engine yet\n-- It needs additional implementation to properly handle this\n\n- Added GetActiveFocus node which outputs the currently focused element in the world for a given user (based on request by @reddneko, @jackthefoxotter, issue #6799)\n\n[h2]Tweaks:[/h2]\n- Reverted Pride month logo back to normal logo (no more gay, much sadness :( )\n-- Due to me being at a con, you got extra week of pride for free!\n- Reduced logging verbosity in home loading (implemented by @probableprime)\n\n[h2]Locale:[/h2]\n- Merged big Czech locale update by @vassterak\n- Merged German locale update by @muppeq \n- Merged Japanese locale fix by @_satler \n\n[h2]Fixes:[/h2]\n- Tweaked permission checking on SignalR session broadcasts (this should improve GH 6494, but Prime plans to do more, implemented by @probableprime)\n- Fix Redis based Ratelimits being ignored (partial fix for issue #6549, implemented by @probableprime)\n- Increased minium threads in .NET threadpool on Cloud (implemented by @probableprime)\n-- Should improve performance and partially address issue #6549 by @yoshi1123_ (and lots of others!)\n- Allow 2 common exceptions to pass Redis Rate Limit checks when Redis is unstable (implemented by @probableprime)\n-- Partially addresses issue #6549 by @yoshi1123_ (and lots of others!)\n- Fixed potential exception in ValueGraphRecorder\n- Fixed some issues in our HealtCheck endpoints (issues found while working on #6549, fixed by @probableprime)",
+      "feedlabel": "Community Announcements",
+      "date": 1783433151,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-07-07T14:05:51Z"
+    },
     {
       "gid": "1836506165546121",
       "title": "2026.6.24.835 - Slot inspector drops, bugfixes",
@@ -2131,5 +2145,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-07-02T05:38:00.770956Z"
+  "last_updated": "2026-07-07T15:09:47.924986Z"
 }

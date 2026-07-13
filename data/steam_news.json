@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 153,
+  "count": 154,
   "newsitems": [
+    {
+      "gid": "1837955055364632",
+      "title": "2026.7.13.1300 - Fix OGG crashing audio engine, YouTube videos not loading",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1837955055364632",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI got a build for you. It's relatively small, but there's some important updates in this!\n\nNotably, the NVorbis library for decoding OGG files has been updated to latest version, which should fix the cases of the audio engine dying! Big thanks to ioctlLR (the developer for the library) for bugfixes and everyone who helped test it!\n\nWe've also switched to Deno for yt-dlp. While this increases the install size a bit, it should fix some YouTube videos not loading.\n\n[h2]New Features:[/h2]\n- Added SubmeshIndex to HitUVCoordinate node (requested by @modernballoonie, @aegis_wolf, @ryuvi)\n-- This will provide you the index of the submesh that was hit, which will match the material index in the renderer\n\n[h2]Tweaks:[/h2]\n- Improved Stripe metrics to send the subscribers Tier name\n\n- Replace QuickJS runtime with Deno for yt-dlp (based on report by @nytra, @troyborg, dragos240, @baplar, issue #6263)\n-- This should fix a number of cases where YouTube videos fail to load\n\n[h2]Locale:[/h2]\n- Merged Esperanto language update by @rad4ngel_ \n- Merged German locale update by @muppeq \n- Merged English locale fix by @muppeq & @bredo\n- Merged Chinese locale update by @modimobeikete \n- Merged Korean locale update by @mirpasec \n\n[h2]Fixes:[/h2]\n- Corrected some inaccuracies in the calculation of total support metadata values for users when annual subscriptions are involved (fixed by @Gawdl3y)\n\n- Updated NVorbis library to latest version (v1.0.0-rc.2) to resolve some .ogg audio files breaking the audio engine (reported by charonfaustinus, issue #6488)\n-- Huge thanks to ioctlLR (NVorbis developer) for fixing up the issues in the library and working with our community!\n-- Also big thanks to @stellaNora, @OhZee, @scrongbongle, @reddneko, @Bredo, @KarasuTengu, @epicEaston197, @Krzeszny, mxjessie for testing the updated versions and reporting breakages!",
+      "feedlabel": "Community Announcements",
+      "date": 1783984392,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-07-13T23:13:12Z"
+    },
     {
       "gid": "1836506165578128",
       "title": "2026.7.7.829 - Elements.Quantity, cloud fixes, no more gay",
@@ -2145,5 +2159,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-07-13T22:37:29.175190Z"
+  "last_updated": "2026-07-13T23:35:29.644625Z"
 }

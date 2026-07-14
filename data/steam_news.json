@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 154,
+  "count": 155,
   "newsitems": [
+    {
+      "gid": "1837955055366480",
+      "title": "2026.7.14.913 - Fixes for yt-dlp, cloud performance improvements",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1837955055366480",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nJust a small build to push out a few fixes since I'm working more on the IK.\n\nCompatible with current.\n\n[h2]Tweaks:[/h2]\n- Moved Ban Status checks in SignalR operations to Distributed Cache (implemented by @probableprime)\n-- Will further improve performance of Session Broadcasts over SignalR for issue #6549 by @yoshi1123_ \n\n[h2]Fixes:[/h2]\n- Fixed invalid QuickJS argument still being passed to yt-dlp (reported by @stellanora, issue #6829)",
+      "feedlabel": "Community Announcements",
+      "date": 1784043045,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-07-14T15:30:45Z"
+    },
     {
       "gid": "1837955055364632",
       "title": "2026.7.13.1300 - Fix OGG crashing audio engine, YouTube videos not loading",
@@ -2159,5 +2173,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-07-13T23:35:29.644625Z"
+  "last_updated": "2026-07-14T15:41:44.237956Z"
 }

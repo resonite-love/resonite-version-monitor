@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 155,
+  "count": 156,
   "newsitems": [
+    {
+      "gid": "1839041357024833",
+      "title": "2026.7.22.1104 - System Audio capture (excluding Resonite), optimizations",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1839041357024833",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI got a small update for you, but with some nice goodies!\n\nI've been focusing on the IK for a bit, but my brain got foggy/burned out on it, so I'm focusing on side projects a bit to recover. One of those is Screen Sharing (which we'll start testing soon) and there's one feature trickling in from it that's also useful on itself - system audio capture!\n\nFor Windows there's now a new audio input, which captures your system audio while excluding Resonite's own audio! This makes it easy to stream in music and other things without shenanigans with virtual audio cables and so on.\n\nThe library used for this also supports capturing specific process audio - if there's interest, this could be added as well, but will require a bit of extra UI to be made. \n\nThere's also some small performance optimizations from @Gawdl3y, modernizing our codebase and removing some old Unity cruft and important fixes for the cloud from @ProbablePrime!\n\nAlso best thing - it's compatible with current, so no need to rush updating!\n\n[h2]New Features:[/h2]\n- Added System Audio input driver which captures system audio without Resonite's audio output (implemented by @Frooxius, CI/CD by J4)\n-- You can use this to stream your system audio without need for another audio device to separate Resonite audio sound\n-- This is Windows only as it relies on Windows-specific ApplicationLoopback audio capture API\n-- The library for the capture is open source under MIT and available here (and open to contributions for Linux / OS X support): https://github.com/Yellow-Dog-Man/ApplicationLoopback.NET\n\n[h2]Optimizations:[/h2]\n- Replaced custom concurrent collections with the built-in .NET ones (implemented by @Gawdl3y)\n-- These were originally added due to inadequate implementation/performance of the built-in ones in Unity's Mono runtime, but are no longer necessary on modern .NET\n-- This may result in some minor performance improvements thanks to smarter locking strategies in the built-ins\n\n[h2]Tweaks:[/h2]\n- Disable April Fools content when in a Universe (issue #4016, implemented by @ProbablePrime)\n\n[h2]Locale:[/h2]\n- Merged Russian locale update by @antonalekseevich \n- Merged Finnish locale update by @airride91 \n\n[h2]Fixes:[/h2]\n- Fix Anonymous Session broadcasts being blocked due to Ban lookup changes in 2026.7.14.913 by @ProbablePrime",
+      "feedlabel": "Community Announcements",
+      "date": 1784745884,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-07-22T18:44:44Z"
+    },
     {
       "gid": "1837955055366480",
       "title": "2026.7.14.913 - Fixes for yt-dlp, cloud performance improvements",
@@ -2173,5 +2187,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-07-20T04:06:25.018289Z"
+  "last_updated": "2026-07-22T19:37:00.057300Z"
 }

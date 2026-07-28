@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 156,
+  "count": 157,
   "newsitems": [
+    {
+      "gid": "1839041357039318",
+      "title": "2026.7.28.1272 - Elements.Core is now open source!",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1839041357039318",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI got an update for you! It's relatively small and mostly internal changes, but there's one (hopefully) impactful change - the Elements.Core library which contains our core datatypes is now open source under MIT license!\n\nThis allows for community contributions, fixes and optimizations and possibly help with some new features. You can even use it for your own projects too and hopefully it'll make it easier for making mods and plugins too.\n\nCheck out the repo here to learn more: https://github.com/Yellow-Dog-Man/Elements.Core\n\n[h2]Open Source:[/h2]\n- Elements.Core library that contains core FrooxEngine datatypes is now open source and accepting (limited) contributions (implemented by @Frooxius, with CI/CD handled by J4)\n-- Available at: https://github.com/Yellow-Dog-Man/Elements.Core\n-- This allows using this library in other projects & community fixes, improvements and optimizations\n-- This library contains core datatypes like vectors, matrices, quaternions, colors and so on\n\n[h2]Tweaks:[/h2]\n- Moved Internal Resonite Boot projects around to support ongoing business work by @probableprime \n- Update .NET libraries to latest versions\n\n[h2]Internal:[/h2]\n- Allow LaunchOptions to overwrite WindowTitle (Part of ongoing business stuff by @probableprime)\n\n[h2]Fixes:[/h2]\n- Fixed session dialog showing the bread day badge based on the incorrect date for migrated accounts, causing inconsistency with in-world badges (reported by @qualium, issue #6879)\n-- The session dialog would not show bread day badge on the actual bread day of the original registration, but instead on the date of new registration",
+      "feedlabel": "Community Announcements",
+      "date": 1785274643,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-07-28T21:37:23Z"
+    },
     {
       "gid": "1839041357024833",
       "title": "2026.7.22.1104 - System Audio capture (excluding Resonite), optimizations",
@@ -2187,5 +2201,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-07-28T21:55:25.880495Z"
+  "last_updated": "2026-07-28T23:13:14.401220Z"
 }

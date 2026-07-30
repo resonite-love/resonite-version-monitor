@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 157,
+  "count": 158,
   "newsitems": [
+    {
+      "gid": "1839676055886205",
+      "title": "2026.7.30.1121 - Efficient SignalR protocol, Elements.Core 1.0.2, Linux fixes",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1839676055886205",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nThis build was supposed to be released hours ago, but unfortunately GitHub has made a number of breaking changes that broke our CI/CD pipelines (with no changes on our end).\n\nHowever thanks to J4's valiant efforts, it finally pushed through! \n\nThere's not huge changes unfortunately, however we got the first community contributions for Elements.Core in this one! Thank you everyone so far!\n\nIt also had a significant change to SignalR - we switched to a more compact serialization protocol, which should save bandwidth and improve latency and server costs on our end. It should function the same otherwise. If you run into any issues, please make a GitHub issue!\n\nThere's also some Linux bugfixes from @bluecyro!\n\n[h2]Tweaks:[/h2]\n- Updated Elements.Core to 1.0.2 with first community contributions\n-- Full list here: https://github.com/Yellow-Dog-Man/Elements.Core/releases/tag/1.0.2\n- The file browser now orders entries by their name instead of relying on the order in which the OS decides to provide them (reported by @tobsssssssss, issue #5156, implemented by @bluecyro)\n\n[h2]Optimizations:[/h2]\n- Use MessagePack with compression for SignalR instead of JSON\n-- This will significantly cut down on network bandwidth for various status updates\n-- This should improve responsivity of cloud updates\n-- This will also likely save us a good chunk of cloud costs, depending on how much bandwidth is reduced\n\n[h2]Fixes:[/h2]\n- The \"Computer\" directory now only shows root (\"/\") on Linux, as all other mounts can be found within it (based on report by TheJebForge, issue #5167, fixed by @bluecyro)\n- Discord Rich Presence integration fully reworked to remove the older Game SDK (reported by Baplar in #5279, fixed by J4)\n-- This has the side effect of also fixing Discord Rich Presence on Linux hosts.\n\n[h2][Elements.Core 1.0.2][/h2]\n- docs: fix typo firts -> first by @FlyingStitchman in #8\n- Prune system assembly references. by @Earthmark in #12\n- tweak(warnings): use append mode for nowarn by @ProbablePrime in #13\n- Added a benchmark project by @Earthmark in #14\n- Fixed RecyclableMemoryStream.WriteFrom corruption by @Earthmark in #20\n- Add CI workflow for .NET projects by @Earthmark in #17\n- Item-Group cleanups by @Earthmark in #21\n- Prune extra build targets (seems like vs tailings) by @Earthmark in #22\n- Upgraded language version from 11 to 14- #2 by @Earthmark in #23",
+      "feedlabel": "Community Announcements",
+      "date": 1785438873,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-07-30T19:14:33Z"
+    },
     {
       "gid": "1839041357039318",
       "title": "2026.7.28.1272 - Elements.Core is now open source!",
@@ -2201,5 +2215,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-07-28T23:13:14.401220Z"
+  "last_updated": "2026-07-30T19:47:30.005424Z"
 }

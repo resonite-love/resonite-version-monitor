@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 158,
+  "count": 159,
   "newsitems": [
+    {
+      "gid": "1839676055886395",
+      "title": "2026.7.30.1243 - Fixed Discord RPC errors on headless",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1839676055886395",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Quick hotfix from J4 for some Discord SDK issues!\n\nCompatible with current!\n\n[h2]Fixes:[/h2]\n- Discord Rich Presence will not initialize on headlesses (reported by Bredo in #6886, fixed by J4)\n- Downgraded Discord RPC library due to a null pointer exception bug (fixed by J4)",
+      "feedlabel": "Community Announcements",
+      "date": 1785445008,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-07-30T20:56:48Z"
+    },
     {
       "gid": "1839676055886205",
       "title": "2026.7.30.1121 - Efficient SignalR protocol, Elements.Core 1.0.2, Linux fixes",
@@ -2215,5 +2229,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-07-30T20:08:02.840098Z"
+  "last_updated": "2026-07-30T21:20:11.988091Z"
 }

@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 160,
+  "count": 161,
   "newsitems": [
+    {
+      "gid": "1840310314340069",
+      "title": "2026.8.5.1169 - Fixed crashes on some systems",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314340069",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hotfix for Resonite not launching properly on some systems!\n\nIf your system does not have dependencies for QUIC support, it will not be supported unfortunately. You can read up on what you need to do here: \nhttps://learn.microsoft.com/en-us/dotnet/fundamentals/networking/quic/quic-overview#platform-dependencies\n\n[h2]Fixes:[/h2]\n- Fixed Resonite not booting on systems that are missing dependencies for the QUIC protocol (reported by @reddneko, issue #6900)",
+      "feedlabel": "Community Announcements",
+      "date": 1785958867,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-08-05T19:41:07Z"
+    },
     {
       "gid": "1840310314339964",
       "title": "2026.8.5.1103 - Experimental QUIC protocol support, fixes & tweaks",
@@ -2243,5 +2257,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-08-05T18:55:27.410909Z"
+  "last_updated": "2026-08-05T19:50:48.959380Z"
 }

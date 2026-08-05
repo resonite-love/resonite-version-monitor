@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 159,
+  "count": 160,
   "newsitems": [
+    {
+      "gid": "1840310314339964",
+      "title": "2026.8.5.1103 - Experimental QUIC protocol support, fixes & tweaks",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314339964",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI've got a build with you with some goodies. This introduces initial experimental support for the QUIC protocol. This can potentially perform much better than LNL and fix issues with queing, however due to complications isn't quite ready yet - you need to configure your server to allow use for WAN connections and clients need to explicitly enable it. \n\nIf you'd like to use this to help test it and see how it performs, please do! If results are promising, we can invest more time into polishing it.\n\nThere's also a number of bugfixes and tweaks as well for general QoL as well as internal changes from the team for business universes & support.\n\n[h2]New Features:[/h2]\n- Added initial experimental QUIC protocol support for realtime networking (issue #5458)\n-- This isn't meant for regular use yet, but to evaluate and test this protocol before putting more work in\n-- It will not be used unless manually configured (both on client & server)\n-- To use it on client, go to Settings -> Network and enable Prefer QUIC option\n-- To allow use on server, you must manually open ports & configure public IP\n--- Add a Config.json file (if not present already) and configure public IP like shown bellow\n--- It's your responsibility to make the public IP correct. The connection will fail otherwise\n-- There are a few limitations currently:\n--- .NET 10 doesn't support datagram extension, so voice/pose streams use reliable streams and can queue/hiccup\n--- If you'd like to help with datagram support, check the thread here: Add support QUIC realtime networking protocol https://github.com/Yellow-Dog-Man/Resonite-Issues/issues/5458\n--- Certificate handling isn't implemented so protocol itself is not as secure as standard. Resonite still performs its own UserID signature verification however to prevent spoofing\n\n[code=JSON]{\n    \"quicConfig\" : {\n        \"publicIP\" : \"127.0.0.1\"\n    }\n}\n[/code]\n\n- Added admin tooling for resolving group storage issues due to partially failed group creation. (implementation by @dante)\n\n[h2]Tweaks:[/h2]\n- Allow mentor system by default in hosts. (requested by @jackthefoxotter, implemented by @J4)\n- Force LinuxBootstrap.sh to be executable and clean up dead references in Linux bootstrap (implemented by @J4)\n\n[h2]Locale:[/h2]\n- Merged Chinese (Taiwan) locale update by @meowwei \n- Merged Chinese locale update by @ninnana., grum3191 and @modimobeikete \n- Merged German locale update by @muppeq \n- Merged English locale fix by @vassterak \n\n[h2]Fixes:[/h2]\n- Fixed exception when using HitUVCoordinate to get UV coordinate of a hit of a mesh with no UV's (reported by bluo2800, issue #6894)\n- Fixed hand & leg automatic dynamic bone colliders not scaling with user scale (reported by @dustysprinkles, <@196039657115353089>, brecert, @sylphsylvia, @nytra, issue #3972)\n- Fixed 3D badges (including supporter badge) being large and visible in some cases when user is loading into the world (reported by @karasutengu, issue #4565)",
+      "feedlabel": "Community Announcements",
+      "date": 1785955274,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-08-05T18:41:14Z"
+    },
     {
       "gid": "1839676055886395",
       "title": "2026.7.30.1243 - Fixed Discord RPC errors on headless",
@@ -2229,5 +2243,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-08-04T17:52:20.806686Z"
+  "last_updated": "2026-08-05T18:55:27.410909Z"
 }

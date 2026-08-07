@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 161,
+  "count": 162,
   "newsitems": [
+    {
+      "gid": "1840310314345276",
+      "title": "2026.8.7.887 - Per protocol port, community fixes, Linux audio fixes",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314345276",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI got another update for you! I don't like pushing them on Friday, but this one was meant to go out yesterday, but due to GitHub actions being down for over 8 hours I could not.\n\nThere's a whole bunch of community contributions from @stiefeljackal, @Earthmark and @WallTack to our libraries, fixing up a number of things and doing some pre-work for more contributions!\n\nThe Linux audio issue with 100 % pinned CPU thread should also now be fixed by @bluecyro!\n\n[h2]Config change[/h2]\n[b]IMPORTANT:[/b] We also changed the config for starting worlds (mostly affects headless) - the forced port is now specified per protocol. This lets you specify port for LNL, QUIC & TCP, rather than only LNL.\n\nYour existing config [b]will[/b] work - it'll map to LNL, but we strongly recommend switching to the new format ASAP, as we'll eventually remove the legacy option.\n\nThis also means you can setup port for the QUIC protocol and do more experimenting with it! It would be helpful to gather some data and see how the protocol fares against LNL. I'll be opening a testing thread soon, so keep an eye on #Devlog\n\n[h2]New Features:[/h2]\n- Reworked port configuration to allow specifying forced port for each protocol independently\n-- This fixes only LNL protocol getting the forced port, with TCP & QUIC getting random ones (reported by @bredo, issue #6901)\n-- Use `forcePorts` with a dictionary to specify the ports in the config (see example below)\n-- Legacy `forcePort` option explicitly maps to LNL for compatibility - however it's **strongly** recommended to migrate to the new configuration as this might get removed at some point\n-- \"ForcePort\" in the new session dialog maps to LNL for legacy reasons - we plan to completely replace this dialog at some point\n-- If protocol is not specified in the list, random port (within configured range) will be used\n\n[code]\"forcePorts\": {\n    \"lnl\" : 12000,\n    \"quic\": 12001,\n    \"tcp\" : 12002\n},\n[/code]\n\n[h2]Tweaks:[/h2]\n- Updated Renderite library to 1.1.3 (see full changes below)\n- Updated Elements.Core library to 1.0.3 (see full changes below)\n- Converted all other Ban Checks in our Cloud Api to use Distributed Caching (implemented by @ProbablePrime)\n\n[h2]Fixes:[/h2]\n- Fixed world crashing due to IsHDR check on RGB565 or BGR565 textures (reported by @rucio, @arandommeatball, @stiefeljackal, issue #5513, \nfix contributed by @stiefeljackal)\n\n- Fix the audio playback loop on Linux having too small of a delay and causing an infinite loop to pin one thread at maximum CPU usage (reported by yosh, issue #1283, fixed by @bluecyro)\n-- Now, the user's system will clock the audio output instead\n-- This may also help crackling due to using a dedicated thread instead of sharing the threadpool\n- Fix the audio buffer never being fully filled on Linux (fixed by @bluecyro)\n\n\n[h2][Renderite 1.1.3][/h2]\nhttps://github.com/Yellow-Dog-Man/Renderite/releases/tag/1.1.1\n\n- feat: setup unit test projects and workflow by @stiefeljackal in #20\n- fix(texture-format): add missing formats in IsHDR check by @stiefeljackal in #21\n\n[h2][Elements.Core 1.0.3][/h2]\nhttps://github.com/Yellow-Dog-Man/Elements.Core/releases/tag/1.0.3\n- Restore generation of XML docs by @WallTack in #24\n- Removed app.config, as it's dotnet framework specific by @Earthmark in #26\n- Project wide clrf->lf replacement, this found the lingering files. by @Earthmark in #41\n- Marked SingleItemEnumerable as deprecated, newer language constructs support this by @Earthmark in #36\n- Added deprecation markers to Elements.Core/Collections/ListEnumerableWrapper.cs by @Earthmark in #38\n- Test using cleanup by @Earthmark in #27\n- Fixed command line args not getting passed to the benchmark runner. by @Earthmark in #30\n- Removed StringTree by @Earthmark in #44\n- Updated nuget dependencies in the test assembly, including with code coverage! by @Earthmark in #31\n- Update Renderite.Shared to 1.1.3 by @Frooxius in #45",
+      "feedlabel": "Community Announcements",
+      "date": 1786115039,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-08-07T15:03:59Z"
+    },
     {
       "gid": "1840310314340069",
       "title": "2026.8.5.1169 - Fixed crashes on some systems",
@@ -2257,5 +2271,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-08-05T20:29:01.034682Z"
+  "last_updated": "2026-08-07T15:32:15.877766Z"
 }

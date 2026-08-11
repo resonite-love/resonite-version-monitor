@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 162,
+  "count": 163,
   "newsitems": [
+    {
+      "gid": "1840310314355146",
+      "title": "2026.8.11.1264 - Screen Sharing Beta",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840310314355146",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone! \n\nI got somewhat exciting update for you - the screen sharing functionality is now in the main build in BETA!\n\nWhat this means is that you don't need to hop on a separate prerelease branch to play with it - but also it still has some bugs which will make it not work in some cases.\n\nGive it a try and please report any issues you run into on our GitHub, so we can polish it up and remove the BETA label.\n\nUnfortunately currently it's not functional on graphical Linux client - we could use help getting it to work there - see more details below.\n\nAlso big thanks to everyone who helped test this in prerelease: @zyro1331, @mpmxyz, @.fulgens, <@158311402677731328>, @qualium, @decoybird, @reddneko , @scrongbongle, polyjitter, Raidriar, @bredo, ssmucny, davidheiserca, <@1022779807186042890>, ilovetoo, @rueshejn, @epiceaston197, @karasutengu and anyone else I missed (sorry ;_;)!\n\n[h2]New Features:[/h2]\n- Added beta support for screen sharing (requested by @eldritchkaiju, darbdarb, @konshu, issue #348)\n     - To start a desktop stream, go to Desktop tab, open the desktop menu, select a screen and click \"Share Screen\"\n     - To stop streaming, either close the stream in-world or repeat the steps above - the button will say \"Stop Sharing Screen\"\n     - Currently only supported on Windows\n     - This feature is in beta and might not work correctly! Please report any issues you run into!\n     - The stream player will be updated soon, currently uses cannibalized video player\n     - All stream data is relayed through the host with normal session traffic - the host needs sufficient bandwidth to handle this, but it also keeps your streams private without touching our servers!\n\n- Added beta support for custom video streams\n     - A new button has been added to your Home dash to start a custom video stream\n     - Spawning a custom video stream will spawn a player in the world, but requires you to use custom software (e.g. OBS) to stream to it\n     - The video stream contains URL that you need to configure your streaming software to stream to - for OBS, use the path as stream key\n     - Stream must use H264 video codec & AAC audio codec\n     - Similarly to screen sharing, the traffic is automatically proxied through Resonite session data\n     - Currently not functional on graphical Linux client due to issues with MediaMTX under Steam Pressure Vessel (see this issue for more info: <https://github.com/Yellow-Dog-Man/Resonite-Issues/issues/6863>)\n\n- Added \"AllowVideoStreaming\" to WorldPermissions\n     - This lets you disable video streaming in a given world separately from ability to spawn objects\n     - For exiting worlds, this is initialized to same value as AllowSpawningObjects\n\n- Added VideoStreamInterface\n-- This is interface used for streaming desktop and other video streams\n-- Unlike video player, there's no playback controls, just raw continuous video stream\n\n- Added visual button to Desktop tab to open the settings\n    - You can use this to open the menu on Desktop\n    - This also makes it easier to find where it is in VR\n    - The position can be adjusted to any corner\n\n[h2]Locale:[/h2]\n- Merged German locale update by @muppeq \n- Merged Chinese locale update by @modimobeikete and @ninnana. \n- Merged Spanish locale update by @rad4ngel_",
+      "feedlabel": "Community Announcements",
+      "date": 1786483238,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-08-11T21:20:38Z"
+    },
     {
       "gid": "1840310314345276",
       "title": "2026.8.7.887 - Per protocol port, community fixes, Linux audio fixes",
@@ -2271,5 +2285,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-08-11T22:05:42.553296Z"
+  "last_updated": "2026-08-11T22:59:06.452985Z"
 }

@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 163,
+  "count": 164,
   "newsitems": [
+    {
+      "gid": "1840944183774935",
+      "title": "2026.8.12.1196 - Screen Sharing bugfixes, QUIC stream priorities",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183774935",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI've got another update for you, with lots of bugfixes and tweaks for two new experimental features we introduced recently!\n\nScreen Sharing got a lot of bugfixes and tweaks, which should make the streams work in a lot more cases where they would fail before.\n\nQUIC also got an important improvement - I managed to backport setting priority for the streams from .NET 11, so voice & pose streams are now much higher priority than the rest. \n\nIf voices & poses got choppy before with assets being transfered, give it another test please and see how well it behaves now. If things are promising, we'll invest more time into this protocol, as it's already very promising.\n\n[h2]New Features:[/h2]\n- Added \"Hide menu button in VR\" setting to hide the hamburger button on desktop tab (based on request by @epiceaston197, @dustysprinkles, issue #6928)\n\n[h2]Tweaks:[/h2]\n- Swap Keyboard & Share Screen button positions (requested by @epiceaston197, issue #6927)\n\n[h2]Optimizations:[/h2]\n- Backported QUIC stream priority assignment from .NET 11 and set appropriate priorities\n-- Voice & Pose streams have highest priority\n-- World data model changes medium\n-- Asset transfers lowest\n-- This might help with some users experiencing degraded voice/poses when assets are transferring - please give it a test and see how well this works with this build!\n\n[h2]Locale:[/h2]\n- Merged Chinese locale update by @modimobeikete and @ninnana. \n- Merged French locale update by @baplar \n\n[h2]Fixes:[/h2]\n- Fixed custom session ID's breaking screen sharing (reported by @gyztormizirath, @galaxy.xml, @skeleton_guts, @mysticjuniper, issue #6923)\n- Fixed TCP tunnel for screen sharing breaking in some cases (based on report by @modernballoonie, issue #6925)\n- Fixed some audio input drivers breaking when they are deactivated and re-activated in a very short timeframe (notably audio loopback driver)\n-- This fixes screen sharing breaking in some cases when switching codecs (based on report by @modernballoonie, issue #6925)\n- Fixed MediaMTX not launching on Linux headless when the binary is not marked as executable\n-- This fixes screen sharing not working on sessions hosted on such headless",
+      "feedlabel": "Community Announcements",
+      "date": 1786565347,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-08-12T20:09:07Z"
+    },
     {
       "gid": "1840310314355146",
       "title": "2026.8.11.1264 - Screen Sharing Beta",
@@ -2285,5 +2299,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-08-11T22:59:06.452985Z"
+  "last_updated": "2026-08-12T20:20:05.696946Z"
 }

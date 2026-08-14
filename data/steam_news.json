@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 164,
+  "count": 165,
   "newsitems": [
+    {
+      "gid": "1840944183780737",
+      "title": "Sojourner Isles Summer Festival",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1840944183780737",
+      "is_external_url": true,
+      "author": "ProbablePrime",
+      "contents": "[p][img src=\"{STEAM_CLAN_IMAGE}/44646621/1bce22e102729b2d857c0a0d86890a20553b810d.jpg\"][/img][/p][p]Announcing the Sojourner Isles Summer Festival!\n\nFrom August 14th to 28th, the Sojourner Isles world will be available to join or host within #Resonite\n\nSwing by for community events!\n\nMake sure to check out events.resonite.com to see which events are being held when, and to add your own![/p][p][/p]",
+      "feedlabel": "Community Announcements",
+      "date": 1786739420,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-08-14T20:30:20Z"
+    },
     {
       "gid": "1840944183774935",
       "title": "2026.8.12.1196 - Screen Sharing bugfixes, QUIC stream priorities",
@@ -2299,5 +2313,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-08-12T20:20:05.696946Z"
+  "last_updated": "2026-08-14T22:36:46.531045Z"
 }

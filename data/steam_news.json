@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 166,
+  "count": 167,
   "newsitems": [
+    {
+      "gid": "1842212951300992",
+      "title": "2026.8.27.1094 - More collections, audio, dash & yt-dlp fixes",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842212951300992",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nIt seems everyone's having fun with the collections, so here's a whole bunch of extra stuff to make it even more fun! :3\n\nThere's also big improvements for handling audio from @bluecyro, especially on Linux, which should prevent a lot of the pops and clicks.\n\nThe second part of the dash fix from @ProbablePrime is also in! Your dash should now get cleaned up automatically and be significantly less heavy if you have not reset it.\n\nAnd last, there's some fixes to yt-dlp, which should help playing YouTube videos!\n\n[h2]New Features:[/h2]\n- Added ValueList<T> component (requested by @jackthefoxotter, issue #7009)\n-- This holds a list of values as individual fields\n- Added ValueArray<T> component (requested by @jackthefoxotter, issue #7009)\n-- This holds a list of values as continuous array (with variable size)\n-- This is more efficient for large amounts of values, but each value isn't its own field that could be individually addressed/driven\n- Added ValueDictionary<K,T> component (requested by @jackthefoxotter, issue #7030)\n-- This holds primitive values stored under a key of type K (this also needs to be engine primitive)\n- Added ReferenceDictionary<K,T> component (requested by @jackthefoxotter, issue #7030)\n-- This holds references stored under a key of type K (this needs to be engine primitive)\n\n- Added ReadOnly variants of ForEachWithIndex (requested by @jackthefoxotter, issue #7005)\n- Added RemoveAll nodes, which will remove all occurences of specific value in a list (requested by @reddneko, issue #7004)\n-- It will also output RemoveCount indicating how many values were removed\n-- Even when no values are removed, it will indicate success with RemoveCount being 0\n\n- Added Children node (requested by @jackthefoxotter, issue #7002)\n-- This provides readonly list of children of given slot\n-- You can use this with the collection nodes such as Foreach\n\n- Added GrabbedGrabbables node (requested by @jackthefoxotter and @reddneko, issue #7010)\n-- This will give list of all currently grabbed objects by given grabber\n\n[h2]Tweaks:[/h2]\n- Simplified the audio frame size settings (implemented by @bluecyro)\n-- The output frame size setting now represents multiples of your system's audio buffer rather than static powers of two (this should fix/mitigate popping audio on Linux, reported by LiminalMushroom, issue #6913)\n-- You can choose to buffer up to 8 times your system's buffer.\n--- The system buffer size is currently only queried from the SoundFlow audio driver\n--- This will be statically set to 1024 on Windows unless you've opted to use SoundFlow via the -forcealtaudio launch setting.\n- The simulator frame size setting now represents the number of times the audio is simulated per each system buffer.\n-- This setting is NOT affected by the output buffer size. It specifically dictates how many simulator frames happen within one system buffer period.\n-- E.g. 4 simulation frames for a 960-sample buffer will be 240 samples each.\n-- The default value of four simulation frames per buffer should be optimal for most systems, so you should only change this if you know you need to\n\n[h2]Fixes:[/h2]\n- Fixed binary encoding for array types\n-- This fixes SplitString node causing crashes (reported by @zyro1331, @u1f98a, @_deltawolf, issue #7003)\n\n- An automatic cleanup process will run on your Dash and cleanup any extra components\n-- This is part 2 of issue #594 reported by @delta, @jack, djsime1, @Nytra, GrayBoltWolf, @NovaFoxxx, Astral-J, fixed by @ProbablePrime\n\n- Fixed Deno runtime not properly loading (reported by @nytra, @troyborg, @reddneko, @luxkitty, issue #6263)\n-- This should also fix some videos only loading as audio (reported by @code807, @luxkitty, @reddneko, issue #7022)\n\n\n[h2][Elements.Core 1.0.7][/h2]\n- Added a unit-test utility for loading local files by @Earthmark in #42\n- Added readonly list wrapper by @Frooxius in #54",
+      "feedlabel": "Community Announcements",
+      "date": 1787855369,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-08-27T18:29:29Z"
+    },
     {
       "gid": "1842212951297715",
       "title": "2026.8.26.1047 - (a little bit of) ProtoFlux collections support",
@@ -2327,5 +2341,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-08-26T18:31:43.707773Z"
+  "last_updated": "2026-08-27T20:26:44.539069Z"
 }

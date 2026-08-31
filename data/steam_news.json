@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 167,
+  "count": 168,
   "newsitems": [
+    {
+      "gid": "1842212951311578",
+      "title": "2026.8.31.1328 - Collections updates, fix YouTube videos only having audio, more",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842212951311578",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone! \n\nI have another update for you! This patches up a number of issues with collections that have been reported and adds a few new nodes as well.\n\nI've also ended up looking more into the issue with YouTube videos and found out a way to make libVLC play videos from two separate URL's (one for video stream one for audio), so YouTube videos should hopefully work better now!\n\nSome that previously didn't load (or were only audio) should now load both and should be better quality as streams can be picked independently. \n\nSince the logic had to be changed a bit, there might be some quality regressions for some videos - please make reports and we'll fine tune the heuristics!\n\nAlso all of the components got properly organized by @ryuvi, cleaning out the Uncategorized category!\n\n[b]IMPORTANT:[/b] If you use custom renderer, you will need to update it, there are breaking changes to the IPC model in this! See below for details.\n\n[h2]New Features:[/h2]\n- Added IsEmpty node for collections (requested by @3x1t_5tyl3, Holy, issue #7068)\n-- This will output true if the given collection is empty (0 elements) or null\n\n- Added support for streaming videos from services where video & audio streams are separate\n-- Reworked the video/audio stream selection logic to account for this\n-- This should fix some videos being audio-only (reported by @code807, @luxkitty, @sylphsylvia, @foxbox. issue #7022)\n-- If you notice worsened playback for videos that previously worked, please make a report! It might require some tuning\n-- This is implemented by using `--input-slave` option of libVLC, which muxes two streams together (based on request by @karasutengu, issue #6970)\n\n\n[h2]Tweaks:[/h2]\n- Categorize AsyncForEachWithIndex under Flow/Async (based on report by @marsmaantje, issue #7063)\n- Sorted all useful components in the Uncategorized Component Attacher category (reported by @reddneko, issue #5662, implemented by @ryuvi)\n\n[h2]Locale:[/h2]\n- Merged Japanese locale update by @ginjake \n- Merged Chinese locale update by @modimobeikete\n\n[h2]Fixes:[/h2]\n- Fixed Quad/Point/BoxArraymesh not clearing the mesh properly when the arrays are fully cleared (reported by @jackthefoxotter, issue #7088)\n- Added ARM64 version of MediaMTX to fix screen sharing not working on ARM hosts (reported by @markn2000, issue #7100)\n- Fixed constraints for ReadOnlyForEachWithIndex\n-- This fixes not being able to use those nodes with collections that *only* implement IReadOnlyList<T> interface\n- Fixed null keys for dictionary nodes resulting in an exception and crash (reported by @rynfluff, @arandommeatball, issue #7077)\n- Fixed lizzy.resonite.com not being added to default host permissions for existing users (based on request by @jackthefoxotter, issue #7062)\n\n[h2][Renderite.Shared 1.3.0][/h2]\n- Add additional source URL to the model for loading video textures\n-- See more here: <https://github.com/Yellow-Dog-Man/Renderite/pull/27>\n-- **IMPORTANT:** This is a breaking change for the IPC model for loading videos. You will need to update custom renderers to account for this!\n\n[h2][Renderite.Shared 1.2.2][/h2]\n- Added RenderTexture readback mechanism\n-- **IMPORTANT:** This is a breaking change for the IPC model. You will need to update custom renderers to account for this!\n-- See more here: <https://github.com/Yellow-Dog-Man/Renderite/releases>\n\n[h2][Elements.Core 1.1.3][/h2]\n- Update Renderite to 1.3.0 by @frooxius in #59\n- Added a unit test to verify enumerator order by @Earthmark in #58",
+      "feedlabel": "Community Announcements",
+      "date": 1788215190,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-08-31T22:26:30Z"
+    },
     {
       "gid": "1842212951300992",
       "title": "2026.8.27.1094 - More collections, audio, dash & yt-dlp fixes",
@@ -2341,5 +2355,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-08-30T23:56:33.468254Z"
+  "last_updated": "2026-08-31T22:49:00.139802Z"
 }

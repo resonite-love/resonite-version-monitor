@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 169,
+  "count": 170,
   "newsitems": [
+    {
+      "gid": "1842212951314650",
+      "title": "2026.9.1.1216 - Raw Mesh, YouTube fixes, component cleanup, fixes",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842212951314650",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI got another update for you! I'll be moving back to the work on the IK hopefully, so this is kinda capping off some of the collections stuff for a little bit (except crashes and some fixes), but there's one juicy bit for it - RawMesh! \n\nThis lets you generate & update custom meshes with ProtoFlux! This should open up a whole new class of options and tools for creativity, so I can't wait to see what you'll make.\n\nI've also done a bunch of tweaking and improvements to the YouTube/streaming services, it should behave better and streams should play again. You can now set the preferred resolution in settings, which is default to 720p which seems to work well.\n\nWe might need to do more tweaks for some formats, if you got videos that have issues still, please make reports.\n\nWe also got more component organization by @ryuvi, all the internal components are now properly hidden to indicate that they're not intended for direct use.\n\n[h2]New Features:[/h2]\n- Added RawMesh procedural mesh (requested by @jackthefoxotter, @shdw_x, @aegis_wolf, issue #7051)\n-- Under Assets / Procedural Meshes\n-- This allows you to define a raw mesh with raw sync arrays of its buffers\n-- This mostly wraps the raw mesh representation with some little extra validation on top\n-- Supports most mesh properties (except skinned mesh data, which could potentially be added later) - Normals, Tangents, Colors, UV0 - UV7\n-- Supports multiple submeshes (point & triangle topologies)\n-- It's your responsibility to ensure good mesh data and indicie data.\n-- Number of vertices is defined by the Points array\n-- If other buffers contain incomplete data, it will be set to default value of that type\n-- If a buffer is empty the mesh will not have that data at all (e.g. set Colors to length 0 array so there's no vertex colors at all)\n-- Triangle submesh requires 3 indicies for each triangle\n-- The class tracks how much data you modify. If you only modify part of the data, the updates will be more efficient than updating the entire mesh\n-- Similarly if you don't update any submeshes, those will be skipped in subsequent updates, leading to more efficient updates when only vertices have been updated\n\n- Added Preferred Resolution to Video Streaming Services settings\n-- This allows you to customize default resolution of streaming video service videos (like YouTube)\n-- By default this is set to 720p\n- Added Multiply(colorX) processing for textures (requested by @jackthefoxotter, issue #2783, @Art0007i, issue #7117)\n\n[h2]Tweaks:[/h2]\n- Tweaked video/audio stream picking heuristics to improve YouTube video playback (based on report by @foxbox., @lucasro7, @foxworth, @luxkitty, @dustysprinkles @dominion  , issue #7116)\n- Hid many unusable components in the Component Selector from the Uncategorized component category (issue #6506, reported and implemented by @ryuvi)\n-- All hidden components were either legacy components, are internal to the function of the engine or ProtoFlux, or otherwise had no functional use to users\n\n[h2]Fixes:[/h2]\n- Fixed live streams and other videos not loading (reported by @konto250, issue #7118)\n- Fixed generic delegate types not being constrainted specifically to delegates, resulting in crashes when used with invalid types (reported by @3x1t_5tyl3, @nepushiro, issue #7125)\n-- This is a holdover from Unity Mono times, which didn't support Delegates as generic constraints\n- Fixed Coder<T> incorrectly returning false for nullable types when both values are null (reported by @mpmxyz, issue #7112, fix contributed by @mpmxyz )\n\n[h2][Elements.Core 1.1.4][/h2]\n- Fixed Yellow-Dog-Man/Resonite-Issues#7112 (Coder.Equals<T?>.Equals(null,null) was false, should have been true) by @mpmxyz in #60\n- Added failing test for Yellow-Dog-Man/Resonite-Issues#7112 (Coder<T?>.Equals(null, null) should not be false) by @mpmxyz in #61\n- Update Renderite.Shared to 1.3.1 by @frooxius in #62",
+      "feedlabel": "Community Announcements",
+      "date": 1788294702,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-09-01T20:31:42Z"
+    },
     {
       "gid": "1842212951311712",
       "title": "2026.8.31.1402 - Banished Eldritch Textures",
@@ -2369,5 +2383,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-09-01T01:29:16.059930Z"
+  "last_updated": "2026-09-01T20:59:24.009962Z"
 }

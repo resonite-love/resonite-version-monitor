@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 168,
+  "count": 169,
   "newsitems": [
+    {
+      "gid": "1842212951311712",
+      "title": "2026.8.31.1402 - Banished Eldritch Textures",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842212951311712",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "The Eldritch textures have returned. They have been banished in this build\n\nCompatible with previous.\n\nHeadless is unaffected, only graphical client needs an update.\n\n[h2]Fixes:[/h2]\n- Fixed screenshots creating broken textures (reported by @unskilledwolf, @epiceaston197 and others, issue #7115)",
+      "feedlabel": "Community Announcements",
+      "date": 1788219425,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-08-31T23:37:05Z"
+    },
     {
       "gid": "1842212951311578",
       "title": "2026.8.31.1328 - Collections updates, fix YouTube videos only having audio, more",
@@ -2355,5 +2369,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-08-31T22:49:00.139802Z"
+  "last_updated": "2026-09-01T01:29:16.059930Z"
 }

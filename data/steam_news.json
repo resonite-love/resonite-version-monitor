@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 170,
+  "count": 171,
   "newsitems": [
+    {
+      "gid": "1842846814441067",
+      "title": "2026.9.2.1005 - Screen Sharing & audio pitch fixes, IPv6 improvements",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842846814441067",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nJust a small update for you with a few fixes and tweaks. \n\nCompatible with current!\n\n[h2]Tweaks:[/h2]\n- Refactored the API's handling and logging of IP addresses, improving IPv6 behavior and accuracy (implemented by @gawdl3y, issue #6750)\n- Added extra diagnostics to MediaMTX failures (for issue @markn2000, issue #7113)\n\n[h2]Locale:[/h2]\n- Merged Chinese locale update by @modimobeikete, @ninnana.\n\n[h2]Fixes:[/h2]\n- Fixed desktop streaming not falling back on software encoder when Intel QSV encoder fails (reported by @markn2000, issue #7120)\n- Fix setting-dependent modulation artifacts when pitch shifting audio outputs & use different internal parameters to improve the sound quality of pitch shifting overall (reported by charonfaustinus, issue #7092, fixed by @bluecyro)",
+      "feedlabel": "Community Announcements",
+      "date": 1788368480,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-09-02T17:01:20Z"
+    },
     {
       "gid": "1842212951314650",
       "title": "2026.9.1.1216 - Raw Mesh, YouTube fixes, component cleanup, fixes",
@@ -2383,5 +2397,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-09-02T00:07:15.775088Z"
+  "last_updated": "2026-09-02T17:20:27.286462Z"
 }

@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 171,
+  "count": 172,
   "newsitems": [
+    {
+      "gid": "1842846814441568",
+      "title": "2026.9.2.1275 - Fixed screen share getting stuck on \"Stream Offline\"",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842846814441568",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hey everyone!\n\nJust an extra small update today, since I found a quick fix for shared screen going offline at cases and it's compatible with previous! :3\n\nTechnically only hosts need to update for this fix.\n\n[h2]Locale:[/h2]\n- Merged German locale update by @muppeq \n\n[h2]Fixes:[/h2]\n- Fixed screen share stream showing as offline when the streaming user is not host and when the stream reinitializes (based on report by @markn2000, issue #7113)",
+      "feedlabel": "Community Announcements",
+      "date": 1788384588,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-09-02T21:29:48Z"
+    },
     {
       "gid": "1842846814441067",
       "title": "2026.9.2.1005 - Screen Sharing & audio pitch fixes, IPv6 improvements",
@@ -2397,5 +2411,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-09-02T17:20:27.286462Z"
+  "last_updated": "2026-09-02T22:30:17.092672Z"
 }

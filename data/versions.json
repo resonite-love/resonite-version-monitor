@@ -723,7 +723,7 @@
     {
       "manifestId": "4220903674298305610",
       "timestamp": "2026-09-08T18:55:11.920568Z",
-      "gameVersion": null
+      "gameVersion": "2026.9.8.1092"
     }
   ],
   "prerelease": [
@@ -2322,7 +2322,7 @@
     {
       "manifestId": "4220903674298305610",
       "timestamp": "2026-09-08T18:55:11.920568Z",
-      "gameVersion": null
+      "gameVersion": "2026.9.8.1092"
     }
   ],
   "headless": [

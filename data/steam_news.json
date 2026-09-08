@@ -1,7 +1,35 @@
 {
   "appid": 2519830,
-  "count": 172,
+  "count": 174,
   "newsitems": [
+    {
+      "gid": "1842846814456476",
+      "title": "2026.9.8.1092 - Fixed crash with FFT analyzer",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842846814456476",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Quick hotfix for a crash. Sorry for the inconvenience! \n\n[h2]Fixes:[/h2]\n- Fixed session crash with FFT_RealAnalyzer (reported by @3x1t_5tyl3 , issue #7197)",
+      "feedlabel": "Community Announcements",
+      "date": 1788891915,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-09-08T18:25:15Z"
+    },
+    {
+      "gid": "1842846814456400",
+      "title": "2026.9.8.1049 - FFT analyzer, Type list/dictionary, QUIC on Linux",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1842846814456400",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nGot another update for you with a bunch of goodies. I've been making more work on the IK again, but there's a few collection-related goodies that have still trickled in!\n\nNotably, there's now FFT analyzer! You can make cool music visualizers and other stuff. \n\nIf you're on Linux, the new QUIC protocol should now also be supported out of the box thanks to @bluecyro! \n\n[h2]New Features:[/h2]\n- Added FFT_RealAnalyzer (requested by @DoubleStyx, issue #48, @frooxius, with consults with @bluecyro)\n-- This performs FFT analysis of audio data (similar to Viseme/Volume meter analyzers)\n-- Data is output as raw FFT array of float (this array is local to each user)\n-- Changes are triggered whenever analysis completes\n-- Configurable FFT buffer size from 128 to 8192\n-- NormalizeOutput will scale values depending on the buffer size to stay within -1.0...1.0 range (on by default)\n-- You can either use Hamming filter (default) or None\n-- Under Media/Utility\n-- More features can be added (window filters, potentially downsampling)\n\n-  Added QUIC libraries for 64-bit Linux systems\n-- Linux users should now be able to enjoy the benefits of our new QUIC networking protocol without workarounds (issue #6965, implemented by @bluecyro)\n\n- Added CharsToString node which constructs a new string from IEnumerable<char> input (requested by @3x1t_5tyl3, issue #7150)\n-- This will accept any collection of chars and construct a string from it\n- Added TypeList component (under Data) (requested by @reddneko, issue #7156)\n- Added TypeDictionary<K> component (requested by @reddneko, issue #7156)\n\n[h2]Tweaks:[/h2]\n- Snapping system now respects Enabled state on snappable components (requested by @_deltawolf, issue #7147)\n\n[h2]Locale:[/h2]\n- Merged Chinese (Taiwan) update by @meowwei \n- Merged Chinese (Taiwan) update by @meowwei, @ninnana. and @modimobeikete \n\n[h2]Fixes:[/h2]\n- Fixed document entity not being fully initialized on import\n-- This fixes document viewer (e.g. for PDF) missing proper item name and spawning user\n- Fixed Resonite completely freezing in rare cases when acceleration structures get corrupted\n-- This will now only crash the world, rather than freezing the entire engine\n- Fixed Add operation with dictionaries causing crash when the key is null (reported by @3x1t_5tyl3, issue #7190)\n-- The operation will now fail for null keys (these cannot be used as keys)",
+      "feedlabel": "Community Announcements",
+      "date": 1788889369,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-09-08T17:42:49Z"
+    },
     {
       "gid": "1842846814441568",
       "title": "2026.9.2.1275 - Fixed screen share getting stuck on \"Stream Offline\"",
@@ -2411,5 +2439,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-09-02T22:30:17.092672Z"
+  "last_updated": "2026-09-08T18:55:12.430020Z"
 }

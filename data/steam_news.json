@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 174,
+  "count": 175,
   "newsitems": [
+    {
+      "gid": "1843481262690192",
+      "title": "2026.9.9.1136 - FFT improvements, Video Stream opt-out, asset cleanup optimize",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262690192",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nJust a small update, addressing some issues with the FFT analyzer. There was some confusion with how the library we use handles real values, where they're not the real parts, but actually complex numbers interweaved. \n\nThis address this, this update adds several new modes. The output by default now is magnitudes of the complex numbers, which should be easier to work with for visualizers.\n\nTo preserve old behavior, there's also Interweaved mode, which behaves the same.\n\nYou can also trim the output size - if you don't care about the higher frequencies, this can give you less data to process.\n\nFor existing items it's trimmed to half with the interweaved method, which preserves how the initial release behaved.\n\n[h2]New Features:[/h2]\n- Added OutputFormat to FFT_RealAnalyzer to configure the format of the output values\n    - Magnitude (new default)\n    - Interweaved (previous behavior, preserved for existing instances)\n    - RealOnly\n     - ImaginaryOnly\n\n- Added OutputLength to FFT_RealAnalyzer which allows trimming the output data\n     - If you don't care about the full spectrum, you can halve, quarter or 1/8th the output array\n     - Set to half for existing items to emulate previous behavior\n\n- SharedDesktopTexture & SharedVideoTextureSink now respect Enabled state\n-- When disabled, the underlying video will be unloaded\n-- This allows of opting out of video streaming (requested by @modernballoonie, issue #6978)\n- Added StreamEnabled to VideoStreamInterface \n-- This allows setting up buttons to locally opt out of video streams (requested by @modernballoonie, issue #6978)\n-- You will need to assign this field to a drive (like ValueUserOverride) for the opt out to be local\n\n[h2]Tweaks:[/h2]\n- Added rtspt:// as recognized streaming protocol\n\n[h2]Optimizations:[/h2]\n- Optimized Asset Deduplication on Headless sessions to prevent worlds with large numbers of assets hanging when periodic asset cleanup runs. (Possibly reported in issue #2079 by @readun and J4, Implemented by @dante)",
+      "feedlabel": "Community Announcements",
+      "date": 1788981089,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-09-09T19:11:29Z"
+    },
     {
       "gid": "1842846814456476",
       "title": "2026.9.8.1092 - Fixed crash with FFT analyzer",
@@ -2439,5 +2453,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-09-08T21:32:18.333152Z"
+  "last_updated": "2026-09-09T19:22:13.523973Z"
 }

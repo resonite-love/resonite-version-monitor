@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 175,
+  "count": 176,
   "newsitems": [
+    {
+      "gid": "1843481262697886",
+      "title": "Resonite Beta Patch notes 2026.08",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262697886",
+      "is_external_url": true,
+      "author": "Decoy",
+      "contents": "[p]Hello! [/p][p]We've had a ton of updates for the past month, and there's lots of content to go over. So - we made a short video to do just that![/p][p][img src=\"{STEAM_CLAN_IMAGE}/44646621/638680cba8ec640ff1471e63771622264c9013ca.jpg\"][/img][/p][previewyoutube=\"aq5D2iyUF-w;full\"][/previewyoutube][p]And if you [i]are[/i] interested in seeing what we did over the past month, we've also uploaded our monthly Recap stream for August, which is where we take an hour to go over and showcase the highlights of August![/p][p]This is also available on our YouTube channel, here: [dynamiclink href=\"https://www.youtube.com/watch?v=ksNMggAk4P0\"][/dynamiclink][/p][hr][/hr][p][/p][h2]Highlights for August:[/h2][p][/p][h3]Rudimentary Collections support[/h3][p][img src=\"{STEAM_CLAN_IMAGE}/44646621/bf904c1a0be7b54fd26a51b64bfe7181ec08fea3.jpg\"][/img][/p][p]You can now create and edit collections such as dictionaries, arrays, and lists![/p][p]This doesn't cover everything yet, and can only be properly accessed with ProtoFlux at the moment, but this is the first building block to opening up collections in the future.[/p][p][/p][h3]Desktop sharing[/h3][p][img src=\"{STEAM_CLAN_IMAGE}/44646621/18047832eabcc6218458e907100ce4c338fb23c2.jpg\"][/img][/p][p]Screen sharing is now possible within Resonite! You can stream your entire desktop, or create a custom stream using an RTMP link and broadcasting software, such as OBS.[/p][p]This is still in very early support, and still isn't fully functional on Linux due to Proton's pressure vessel. We're still working on it, and if you have any information or encounter any bugs, please let us know in our GitHub![/p][p][/p][h3]RawMesh Procedural[/h3][p][img src=\"{STEAM_CLAN_IMAGE}/44646621/28b566f9102b07172af0d65e534df7fa10a6f47f.jpg\"][/img][/p][p]You can create and edit a mesh object, entirely within Resonite![/p][p]This currently supports points, normals, tangents, UVs and colors.[/p][p][/p][p]There's tons of other stuff that's been added, and this is just a peek. So to learn more, you should definitely check out the video, watch our recap, and check out the previous patch notes for this month![/p]",
+      "feedlabel": "Community Announcements",
+      "date": 1789235763,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-09-12T17:56:03Z"
+    },
     {
       "gid": "1843481262690192",
       "title": "2026.9.9.1136 - FFT improvements, Video Stream opt-out, asset cleanup optimize",
@@ -2453,5 +2467,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-09-12T13:47:19.223893Z"
+  "last_updated": "2026-09-12T18:20:04.717965Z"
 }

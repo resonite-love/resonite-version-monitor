@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 176,
+  "count": 177,
   "newsitems": [
+    {
+      "gid": "1843481262702971",
+      "title": "2026.9.14.1239 - FABRIK bone stiffness, more holiday nodes, fixes & tweaks",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1843481262702971",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI've got another tidbit of StrikePose for you, our new in-house IK - FABRIK chain now supports bone stiffness!\n\nThis is a new mechanism that allows to prevent weird kinks and bends when solving bones, making them look much nicer.\n\n[previewyoutube=9zZEHyg7KMI;full][/previewyoutube]\n\nThis was implemented to make spine behave well for the Biped IK, I'll be integrating this soonish and continuing work the full body IK. \n\nThere's a few other goodies too! RaycastOne now has IgnoreHierarchy input!\n\nThere's a few new nodes for Black History Month & Halloween since it's coming up soon. More will come in the future!\n\nAlso a number of bugfixes for FFT and desktop sharing. Notably custom video streams *might* work on Linux now, so give it a try!\n\n[h2]New Features:[/h2]\n- Added Start/End Stiffness support to FABIK chain\n-- Start/End indicate the intensity of stiffness from the first iteration to the last\n-- The higher the stiffness, the more will each bone move with its child bone during the solve\n-- Effector driven bones inherit the effector rotation for stiffness computations\n-- This is useful for the chain to maintain its shape and better distribute rotations and bending throughout\n-- Chains with stiffness are somewhat more expensive to solve due to additional computations, but should generally be still quite fast\n\n- Added \"IgnoreHierarchy\" to both RaycastOne and Raycaster to feature-match the RaycastDriver component (request @adreos, issue #6881, implemented by @bluecyro)\n-- This allows you to filter out parts of the scene hierarchy you don't wish to test when performing raycasts.\n\n- Added Sanitized User Username node (requested by @Art0007i, @jackthefoxotter, @shdw_x, @_deltawolf, @socksthefennec, issue #7266)\n-- This provides a version of the username sanitized so if the user contains RTF tags, they won't get parsed\n\n- Added IsBlackHistoryMonth(UK) nodes (@jeweltk, @kodufan, @reddneko, issue #7194)\n-- The US/Canada/Jamaica variant is true during the month of February\n-- The UK/Ireland variant is true during the month of October\n- Added IsHalloween node (requested by @frooxius, issue #7218)\n-- This will be true on the day of Halloween (October 31st)\n-- It uses same method for AprilFools, where it stays true until Halloween is over at the US West Coast no matter your local system time - making it easier to celebrate and participate in US-events)\n\n[h2]Tweaks:[/h2]\n- FFT_RealAnalyzer now has default OutputLength set to Half instead of invalid value (requested by @3x1t_5tyl3, @.fulgens, issue #7243)\n-- Full length does give mirrored spectrum, which is usually not necessary\n\n[h2]Locale:[/h2]\n- Merged Czech locale update by @vassterak and @rampa_3 \n- Merged English locale fixed by @vassterak\n\n[h2]Fixes:[/h2]\n- Fixed an issue with the `/changeUsername` command that prevented previous names from being freed up for re-use in some cases. (issue #7227, implemented by @dante)\n- Fixed reverse mode for (Async)ForEachWithIndex not working correctly (reported by @3x1t_5tyl3, @shisosans, issue #7242)\n- Applied potential fix for MediaMTX crashing on graphical Linux client (reported by @reddneko, ssmucny, @bredo, mxjessie, @kibblestherexouium, @kyuvulpes, @fundale8845, issue #6863)\n-- Fix suggested by @fundale8845\n-- Resonite will try to run MediaMTX under proton by default with this\n-- This means that you should be able to use custom video stream on Linux\n- Fixed Desktop Screen Sharing & Custom Video Stream button not resetting when sharing fails due to permission (reported by @fundale8845, issue #7255)",
+      "feedlabel": "Community Announcements",
+      "date": 1789419544,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-09-14T20:59:04Z"
+    },
     {
       "gid": "1843481262697886",
       "title": "Resonite Beta Patch notes 2026.08",
@@ -2467,5 +2481,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-09-12T18:20:04.717965Z"
+  "last_updated": "2026-09-14T23:06:08.856538Z"
 }

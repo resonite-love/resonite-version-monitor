@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 177,
+  "count": 178,
   "newsitems": [
+    {
+      "gid": "1844115010489995",
+      "title": "2026.9.16.1154 - FFT rolling window, Toki Pona locale, fixes",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844115010489995",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI'll be away travelling soon, so there won't likely be any builds for a bit, but I got a few goodies for you before!\n\nFFT now has rolling analysis mode! This lets you use large window sizes for more detail, while keeping low latency  - in fact, there's now also 16K window size mode!\n\nAlso another fun thing - thanks to @.hecko, Resonite now has Toki Pona locale! If you like constructed languages, this might be great way to practice it.\n\nThere's a few bugfixes too and little bit of prep-work for .NET 11 update in November - I found some more inconsistencies in our compatibility determination system that were now plugged in.\n\nI *might* be able to squeeze a build in tomorrow as well from the hotel, but no promises! \n\n[h2]New Feature:[/h2]\n- Added support for rolling buffer analysis mode for FFT analyzer (based on request by @EuphieEuphoria, issue #7225)\n-- You need to switch the BufferMode from Discrete to Rolling\n- Added 16384 FFT buffer size option to FFT analyzer\n\n[h2]Tweaks:[/h2]\n- Categorized ReferenceProxy into the Common UI/Proxies category alongside the other usable proxy components (reported by @jackthefoxotter, issue #7169, implemented by @ryuvi)\n\n[h2]Locale:[/h2]\n- Merged new Toki Pona locale by @.hecko\n- Merged English locale tweak by @cameron5 \n\n[h2]Fixes:[/h2]\n- Fixed encoding of char surrogate pairs causing a crash (reported by @3x1t_5tyl3, Lexevo, issue #72520)\n- Ensure consistent method sorting for compatibility hash when there are multiple methods with the same name\n-- This fixes some builds being treated as incompatible, even though they should be compatible (e.g. .NET 10 & .NET 11)\n- Discord RPC will not spam logs with errors when Discord is closed or not present (reported by @flying_stitchman in #6889, implemented by @j4.lc)",
+      "feedlabel": "Community Announcements",
+      "date": 1789586849,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-09-16T19:27:29Z"
+    },
     {
       "gid": "1843481262702971",
       "title": "2026.9.14.1239 - FABRIK bone stiffness, more holiday nodes, fixes & tweaks",
@@ -2481,5 +2495,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-09-14T23:27:50.422792Z"
+  "last_updated": "2026-09-16T19:32:41.249098Z"
 }

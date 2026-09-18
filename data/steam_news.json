@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 178,
+  "count": 179,
   "newsitems": [
+    {
+      "gid": "1844115010493617",
+      "title": "2026.9.18.82 - Fixed crash when switching controllers & hand tracking",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1844115010493617",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI got one extra update for you before I'm off!\n\nOne of the issues that has been plaguing us for a while has been the crash when switching hand tracking and controllers with Quest. \n\nSince this is bug inside of Unity's own native code, this has been difficult for us to fix. \n\nHowever @hazre has managed to work out a solution that patches the affected sites and prevents the crash from occuring!\n\nA huge thanks to them for helping fix this issue! \n\nAlso the build is compatible with previous as only the renderer side has changed.\n\n[h2]Locale:[/h2]\n - Merged Korean locale update by @mirpasec\n\n[h2]Fixes:[/h2]\n- Fixed renderer crash when switching hand tracking and controllers with Quest (reported by @zyro1331, @modernballoonie, @ohzee, @merith, @eldritchkaiju, @grandpavape, @kodufan, mrdabup, @karasutengu, @stellanora, @rynfluff and @mint_shock, issue #3066, fix contributed by @hazre)\n-- The fix works around bug in Unity's native code by patching the affected sites\n-- You can see details and source here: https://github.com/Yellow-Dog-Man/Renderite.Unity.Renderer/pull/59",
+      "feedlabel": "Community Announcements",
+      "date": 1789695439,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-09-18T01:37:19Z"
+    },
     {
       "gid": "1844115010489995",
       "title": "2026.9.16.1154 - FFT rolling window, Toki Pona locale, fixes",
@@ -2495,5 +2509,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-09-16T22:19:39.107460Z"
+  "last_updated": "2026-09-18T04:41:50.872518Z"
 }

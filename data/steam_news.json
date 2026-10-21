@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 179,
+  "count": 180,
   "newsitems": [
+    {
+      "gid": "1847286114028910",
+      "title": "Resonite Costume Contest 2026",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1847286114028910",
+      "is_external_url": true,
+      "author": "Decoy",
+      "contents": "[p]To celebrate the time of terrifying tomfoolery we're going to be running another costume competition! There are four categories to choose from, so here are your options: [/p][list][*][p][b]Spooky/classic [/b][/p][/*][*][p][b]Meme [/b][/p][/*][*][p][b]Unique [/b][/p][/*][*][p][b]Group[/b][/p][/*][/list][p][/p][h3][b]How to enter[/b][/h3][p]Make a post on our Discord in the [b]⁠[/b][url=\"https://discord.com/channels/1040316820650991766/1557521343451238493\"]🎃costume-contest-2026[/url][b] [/b]channel.[/p][p][b]You must include[/b]: [/p][list][*][p]A picture or [i]short[/i] video (30 seconds max) that shows off your costume[/p][/*][*][p]The Resonite usernames of everyone who is part of the entry[/p][/*][*][p]The category you are submitting to[/p][/*][/list][p][/p][h3][b]How to win[/b][/h3][p]Judging will be managed by [b]Rustybot[/b], [b]Nexulan[/b], and [b]Decoy[/b]. We'll be gathering entries with the most Discord reactions and then picking a winner from the top results, so if you see a costume you like, give it a thumbs up! [/p][p][/p][h3][b]Deadline[/b][/h3][p]The submission window closes on [b]October 29, 2026[/b] at:[/p][list][*][p]7 PM (EST)[/p][/*][*][p]4 PM (PDT)[/p][/*][*][p]Midnight (CET, Oct 30)[/p][/*][*][p]8 AM (JST, Oct 30)[/p][/*][/list][p][/p][h3][b]Award Show[/b][/h3][p]We will be hosting two streams to announce the winners![/p][p]The first one hosted by Rustybot, will be on [b]October 30[/b] at:[/p][list][*][p]7 PM (EST)[/p][/*][*][p]4 PM (PDT)[/p][/*][*][p]Midnight (CET, Oct 31)[/p][/*][*][p]8 AM (JST, Oct 31)[/p][/*][/list][p]The second stream hosted by Decoy, will follow on [b]October 31[/b] at:[/p][list][*][p]12 PM (EST)[/p][/*][*][p]9 AM (PDT)[/p][/*][*][p]5 PM (CET)[/p][/*][*][p]1 AM (JST, Nov 1)[/p][/*][/list][p][/p][p]If you're in Resonite during the stream, you could be invited on stage to show off in person! [/p][p][/p][h3][b]Prizes[/b][/h3][p]Everyone who enters will earn a participation badge, and the winners will of course get a victory badge as well as a trophy made by the art team! And bragging rights. And I'll high-five you if you want. Good luck everyone![/p]",
+      "feedlabel": "Community Announcements",
+      "date": 1792590381,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-10-21T13:46:21Z"
+    },
     {
       "gid": "1844115010493617",
       "title": "2026.9.18.82 - Fixed crash when switching controllers & hand tracking",
@@ -2509,5 +2523,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-10-10T22:43:24.242083Z"
+  "last_updated": "2026-10-21T18:34:16.112160Z"
 }

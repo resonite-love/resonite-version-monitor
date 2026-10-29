@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 181,
+  "count": 182,
   "newsitems": [
+    {
+      "gid": "1847920302236440",
+      "title": "2026.10.29.1239 - Babble Frame Runtime support, Frame tweaks & fixes",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1847920302236440",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI got a smaller build for you with a bunch of tweaks for the Steam Frame support and now also supporting the Babble Frame Runtime for eye tracking in addition to the SteamLink!\n\n[h2]New Features:[/h2]\n- Added support for Babble Frame Runtime (issue #7447)\n-- This uses existing Babble OSC driver, which is now able to receive data from the Frame version\n-- On your Frame, you must enable Babble OSC output for this to work (leaving address set to Steam Link Host should work)\n-- Pupil dilation is now supported\n\n[h2]Tweaks:[/h2]\n- Made it easier to align held items by pressing Trigger with the Steam Frame controller\n- Adjusted Grip threshold for grabbing to be higher for Steam Frame Controller (based on feedback by @u1f98a, issue #7449)\n\n[h2]Fixes:[/h2]\n- Fixed Standard controller Menu button mapping being different from direct Frame controller mapping (reported by @scarstrf, issue #7448)\n- Fixed pupils getting stuck when multiple eye tracking drivers are available, but the currently active driver does not track pupils\n- Fixed race condition when removing audio sources causing audio system to break completely (issue #7437)",
+      "feedlabel": "Community Announcements",
+      "date": 1793309317,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-10-29T21:28:37Z"
+    },
     {
       "gid": "1847920302228888",
       "title": "2026.10.27.1325 - Frame controller & eye tracking support, PLY, SPZ & SOG format",
@@ -2537,5 +2551,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-10-28T01:30:43.221758Z"
+  "last_updated": "2026-10-29T23:55:01.906842Z"
 }

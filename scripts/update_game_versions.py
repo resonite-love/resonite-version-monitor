@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
+import argparse
 import json
 import os
 import subprocess
 import tempfile
 from pathlib import Path
-from datetime import datetime
 
 def load_json(file_path):
     """Load JSON file."""
@@ -39,15 +39,14 @@ def download_build_version(app_id, depot_id, manifest_id, branch):
             '-filelist', str(filelist_path)
         ]
         
-        # Add branch if specified
-        if branch and branch != 'public':
-            cmd.extend(['-beta', branch])
-            
-            # Add beta password for headless branch
-            if branch == 'headless':
-                beta_key = os.environ.get('STEAM_BETA_KEY', '')
-                if beta_key:
-                    cmd.extend(['-betapassword', beta_key])
+        # Preserve Steam's exact branch name, including public and release.
+        cmd.extend(['-branch', branch])
+
+        # Keep the existing headless beta-key configuration.
+        if branch == 'headless':
+            beta_key = os.environ.get('STEAM_BETA_KEY', '')
+            if beta_key:
+                cmd.extend(['-branchpassword', beta_key])
         
         print(f"Downloading Build.version for {branch} (manifest: {manifest_id})...")
         
@@ -74,25 +73,26 @@ def download_build_version(app_id, depot_id, manifest_id, branch):
             print(f"Exception during download: {e}")
             return None
 
-def update_versions_with_game_version():
+def update_versions_with_game_version(branch='all', versions_file=None):
     """Update versions.json with game versions."""
-    versions_file = Path(__file__).parent.parent / 'data' / 'versions.json'
+    versions_file = Path(versions_file) if versions_file is not None else Path(__file__).parent.parent / 'data' / 'versions.json'
     
     if not versions_file.exists():
         print("versions.json not found")
         return False
     
     versions_data = load_json(versions_file)
+    if branch != 'all' and branch not in versions_data:
+        raise ValueError(f"Unknown branch '{branch}'. Available branches: {', '.join(versions_data)}")
+    branches = list(versions_data) if branch == 'all' else [branch]
     app_id = 2519830
     depot_id = 2519832
     updated = False
-    failed_count = 0
-    max_failures = 3  # Stop after 3 consecutive failures (likely rate limit)
+    max_failures = 3  # Skip the rest of a branch after consecutive download failures.
     
     # Process each branch
-    for branch_name in ['public', 'prerelease', 'release', 'headless']:
-        if branch_name not in versions_data:
-            continue
+    for branch_name in branches:
+        failed_count = 0
         
         # Process entries that don't have gameVersion
         for entry in versions_data[branch_name]:
@@ -116,29 +116,33 @@ def update_versions_with_game_version():
                         print(f"Failed to get version for {branch_name} manifest: {manifest_id}")
                         failed_count += 1
                         
-                        # Check if we hit rate limit
+                        # An inaccessible branch must not block other branches.
                         if failed_count >= max_failures:
-                            print(f"\nStopping due to {max_failures} consecutive failures (likely rate limit)")
-                            if updated:
-                                save_json(versions_file, versions_data)
-                                print(f"Saved progress: updated entries before hitting rate limit")
-                            return updated
+                            print(f"\nSkipping remaining {branch_name} entries after {max_failures} consecutive failures")
+                            break
     
     if updated:
         save_json(versions_file, versions_data)
-        print("\nSuccessfully updated all available versions")
+        print("\nSaved successfully retrieved game versions")
         return True
     else:
-        print("\nNo updates needed")
+        print("\nNo game versions updated")
         return False
 
-def main():
+def main(argv=None):
+    parser = argparse.ArgumentParser(description='Fill missing game versions for recorded Steam branches.')
+    parser.add_argument('--branch', default=os.environ.get('VERSION_BRANCH') or 'all',
+                        help='Steam branch name from versions.json, or all (default: VERSION_BRANCH or all)')
+    args = parser.parse_args(argv)
     # Check if Steam credentials are provided
     if not os.environ.get('STEAM_USERNAME') or not os.environ.get('STEAM_PASSWORD'):
         print("Error: STEAM_USERNAME and STEAM_PASSWORD must be set")
         return
     
-    update_versions_with_game_version()
+    try:
+        update_versions_with_game_version(branch=args.branch)
+    except ValueError as error:
+        parser.error(str(error))
 
 if __name__ == '__main__':
     main()

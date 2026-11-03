@@ -8,7 +8,8 @@ on:
   workflow_dispatch:
     inputs:
       branch:
-        description: 'Branch to update (public, prerelease, release, headless)'
+        description: 'Steam branch name recorded in versions.json, or all'
+        type: string
         required: false
         default: 'all'
 
@@ -43,6 +44,7 @@ jobs:
     
     - name: Update game versions
       env:
+        VERSION_BRANCH: ${{ inputs.branch || 'all' }}
         STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
         STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
         STEAM_BETA_KEY: ${{ secrets.STEAM_BETA_KEY }}

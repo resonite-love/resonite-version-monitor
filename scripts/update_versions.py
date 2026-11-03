@@ -31,21 +31,16 @@ def create_version_entries(manifest_data, timestamp):
     
     return entries
 
-def update_versions_json(manifest_data):
+def update_versions_json(manifest_data, versions_file=None):
     """Update versions.json with new manifest data."""
-    versions_file = Path(__file__).parent.parent / 'data' / 'versions.json'
+    versions_file = Path(versions_file) if versions_file is not None else Path(__file__).parent.parent / 'data' / 'versions.json'
     
     # Load existing versions or create new
     if versions_file.exists():
         versions_data = load_json(versions_file)
     else:
-        # Initialize with empty arrays for each branch
-        versions_data = {
-            'public': [],
-            'prerelease': [],
-            'release': [],
-            'headless': []
-        }
+        # Branches are discovered from Steam manifests rather than a fixed list.
+        versions_data = {}
     
     # Create new version entries
     timestamp = datetime.utcnow().isoformat() + 'Z'

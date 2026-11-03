@@ -2865,5 +2865,12 @@
       "timestamp": "2026-11-03T01:50:03.118703Z",
       "gameVersion": "2026.11.3.97"
     }
+  ],
+  "alpha-jae": [
+    {
+      "manifestId": "1848884487800858521",
+      "timestamp": "2026-11-03T22:03:12.685920Z",
+      "gameVersion": null
+    }
   ]
 }

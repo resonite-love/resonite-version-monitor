@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 182,
+  "count": 183,
   "newsitems": [
+    {
+      "gid": "1847920302250051",
+      "title": "2026.11.2.1415 - Brotli security patch, alpha branches, Unity SDK UPM fix",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1847920302250051",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nGot a small, but important update - there's a security vulnerability discovered in the Brotli compression library, which affects Resonite as well - specifically when saving & loading items & worlds.\n\nTo address this, we moved from the custom fork (which we'd have to update) to a built-in .NET version, which both simplifies things for us and makes security updates part of .NET itself - the fork was left-over from the Unity Mono times, but is no longer necessary. \n\nThis build is compatible with current, but [b]updating ASAP is strongly recommended[/b].\n\n[h2]New Features:[/h2]\n- Enable Alpha branches for all engineering team members (issue #7417, implemented by @probableprime )\n-- This will allow for additional testing and pre-release feature previews for the entire community\n\n[h2]Security:[/h2]\n- Replaced Brotli implementation with built-in .NET version, rather than custom fork of a library\n-- This is to address a Brotli security vulnerability CVE-2026-111497 (reported by TheAutopilot, security ticket #14388)\n-- Make sure your .NET 10 install is up to date ( https://support.microsoft.com/en-us/servicing/dotnet/net-10/2026/net-10-0-update-october-25-2026 )\n\n[h1][Resonite Unity SDK 1.2.3][/h1]\nThis update fixes the UPM package failing to install properly on some systems.\n\nIf you're having trouble, just update to latest package in the Package Manager in Unity Editor!\n\nIf you're installing the package to a new project, simply install it from Git using this url:\n`https://github.com/Yellow-Dog-Man/Resonite.UnitySDK.git?path=/Packages/ResoniteSDK#upm`\n\n[h2]Fixes:[/h2]\n- Fixed UPM installs failing on some systems due to Git LFS (reported by @cowardlycamper32, @karasutengu, @pyxaron, issue #134)",
+      "feedlabel": "Community Announcements",
+      "date": 1793663216,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-11-02T23:46:56Z"
+    },
     {
       "gid": "1847920302236440",
       "title": "2026.10.29.1239 - Babble Frame Runtime support, Frame tweaks & fixes",
@@ -2551,5 +2565,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-11-01T01:08:47.192158Z"
+  "last_updated": "2026-11-03T01:50:03.559746Z"
 }

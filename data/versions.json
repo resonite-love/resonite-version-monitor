@@ -2846,24 +2846,24 @@
     {
       "manifestId": "6221332527682572057",
       "timestamp": "2025-08-14T02:19:46.683272Z",
-      "gameVersion": null
+      "gameVersion": "2025.6.17.855"
     }
   ],
   "alpha-prime": [
     {
       "manifestId": "5486697587707029206",
       "timestamp": "2026-10-30T07:04:17.696243Z",
-      "gameVersion": null
+      "gameVersion": "2026.10.30.290"
     },
     {
       "manifestId": "3909066433782922696",
       "timestamp": "2026-11-01T01:08:46.843670Z",
-      "gameVersion": null
+      "gameVersion": "2026.10.31.1381"
     },
     {
       "manifestId": "3517401286321256272",
       "timestamp": "2026-11-03T01:50:03.118703Z",
-      "gameVersion": null
+      "gameVersion": "2026.11.3.97"
     }
   ]
 }

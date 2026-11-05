@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 183,
+  "count": 184,
   "newsitems": [
+    {
+      "gid": "1848557880481482",
+      "title": "2026.11.5.80 - Steam Frame eye tracking improvements & fixes",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1848557880481482",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nJust a small build improving some Steam Frame & eye tracking things. I'm mostly busy with some administrative things and implementing stuff for the AI policy, but I didn't want those to be held up.\n\nCompatible with current, don't need to update if not affected. \n\n[h2]Tweaks:[/h2]\n- Lowered Babble OSC driver tracking timeout to 5 seconds\n-- If you use both Babble & SteamLink in conjunction, this means it'll take 5 seconds to switch from Babble to SteamLink eye tracking with the SteamFrame after disabling it on the headset\n\n[h2]Optimizations:[/h2]\n- Apply caching to Sessions List endpoint, to mitigate load (implemented by @probableprime )\n\n[h2]Locale:[/h2]\n- Merged French locale update by @Baplar\n\n[h2]Fixes:[/h2]\n- Fixed AvatarRawEyeData not providing the eye tracking data in some cases where multiple eye tracking drivers are registered (reported by @tabithamoon, @modernballoonie, mxjessie, @noblefurlyfe, @thejebforge, issue #6573)\n-- This also ensures that avatar eye tracking driver & AvatarRawEye data drivers are always the same\n- Fixed eye drivers that aren't currently actively tracking being used, resulting in halted eye tracking",
+      "feedlabel": "Community Announcements",
+      "date": 1793842617,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-11-05T01:36:57Z"
+    },
     {
       "gid": "1847920302250051",
       "title": "2026.11.2.1415 - Brotli security patch, alpha branches, Unity SDK UPM fix",
@@ -2565,5 +2579,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-11-03T22:03:12.861650Z"
+  "last_updated": "2026-11-05T02:59:09.549489Z"
 }

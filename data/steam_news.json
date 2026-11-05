@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 184,
+  "count": 185,
   "newsitems": [
+    {
+      "gid": "1848664643340855",
+      "title": "Islands of Resonite Convention",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1848664643340855",
+      "is_external_url": true,
+      "author": "Decoy",
+      "contents": "[h1]Islands of Resonite Convention[/h1][p][/p][p]Resonite and Metaverse Academia are excited to announce the [b]Islands of Resonite Convention[/b], a community-driven celebration of everything that makes Resonite special! Explore a fantasy island filled with community group booths, events, panels, performances, workshops, free items, avatars, and more! Whether you want to showcase your community, share something you've created, host an activity, or simply hang out with fellow Resonite users, there's a place for you.[/p][p][dynamiclink href=\"https://www.youtube.com/watch?v=_F7ka9XqYpE\"][/dynamiclink][/p][h2]Convention Dates[/h2][p]Thursday, November 19, 2026, at 4 PM PST – Monday, November 23, 2026, at 4 PM PST\n[i](November 20–24, 00:00 UTC)[/i][/p][p][/p][h2]Host an Event/Panel[/h2][p]We're looking for community members to host panels, workshops, games, performances, and other activities during the convention! [/p][p][b]Sign up here: [/b][url=\"https://forms.gle/sYDk7RWiCfTi7PB87\"]https://forms.gle/sYDk7RWiCfTi7PB87[/url][/p][p]Fill out the form to propose your event or panel and share what you'd like to host. You don't need to represent a group to participate![/p][p][/p][h2]Convention Badges[/h2][p]You can receive a special [b]Islands of Resonite Convention badge[/b] for [b]hosting an event or panel[/b] during the convention! It's a way to commemorate your contribution and show that you helped make the convention happen.[/p][p][/p][h2]Convention Links[/h2][list][*][p][url=\"https://docs.google.com/document/d/155yx7q4EOrIAUxXyCPT5btVnrXs8KG9BTNLIylIzdJI/edit?usp=sharing\"]Information, Guidelines & FAQ[/url][/p][/*][*][p][url=\"https://forms.gle/sYDk7RWiCfTi7PB87\"]Event & Panel Signup Form[/url][/p][/*][*][p][url=\"https://discord.gg/YTrR6eB9m7\"]Metaverse Academia Discord Server[/url][/p][/*][/list][p][/p][p]Whether you're representing a group, sharing your work, hosting an activity, or joining us as a visitor, we hope you'll be part of this adventure![/p]",
+      "feedlabel": "Community Announcements",
+      "date": 1793876912,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-11-05T11:08:32Z"
+    },
     {
       "gid": "1848557880481482",
       "title": "2026.11.5.80 - Steam Frame eye tracking improvements & fixes",
@@ -2579,5 +2593,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-11-05T02:59:09.549489Z"
+  "last_updated": "2026-11-05T17:58:28.587527Z"
 }

@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 185,
+  "count": 186,
   "newsitems": [
+    {
+      "gid": "1848664643347145",
+      "title": "2026.11.6.1136 - SRAnipal eye tracking fix when eyes are closed",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1848664643347145",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hey everyone!\n\nI normally avoid builds on Friday, but this is just tiny fix for some SRAnipal eye tracking weirdness that got introduced so we can have our eyes be normal on stream :3\n\nCompatible with current of course!\n\n[h2]Fixes:[/h2]\n- Fixed SRAnipal eye tracking stopping to work when eyes are closed (reported by @decoy, @ryuvi, @snuhr, issue #7490)",
+      "feedlabel": "Community Announcements",
+      "date": 1793992514,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-11-06T19:15:14Z"
+    },
     {
       "gid": "1848664643340855",
       "title": "Islands of Resonite Convention",
@@ -2593,5 +2607,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-11-05T17:58:28.587527Z"
+  "last_updated": "2026-11-06T21:27:44.743605Z"
 }

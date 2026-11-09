@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 186,
+  "count": 187,
   "newsitems": [
+    {
+      "gid": "1848664643354953",
+      "title": "Resonite Marketing Survey",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1848664643354953",
+      "is_external_url": true,
+      "author": "Decoy",
+      "contents": "[h3][b]Do you want to give the Resonite team some hard feedback?[/b][/h3][p][/p][p]Great! Take our marketing survey, and let us know how you feel about Resonite, and our current efforts! [/p][p]We're looking for ways to reach more people, and we'd like your input on our userbase on why you use (or don't use) Resonite, and how we can try to capture more users. This survey helps us understand what kind of things keep people on Resonite, what should we be promoting more of, and what possible other marketing strategies we can use in future campaigns. It only takes a few minutes, so please give us input! [/p][p]The form will be closed on November 21, 2026 at midnight UTC![/p][p][/p][p]The survey is available here: [url=\"https://files.yellowdogman.com/index.php/apps/forms/s/ANoBK8a8yTcmb2yXmjdN5ZNZ\"]https://files.yellowdogman.com/index.php/apps/forms/s/ANoBK8a8yTcmb2yXmjdN5ZNZ[/url][/p][p][/p][p][/p][h3]FILL OUT MY FORM!!! (please)[/h3][h3][img src=\"{STEAM_CLAN_IMAGE}/44646621/17e728e1ae00f43a0bb78d0a8da0ead75148773b.jpg\"][/img][/h3]",
+      "feedlabel": "Community Announcements",
+      "date": 1794220263,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-11-09T10:31:03Z"
+    },
     {
       "gid": "1848664643347145",
       "title": "2026.11.6.1136 - SRAnipal eye tracking fix when eyes are closed",
@@ -2607,5 +2621,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-11-06T23:29:18.110414Z"
+  "last_updated": "2026-11-09T20:40:36.234957Z"
 }

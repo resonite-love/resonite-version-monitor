@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 187,
+  "count": 188,
   "newsitems": [
+    {
+      "gid": "1848664643361232",
+      "title": "2026.11.10.1262 - Finger gesture in-game video recording",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1848664643361232",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hey everyone!\n\nI got an exciting update for you! I managed to finish the MVP of one of my creative day projects - in-game video recording! This is now released as a beta feature - you have to enable it in your settings first. \n\nIt lets you quickly record video clips with the finger photo gesture with no external software needed like OBS! Hopefully this will make it easier to capture some fun contents and shenanigans on Resonite and share them with everyone. \n\nThere's more to do with this - like making this work with the interactive & streaming camera and such, I'll be doing more work on this next Friday (I'm working on the AI tagging most of the week), but this was enough to make it into a build and I think there's general benefit to releasing things gradually piece by piece where possible and gather feedback & bug reports.\n\nSome of the work on this also fixes audio issues with screen sharing too! \n\nMore to come soon!\n\n[h2]New Features:[/h2]\n- Added support for recording video in-game with the finger photo gesture (requested by @euphieeuphoria, @buddy_dibs, issue #4154)\n    - This feature is currently in BETA! It can break, please report issues on GitHub!\n    - You need to enable it in settings: User Interface - Quick Photo Capture - Record Video\n    - In VR, start recording by holding the left hand index finger until a red circle fills up. Stop recording by moving hands far away from each other or close to each other.\n    - Releasing before the red circle fills up will perform normal Timer photo\n    - In Desktop, press Ctrl+R to start recording. Press again to stop.\n    - You can configure recording quality under Settings -> User Interface -> Video Capture Settings\n    - More to come! This is initial MVP release, but recording with the streaming camera and in world interactive camera is planned!\n    - This has been implemented as my creative day issue! (see <https://github.com/Yellow-Dog-Man/Resonite-Issues/blob/main/CREATIVE_DAY.md> for more)\n\n- Added VideoMetadata tag component\n-- This is analogous to photo metadata, but for video clips\n-- Allows saving/exporting video clips recorded in-game similar to screenshots\n-- Video clips saved/exported this way will be put into \"Videos\" folder in Documents\n\n[h2]Tweaks:[/h2]\n- Update ffmpeg to latest version\n-- Switched to GPL pre-compiled executable for ffmpeg, which includes libx264 encoder for better quality\n--- The ffmpeg in this case is not incorporated as a library, but provided as a standalone separate program executed through the shell in order to maintain sufficient separation to not constitute a single program\n--- We have made no motifications to ffmpeg. Resonite invokes it from the command-line using standard arguments  supported by publicly available versions of ffmpeg\n--- Exact version included in this build is 2026-10-01-git-0b01ed76aa\n--- Resonite as a whole also remains functional if this copy of ffmpeg is replaced with LGPL version (in such case, libopenh264 will be used for software fallback)\n--- See: https://www.gnu.org/licenses/gpl-faq.html#GPLInProprietarySystem\n--- Also: https://en.wikipedia.org/wiki/GNU_General_Public_License#Communicating_and_bundling_with_non-GPL_programs\n\n[h2]Optimizations:[/h2]\n- Use libx264 when available for encoding instead of libopenh264\n-- This affects both video recording & screen sharing feature when software encoding fallback is used\n-- This should provide better quality & performance when encoding\n-- libopenh264 will use lower quality options when in use to maintain realtime encoding speed\n\n[h2]Security:[/h2]\n- Fixed unsupported URL's not being properly filtered due to legacy URL handling mechanism\n-- This fixes VideoTextureProvider being able to load media locally from file:/// URL's (security ticket #13941) for the user, rather than typical import pipeline. These files would not be transferred to other users.\n\n[h2]Locale:[/h2]\n- Merged German locale update by @3x1t_5tyl3 \n\n[h2]Fixes:[/h2]\n- Fixed \"Register.MalformedUID\" issue preventing website registrations, reported by @colin.cat in #6703, fixed by @dante\n- - Fixed sending audio to ffmpeg instance resulting in small audio corruptions\n-- This fixes audio corruptions when using desktop streaming",
+      "feedlabel": "Community Announcements",
+      "date": 1794345405,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-11-10T21:16:45Z"
+    },
     {
       "gid": "1848664643354953",
       "title": "Resonite Marketing Survey",
@@ -2621,5 +2635,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-11-09T20:40:36.234957Z"
+  "last_updated": "2026-11-10T21:59:48.459512Z"
 }

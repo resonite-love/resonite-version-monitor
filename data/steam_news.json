@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 188,
+  "count": 189,
   "newsitems": [
+    {
+      "gid": "1849192144176740",
+      "title": "2026.11.11.21 - Cloudflare testing option",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1849192144176740",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hey everyone!\n\nGuess what, there's one more build today (no more after this I promise x3 (unless something explodes horribly))!\n\nThis adds in a new launch options to help us test some cloud improvements. \n\nThe build is compatible with previous (and with the .NET 11 prerelease too), if you don't care about testing, don't need to update right away!\n\n[h2]New Features:[/h2]\n- Added StagingCloudflare as a new option for the CloudProfile launch option (implemented by @gawdl3y)\n-- This profile is for testing the graphical client's usage of the Resonite API behind the Cloudflare proxy\n-- See https://github.com/Yellow-Dog-Man/Resonite-Issues/discussions/7510 for more information if you'd like to help us test!",
+      "feedlabel": "Community Announcements",
+      "date": 1794357993,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-11-11T00:46:33Z"
+    },
     {
       "gid": "1848664643361232",
       "title": "2026.11.10.1262 - Finger gesture in-game video recording",
@@ -2635,5 +2649,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-11-10T21:59:48.459512Z"
+  "last_updated": "2026-11-11T01:53:37.734383Z"
 }

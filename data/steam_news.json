@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 189,
+  "count": 190,
   "newsitems": [
+    {
+      "gid": "1849192144180099",
+      "title": "2026.11.11.1148 - Fixed RTMP video streams",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1849192144180099",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nJust a small patch for a regression due to a security fix. \n\nCompatible with previous\n\n[h2]Fixes:[/h2]\n- Fixed RTMP and other types of streaming no longer starting due to recent security fix (reported by @fukuro8232, issue #7516)",
+      "feedlabel": "Community Announcements",
+      "date": 1794425151,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-11-11T19:25:51Z"
+    },
     {
       "gid": "1849192144176740",
       "title": "2026.11.11.21 - Cloudflare testing option",
@@ -2649,5 +2663,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-11-11T01:53:37.734383Z"
+  "last_updated": "2026-11-11T23:06:51.106011Z"
 }

@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 190,
+  "count": 191,
   "newsitems": [
+    {
+      "gid": "1849458702681855",
+      "title": "Resonite Beta Patch notes 2026.09 - 10",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1849458702681855",
+      "is_external_url": true,
+      "author": "Decoy",
+      "contents": "[h3]It's been a while![/h3][p]Unfortunately I was a bit busy putting out fires the previous month, so we're covering two months for this one![/p][p][img src=\"{STEAM_CLAN_IMAGE}/44646621/f3804b63d516196c02a22f8d6fc0d84ed31e040a.jpg\"][/img][/p][previewyoutube=\"4cjh1AXBV2Q;full\"][/previewyoutube][p][/p][p]Of course, the full recap streams are also available on our YouTube channel as well here:[dynamiclink href=\"https://www.youtube.com/watch?v=pyNwq4HWzqo\"][/dynamiclink][/p][hr][/hr][p][/p][h2]Highlights for September and October:[/h2][p][/p][h3]FFT Component[/h3][p][img src=\"{STEAM_CLAN_IMAGE}/44646621/098f412c97a7d8dbe9aa0433f32c01b70394106c.png\"][/img][/p][p]There's a new FFT (Fast Fourier Transform) component that lets you analyse any audio source, and grab each frequency out of it as a collection. You can use this to make music visualisers, or anything else you'd want to do with frequency data![/p][p][/p][h3]New Resonite feedback site[/h3][p][img src=\"{STEAM_CLAN_IMAGE}/44646621/51e15a0e8b21b593ed6b5be8011597c21b3558c6.png\"][/img][/p][p]We have a new site for sending us anonymous feedback! If you want to report an issue or just leave us any feedback, you no longer have to go through our GitHub to do so.[/p][p]This also creates a mirror of the feedback as an issue on our GitHub, so that we can track it![/p][p]Check it out: [url=\"https://feedback.resonite.com/\"]feedback.resonite.com[/url][/p][p][/p][h3]Steam Frame support and OSC Face/eye tracking improvements[/h3][p][img src=\"{STEAM_CLAN_IMAGE}/44646621/b4ed6d8fa542127ea502527d2a66a3a08836c37b.jpg\"][/img][/p][p]Currently the longest Protoflux node we have, every single binding for the Steam Frame controllers can be accessed, and used.[/p][p]We also made sure that face and eye tracking OSC data works for SteamLink, Babble, and the Babble Frame Runtime, so you don't need any extra programs to get them working with Resonite. [/p][p][/p][p]There's a ton of smaller bug fixes, and quality of life patches that's been added too, so check out the previous patch notes if you want to learn more![/p][p][/p][h3]Current and upcoming events[/h3][p]On November 20, we have a community run event happening, and a marketing survey that you should totally fill out! Check both of them out below![dynamiclink href=\"https://store.steampowered.com/news/app/2519830/view/698780706978922602?l=english\"][/dynamiclink][dynamiclink href=\"https://store.steampowered.com/news/app/2519830/view/698780869084578159?l=english\"][/dynamiclink][/p][p][/p]",
+      "feedlabel": "Community Announcements",
+      "date": 1794614273,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-11-13T23:57:53Z"
+    },
     {
       "gid": "1849192144180099",
       "title": "2026.11.11.1148 - Fixed RTMP video streams",
@@ -2663,5 +2677,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-11-11T23:06:51.106011Z"
+  "last_updated": "2026-11-14T01:54:52.239558Z"
 }

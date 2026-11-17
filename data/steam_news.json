@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 191,
+  "count": 192,
   "newsitems": [
+    {
+      "gid": "1849458702691540",
+      "title": "2026.11.16.1330 - More video recording, cloud session visibility fixes, yt-dlp",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1849458702691540",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nI got another update for you! There's not much in terms of regular work, as most of that is still consumed by administrative stuff and AI tagging, but I made more progress on the video recording feature and bugfixes. It's still under BETA, so expect stuff to still break and use at your own risk - but reports are welcome! I'll work on more of them next Friday.\n\nNotably I found a general issue where some MP4 files would not be identified properly as such - this fix should also overall improve video compatibility and use Unity Native in more cases than before.\n\nThere are also improvements to the cloud from @probableprime, improving the stability of the session endpoint, which should help with the session visibility issues.\n\nAnd lastly a reminder - we're looking to switch to .NET 11, which has been running on pre-release. From the tests there seem to be no issues, but some users are waiting on Linux packages to update. If you can, please check the issue and share feedback: https://github.com/Yellow-Dog-Man/Resonite-Issues/issues/7507\n\n[h2]New Features:[/h2]\n- Added \"Record\" button to the Streaming Camera dialog\n-- This will start recording a video from the camera's perspective\n-- You can use the streaming camera as usual with different modes\n-- Pressing the button again will stop the recording and spawn the video clip\n-- You need to enable the Video Recording BETA in settings for this option (in Settings -> User Interface)\n-- Video recording is a work in progress feature - turn on at your own risk and expect breakages! Please report bugs if you run into them.\n\n- Added \"Copy Video\" option to video clips\n-- This copies the video file path to the clipboard, since clipboards do not seem to have standard formats for exchanging video clips\n-- This does seem to work well enough with various systems (e.g. pasting into Telegram or Discord)\n\n[h2]Optimizations:[/h2]\n- Tweak Cache parameters on session endpoint to improve performance (reported by Redd56, issue #7531, fixed by @probableprime )\n\n[h2]Locale:[/h2]\n- Merged Chinese (Taiwan) locale update by @meowwei \n- Merged Chinese (Simplified) locale update by @modimobeikete\n- Merged Korean locale update by @mirpasec\n- Merged French locale update by @baplar \n- Merged German locale update by @muppeq \n\n[h2]Tweaks:[/h2]\n- Improved encoding settings for OpenH264 (based on report by @UnskilledWolf, issue #7512)\n- Improved detection of NVidia GPU's so video recording & screen sharing uses NVENC encoder, rather than fallback software encoder (based on report by @UnskilledWolf, issue #7512)\n- Improved detection of AMD GPU's so video recording & screen sharing uses AMD hardware encoder rather than software fallback (based on report by Raidriar796, issue #7535)\n\n[h2]Fixes:[/h2]\n- Fixed MP4 files not being detected properly in some cases from file header\n-- This fixes spawning recorded videos by others missing file extension (reported by @UnskilledWolf, issue #7513)\n-- This also fixes videos using libVLC, instead of Unity Native playback engine, causing potential freezes and crashes\n- Fixed recorded videos spawning without permission (reported by @greyfoxen, issue #7523)\n- Fixed audio selection for YouTube videos to prefer original audio over auto-dubbed versions (reported by @cataena, TisFoolish, gentlecolts, @baplar, issue #7528)\n-- This was due to changes on YouTube end\n- Added Linux binary for ffmpeg (reported by @UnskilledWolf, Mhowser, @hayden_fluff, @Bredo, @shadowpanther, issue #7509)\n-- Exact commit of the binary is c9fe5114060e507409f7ee07edfd82efaf25d767\n-- Note: This might not be sufficient to make this feature functional on all systems as I found that the recorded videos don't properly load on my test machine. I'll be looking into this more next Friday",
+      "feedlabel": "Community Announcements",
+      "date": 1794867998,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-11-16T22:26:38Z"
+    },
     {
       "gid": "1849458702681855",
       "title": "Resonite Beta Patch notes 2026.09 - 10",
@@ -2677,5 +2691,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-11-14T08:19:56.473128Z"
+  "last_updated": "2026-11-17T03:04:51.996748Z"
 }

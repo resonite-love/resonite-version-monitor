@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 194,
+  "count": 195,
   "newsitems": [
+    {
+      "gid": "1850460852987385",
+      "title": "2026.11.26.1331 - Fixed folders with Unicode not opening, renderer crash fix",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1850460852987385",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hello everyone!\n\nAnother small update, fixing another few issues. This one is caused by a bug in .NET 11 (technically previous versions too), so we only have workaround, but it'll make things work until .NET fixes it on their end. \n\nWe also have community contributions from @xyhieqkiwa, fixing a case of renderer crash and some legacy Light components not loading!\n\nCompatible with current.\n\n[h2]Locale:[/h2]\n- Merged Chinese locale update by @modimobeikete \n\n[h2]Fixes:[/h2]\n- Fixed folders with unicode characters failing to open (reported by [@Qualium](https://github.com/Qualium), @greasyweezy, issue #7586)  \n\\-- Note that current fix is a workaround for a .NET 11 bug, see more here: [\\[.NET 11 regression\\] Uri.IsWellFormedUriString fails on relative URI with escaped Unicode symbols dotnet/runtime#138381](https://github.com/dotnet/runtime/issues/138381)\n- Fixed Renderer crash when changing properties of invalid textures (reported by yosh, brecert, issue #5702, fix contributed by @xyhieqkiwa)\n- Fixed some legacy Light components turning into MissingComponent (reported by @officialxau, @dr.tangerine, @dustysprinkles, issue #5530, fix contributed by @xyhieqkiwa)\n\n[h2][Renderite 1.4.6][/h2]\n*   fix(shared): correct LightType old type name by [@xyhieqkiwa](https://github.com/xyhieqkiwa) in [#43](https://github.com/Yellow-Dog-Man/Renderite/pull/43)\n*   fix(unity): check texture instance before changing properties by [@xyhieqkiwa](https://github.com/xyhieqkiwa) in [#44](https://github.com/Yellow-Dog-Man/Renderite/pull/44)",
+      "feedlabel": "Community Announcements",
+      "date": 1795731965,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-11-26T22:26:05Z"
+    },
     {
       "gid": "1850460852983296",
       "title": "2026.11.25.1420 - Fixed manual login",
@@ -2719,5 +2733,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-11-26T01:44:48.572459Z"
+  "last_updated": "2026-11-26T22:57:05.140818Z"
 }

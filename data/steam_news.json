@@ -1,7 +1,21 @@
 {
   "appid": 2519830,
-  "count": 193,
+  "count": 194,
   "newsitems": [
+    {
+      "gid": "1850460852983296",
+      "title": "2026.11.25.1420 - Fixed manual login",
+      "url": "https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1850460852983296",
+      "is_external_url": true,
+      "author": "Frooxius",
+      "contents": "Hey everyone!\n\nJust a small patch fixing manual login issues!\n\nCompatible with previous, if you're already logged in, don't need to update right away.\n\nThis issue has actually a funny cause. The bug has technically been present before .NET 11 + runtime async and could've possibly occurred in some cases. The reason it's happening a lot now is that .NET 11 made things [i]too fast[/i].\n\nEssentially the login and dash load so quickly, they interrupted the login task, because it's been tied to existence of the login dialog. I don't know about you, but I'll take \".NET 11 made things so fast it broke things\" as a win :D\n\n[b]Fixes:[/b]\n- Fixed broken manual login (reported by @rodorin, Raidriar, @DanteTucker (on behalf of a number of support tickets), issue #7577)",
+      "feedlabel": "Community Announcements",
+      "date": 1795651042,
+      "feedname": "steam_community_announcements",
+      "feed_type": 1,
+      "appid": 2519830,
+      "date_formatted": "2026-11-25T23:57:22Z"
+    },
     {
       "gid": "1849827110447898",
       "title": "2026.11.24.1272 - .NET 11 with runtime async, video recording, new nodes",
@@ -2705,5 +2719,5 @@
       "date_formatted": "2024-06-11T00:02:19Z"
     }
   ],
-  "last_updated": "2026-11-25T07:00:42.411952Z"
+  "last_updated": "2026-11-26T01:44:48.572459Z"
 }
